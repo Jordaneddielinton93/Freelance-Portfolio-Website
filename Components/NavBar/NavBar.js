@@ -1,4 +1,4 @@
-import style from "../../styles/NavBar.module.css";
+import style from "./NavBar.module.css";
 import Image from "next/image";
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 const NavBar = () => {

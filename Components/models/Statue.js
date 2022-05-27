@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef, useState } from "react";
 
-const Rock = ({}) => {
+const Statue = ({}) => {
   const ref = useRef();
   // console.log(ref.current.rotation.x)
 
@@ -28,4 +28,4 @@ const Rock = ({}) => {
   );
 };
 
-export default Rock;
+export default Statue;

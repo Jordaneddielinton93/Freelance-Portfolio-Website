@@ -1,6 +1,6 @@
 .NavContainer {
   height: 80px;
-  width: 100vw;
+  width: 100%;
 }
 .NavContainer_Fixed {
   display: flex;
@@ -12,6 +12,7 @@
   width: 100vw;
   background-color: #ffffff;
   border-bottom: solid 3px #ffd700;
+  z-index: 2;
 }
 .NavContainer_Fixed_List {
   height: 100%;

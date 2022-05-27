@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import HomeHero from "../Components/HomeHero/HomeHero";
+import LogoList from "../Components/LogoList/LogoList";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <HomeHero />
+      <LogoList />
     </div>
   );
 }
