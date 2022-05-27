@@ -1,3 +1,4 @@
+import CanvasLayout from "../CanvasLayout/CanvasLayout";
 import style from "./HomeHero.module.css";
 
 const HomeHero = () => {
@@ -5,7 +6,9 @@ const HomeHero = () => {
     <main className={style.Container}>
       <div className={style.Container_Main}>
         <section className={style.Container_Main_LeftSection}></section>
-        <section className={style.Container_Main_RightSection}></section>
+        <section className={style.Container_Main_RightSection}>
+          <CanvasLayout />
+        </section>
       </div>
     </main>
   );

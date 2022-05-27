@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cosmonaut on a rocket
+* source:	https://sketchfab.com/3d-models/cosmonaut-on-a-rocket-e93cbbdb9a2144fb9f63d062566f3e63
+* author:	Yury Misiyuk (https://sketchfab.com/Tim0)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cosmonaut on a rocket" (https://sketchfab.com/3d-models/cosmonaut-on-a-rocket-e93cbbdb9a2144fb9f63d062566f3e63) by Yury Misiyuk (https://sketchfab.com/Tim0) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
