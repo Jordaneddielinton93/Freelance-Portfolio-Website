@@ -6,7 +6,7 @@ const Rock = ({}) => {
   const ref = useRef();
   // console.log(ref.current.rotation.x)
 
-  let gltf = useGLTF("/StatueBacchus/scene.gltf", true);
+  let gltf = useGLTF("/MarbleMan/scene.gltf", true);
 
   let [rotate, setRotate] = useState(true);
   useFrame((state, delta) => {
@@ -22,7 +22,7 @@ const Rock = ({}) => {
     }
   });
   return (
-    <mesh ref={ref} position={[0, 0, 1]} scale={0.1}>
+    <mesh ref={ref} position={[0, -1.6, 1.5]} scale={0.8}>
       <primitive object={gltf.scene} />
     </mesh>
   );
