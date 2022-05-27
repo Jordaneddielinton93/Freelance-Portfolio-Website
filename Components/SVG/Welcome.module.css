@@ -1,0 +1,180 @@
+.WELCOMETOMYFREELANCE g:nth-child(1) {
+  opacity: 0;
+  animation: Rubble 0.5s 0.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(2) {
+  opacity: 0;
+  animation: Rubble 0.5s 1s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(3) {
+  opacity: 0;
+  animation: Rubble 0.5s 1.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(4) {
+  opacity: 0;
+  animation: Rubble 0.5s 2s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(5) {
+  opacity: 0;
+  animation: Rubble 0.5s 2.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(6) {
+  opacity: 0;
+  animation: Rubble 0.5s 3s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(7) {
+  opacity: 0;
+  animation: Rubble 0.5s 3.5s linear forwards;
+}
+
+.WELCOMETOMYFREELANCE g:nth-child(8) {
+  opacity: 0;
+  animation: Rubble 0.5s 4s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(9) {
+  opacity: 0;
+  animation: Rubble 0.5s 4.5s linear forwards;
+}
+
+.WELCOMETOMYFREELANCE g:nth-child(10) {
+  opacity: 0;
+  animation: Rubble 0.5s 5s linear forwards;
+}
+
+.WELCOMETOMYFREELANCE g:nth-child(11) {
+  opacity: 0;
+  animation: Rubble 0.5s 5.5s linear forwards;
+}
+
+.WELCOMETOMYFREELANCE g:nth-child(12) {
+  opacity: 0;
+  animation: Rubble 0.5s 6.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(13) {
+  opacity: 0;
+  animation: Rubble 0.5s 6.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(14) {
+  opacity: 0;
+  animation: Rubble 0.5s 7s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(15) {
+  opacity: 0;
+  animation: Rubble 0.5s 7.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(16) {
+  opacity: 0;
+  animation: Rubble 0.5s 8s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(17) {
+  opacity: 0;
+  animation: Rubble 0.5s 8.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(18) {
+  opacity: 0;
+  animation: Rubble 0.5s 9s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(19) {
+  opacity: 0;
+  animation: Rubble 0.5s 9.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(20) {
+  opacity: 0;
+  animation: Rubble 0.5s 10s linear forwards;
+}
+
+.WELCOMETOMYFREELANCE g:nth-child(21) {
+  opacity: 0;
+  animation: Rubble 0.5s 10.5s linear forwards;
+}
+/*  */
+.WELCOMETOMYFREELANCE g:nth-child(22) {
+  opacity: 0;
+  animation: Rubble 0.5s 11s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(23) {
+  opacity: 0;
+  animation: Rubble 0.5s 11.5s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(24) {
+  opacity: 0;
+  animation: Rubble 0.5s 12s linear forwards;
+}
+.WELCOMETOMYFREELANCE g:nth-child(25) {
+  opacity: 0;
+  animation: Rubble 0.5s 12.5s linear forwards;
+}
+
+@keyframes Rubble {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Rocks {
+  /* transform: translate(50px, 0px); */
+  animation: Rocks 12.5s linear forwards;
+}
+
+@keyframes Rocks {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(450px, 0, 0);
+  }
+  51% {
+    transform: translate3d(0, 60px, 0);
+  }
+  99% {
+    transform: translate3d(450px, 60px, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.Rock1 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s 0.1s linear infinite;
+}
+.Rock2 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s linear infinite;
+}
+.Rock3 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s 0.4s linear infinite;
+}
+.Rock4 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s linear infinite;
+}
+.Rock5 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s 0.1s linear infinite;
+}
+.Rock6 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s 0.6s linear infinite;
+}
+.Rock7 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s linear infinite;
+}
+.Rock8 {
+  /* transform: translate(50px, 0px); */
+  animation: crumble 1s linear infinite;
+}
+@keyframes crumble {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  to {
+    transform: translate(0px, 60px) rotate(50deg);
+  }
+}

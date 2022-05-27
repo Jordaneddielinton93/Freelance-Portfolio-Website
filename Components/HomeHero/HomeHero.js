@@ -3,18 +3,14 @@ import style from "./HomeHero.module.css";
 import Image from "next/image";
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
+import { WelcomeSvg } from "../SVG/Welcome";
 const HomeHero = () => {
   return (
     <main className={style.Container}>
       <div className={style.Container_Main}>
         <section className={style.Container_Main_LeftSection}>
           <h3 className={style.LeftSection_name}>Hi, Im Jordan</h3>
-          <Image
-            height="128px"
-            width="500px"
-            alt="Welcome"
-            src="/images/Welcome.svg"
-          />
+          {WelcomeSvg}
           <Image
             height="91px"
             width="420px"
