@@ -1,4 +1,4 @@
-import Primary_ButtonCTA from "../Components/Buttons/Primary_ButtonCTA";
+import Primary_ButtonCTA from "../Components/Buttons/Primary/Primary_ButtonCTA.js";
 
 export default {
   title: "Button",
@@ -6,5 +6,5 @@ export default {
 };
 
 export const PrimarButtonCTA = () => (
-  <Primary_ButtonCTA label="press me" backgroundColor="red" />
+  <Primary_ButtonCTA Label="press me" backgroundColor="red" />
 );
