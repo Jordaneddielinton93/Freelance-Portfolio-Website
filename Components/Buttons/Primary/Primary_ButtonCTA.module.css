@@ -1,0 +1,14 @@
+.PrimaryButton {
+  background-color: #23c7a7;
+  height: 44px;
+  width: 150px;
+  font-size: 16px;
+  color: white;
+  border: #e8e5e2 solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px rgba(35, 199, 167, 0.25);
+}
+.PrimaryButton:hover {
+  transition: 1s;
+  box-shadow: none;
+}
