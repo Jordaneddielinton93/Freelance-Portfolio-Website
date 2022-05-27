@@ -1,0 +1,26 @@
+.NavContainer {
+  height: 80px;
+  width: 100%;
+}
+.NavContainer_Fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0px 20px;
+  height: 80px;
+  width: 100vw;
+  background-color: #ffffff;
+  border-bottom: solid 3px #ffd700;
+  z-index: 2;
+}
+.NavContainer_Fixed_List {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #777373;
+}
+.NavContainer_Fixed_List_Item {
+  margin: 0px 25px;
+}

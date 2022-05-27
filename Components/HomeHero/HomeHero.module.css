@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0px;
+  margin: 0px 0px;
 }
 
 .Container_Main {
@@ -14,11 +14,16 @@
   height: 605px;
   margin: 0px 10px;
   border-radius: 8px;
-
+  border: solid 3px #ffd700;
   position: relative;
 }
 
 .Container_Main_LeftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 40px;
   position: absolute;
   left: 0;
   height: 100%;
@@ -31,10 +36,18 @@
   background-position: right center;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  border: solid 3px #ffd700;
   border-right: none;
   border-bottom: none;
 }
+.LeftSection_name {
+  color: #c8c9cb;
+  /* text-shadow: 0px 4px 4px #c8c9cb, 0 0 0 rgb(255, 255, 255), 0px 4px 4px #fff; */
+
+  margin-top: 60px;
+  text-align: center;
+  font-size: 28px;
+}
+
 .Container_Main_RightSection {
   position: absolute;
   right: 0;
@@ -45,6 +58,8 @@
   background-size: cover;
   background-position: bottom;
   animation: BackgroundWave 5s infinite linear alternate;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 @keyframes BackgroundWave {
   from {

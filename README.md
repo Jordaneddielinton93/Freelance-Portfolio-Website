@@ -14,7 +14,7 @@ gitHub
 
 <ul>
 
-- Main branch is protected from any merge other then from dev and dev requires a review .123
+- Main branch is protected from any merge other then from dev and dev requires a review .
 
 </ul>
 
