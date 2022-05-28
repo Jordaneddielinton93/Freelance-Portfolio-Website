@@ -1,0 +1,42 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+  max-width: 1300px;
+  margin: 0px auto;
+  padding-left: 50px;
+}
+
+.Label {
+  font-size: 25px;
+  color: rgb(70, 70, 70);
+}
+
+.ImageContainer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.ImageBox {
+  transition: 300ms;
+  position: relative;
+  min-width: 100px;
+  height: 100px;
+  border: solid 2px #ffd700;
+  border-radius: 8px;
+  margin-right: 20px;
+  /* opacity: 0; */
+  cursor: pointer;
+}
+.ImageBox:hover {
+  position: relative;
+  min-width: 130px;
+  height: 130px;
+  border: solid 2px #ffd700;
+  border-radius: 8px;
+  margin-right: 20px;
+  /* opacity: 0; */
+}

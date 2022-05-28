@@ -3,6 +3,14 @@ import style from "./LogoList.module.css";
 const LogoList = () => {
   return (
     <section className={style.Container}>
+      <span style={{ position: "absolute", left: 0 }}>
+        <Image
+          height="159px"
+          width="131px"
+          alt="Initials"
+          src="/images/backgroundFlower.png"
+        />
+      </span>
       <Image
         height="70px"
         width="85px"
