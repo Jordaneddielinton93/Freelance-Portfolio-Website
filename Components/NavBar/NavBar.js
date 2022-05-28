@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className={style.NavContainer_Fixed}>
         <Image
           alt="Logo Inistials"
-          src="/images/LogoInistials.svg"
+          src="/images/LogoInistials2.svg"
           width="85px"
           height={"70px"}
         />
