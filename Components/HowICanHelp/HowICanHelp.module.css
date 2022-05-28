@@ -1,0 +1,46 @@
+.Container {
+  height: 1000px;
+  width: 1300px;
+  margin: 0px auto;
+  background-color: #f7f9fa;
+
+  border-top: #ffd700 solid 3px;
+  border-bottom: #ffd700 solid 3px;
+}
+.TopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+.TopContainer_Label1 {
+  font-weight: bold;
+  font-size: 13px;
+
+  color: #b4b4b4;
+}
+.TopContainer_Label2 {
+  font-size: 33px;
+  margin: 20px 0px;
+}
+.TopContainer_Label3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #6484bc;
+}
+
+.BottomContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-weight: 400;
+  height: 70%;
+}
+
+.BottomContainer_Card {
+  width: 310px;
+  height: 558px;
+  background-color: #6484bc;
+}

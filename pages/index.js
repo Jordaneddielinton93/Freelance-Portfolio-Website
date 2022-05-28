@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
+import Folders from "../Components/Folders/Folders";
 import HomeHero from "../Components/HomeHero/HomeHero";
+import HowICanHelp from "../Components/HowICanHelp/HowICanHelp";
+import LatestWork from "../Components/LatestWork/LatestWork";
 import LogoList from "../Components/LogoList/LogoList";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
@@ -16,6 +18,9 @@ export default function Home() {
       <NavBar />
       <HomeHero />
       <LogoList />
+      <Folders />
+      <LatestWork />
+      <HowICanHelp />
     </div>
   );
 }
