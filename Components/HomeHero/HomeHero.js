@@ -7,7 +7,7 @@ import { WelcomeSvg } from "../SVG/Welcome";
 const HomeHero = () => {
   return (
     <main className={style.Container}>
-      <span style={{ position: "absolute", right: 0, top: 0 }}>
+      <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
         <Image
           height="159px"
           width="131px"
