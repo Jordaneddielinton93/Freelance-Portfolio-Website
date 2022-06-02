@@ -6,7 +6,7 @@ const Statue = ({}) => {
   const ref = useRef();
   // console.log(ref.current.rotation.x)
 
-  let gltf = useGLTF("/MarbleMan/scene.gltf", true);
+  let gltf = useGLTF("/Minoture/scene.gltf", true);
 
   let [rotate, setRotate] = useState(true);
   useFrame((state, delta) => {
@@ -22,7 +22,7 @@ const Statue = ({}) => {
     }
   });
   return (
-    <mesh ref={ref} position={[0, -1.6, 1.5]} scale={0.8}>
+    <mesh ref={ref} position={[0, -1, 2.2]} scale={0.002}>
       <primitive object={gltf.scene} />
     </mesh>
   );

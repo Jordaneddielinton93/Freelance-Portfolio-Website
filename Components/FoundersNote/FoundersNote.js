@@ -27,6 +27,11 @@ const FoundersNote = () => {
             />
           </article>
         </div>
+        <h1 className={style.Footer_title}>Ready to join the fun?</h1>
+        <div className={style.Footer_container}>
+          <section></section>
+          <section></section>
+        </div>
       </div>
       <section className={style.Container_TopBckGround}></section>
       <section className={style.Container_BottomBckGround}></section>

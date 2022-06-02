@@ -46,14 +46,14 @@
   background-color: #6484bc;
 }
 .BottomContainer:hover article {
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
 }
 
 .BottomContainer article:nth-child(1):hover {
   opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border: solid 2px #23c7a7;
+  border: solid 4px #23c7a7;
 }
 .BottomContainer article:nth-child(1):hover span {
   transition: 1s;
@@ -62,7 +62,7 @@
 .BottomContainer article:nth-child(2):hover {
   opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border: solid 2px #23c7a7;
+  border: solid 4px #23c7a7;
 }
 .BottomContainer article:nth-child(2):hover span {
   transition: 1s;
@@ -71,7 +71,7 @@
 .BottomContainer article:nth-child(3):hover {
   opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border: solid 2px #23c7a7;
+  border: solid 6px #23c7a7;
 }
 .BottomContainer article:nth-child(3):hover span {
   transition: 1s;
