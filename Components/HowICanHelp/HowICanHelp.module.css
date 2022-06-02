@@ -1,11 +1,12 @@
 .Container {
   height: 1000px;
-  width: 1300px;
-  margin: 0px auto;
+  width: 100%;
   background-color: #f7f9fa;
-
-  border-top: #ffd700 solid 3px;
-  border-bottom: #ffd700 solid 3px;
+}
+.InnerContainer {
+  height: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
 }
 .TopContainer {
   display: flex;

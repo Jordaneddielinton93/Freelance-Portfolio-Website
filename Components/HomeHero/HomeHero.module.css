@@ -10,9 +10,9 @@
 
 .Container_Main {
   width: 100%;
-  max-width: 1260px;
+  /* max-width: 1260px; */
   height: 605px;
-  margin: 0px 10px;
+  margin: 0px 20px;
   border-radius: 8px;
   border: solid 3px #ffd700;
   position: relative;

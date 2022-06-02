@@ -20,6 +20,22 @@
   align-items: center;
   overflow-x: hidden;
 }
+
+.ImageContainer div:nth-child(1):hover,
+.ImageContainer div:nth-child(2):hover,
+.ImageContainer div:nth-child(3):hover,
+.ImageContainer div:nth-child(4):hover,
+.ImageContainer div:nth-child(5):hover,
+.ImageContainer div:nth-child(6):hover,
+.ImageContainer div:nth-child(7):hover,
+.ImageContainer div:nth-child(8):hover,
+.ImageContainer div:nth-child(9):hover,
+.ImageContainer div:nth-child(10):hover {
+  opacity: 1;
+}
+.ImageContainer:hover div {
+  opacity: 0.3;
+}
 .ImageBox {
   transition: 300ms;
   position: relative;
@@ -35,8 +51,8 @@
   position: relative;
   min-width: 130px;
   height: 130px;
-  border: solid 2px #ffd700;
+  border: solid 5px #23c7a7;
   border-radius: 8px;
   margin-right: 20px;
-  /* opacity: 0; */
+  opacity: 1;
 }
