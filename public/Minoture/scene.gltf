@@ -116,7 +116,7 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 1582,
+            "count" : 1570,
             "max" : [
                 4.193038463592529,
                 3.3253254890441895,
@@ -132,53 +132,53 @@
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 1582,
+            "count" : 1570,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 1582,
+            "count" : 1570,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5126,
-            "count" : 1582,
+            "count" : 1570,
             "type" : "VEC2"
         },
         {
             "bufferView" : 4,
             "componentType" : 5123,
-            "count" : 5868,
+            "count" : 5817,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 18984,
+            "byteLength" : 18840,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 18984,
-            "byteOffset" : 18984
+            "byteLength" : 18840,
+            "byteOffset" : 18840
         },
         {
             "buffer" : 0,
-            "byteLength" : 12656,
-            "byteOffset" : 37968
+            "byteLength" : 12560,
+            "byteOffset" : 37680
         },
         {
             "buffer" : 0,
-            "byteLength" : 12656,
-            "byteOffset" : 50624
+            "byteLength" : 12560,
+            "byteOffset" : 50240
         },
         {
             "buffer" : 0,
-            "byteLength" : 11736,
-            "byteOffset" : 63280
+            "byteLength" : 11634,
+            "byteOffset" : 62800
         }
     ],
     "samplers" : [
@@ -189,7 +189,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 75016,
+            "byteLength" : 74436,
             "uri" : "scene.bin"
         }
     ]
