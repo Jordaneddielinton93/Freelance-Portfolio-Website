@@ -3,9 +3,10 @@
   height: 558px;
   background-color: #fff;
   border: solid 3px #ffd700;
+  border-radius: 8px;
 }
 .Card_content {
-  padding: 20px;
+  padding: 15px;
   height: 432px;
   width: 100%;
   display: flex;
@@ -31,4 +32,12 @@
 .Card_content_head_underline {
   border: solid 2px #23c7a7;
   width: 25%;
+}
+
+.Card_content_body {
+  display: flex;
+  height: 70px;
+  font-size: 15px;
+  align-items: flex-start;
+  width: 100%;
 }

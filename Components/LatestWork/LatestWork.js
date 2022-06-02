@@ -23,6 +23,14 @@ const LatestWork = () => {
         })}
       </div>
       <Secondary_ButtonCTA Label="Projects" />
+      <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
+        <Image
+          height="159px"
+          width="131px"
+          alt="Initials"
+          src="/images/backgroundFlower2.png"
+        />
+      </span>
     </section>
   );
 };

@@ -1,9 +1,12 @@
 import Head from "next/head";
+import BigSlateTitle from "../Components/BigSlateTitle/BigSlateTitle";
 import Folders from "../Components/Folders/Folders";
+import FoundersNote from "../Components/FoundersNote/FoundersNote";
 import HomeHero from "../Components/HomeHero/HomeHero";
 import HowICanHelp from "../Components/HowICanHelp/HowICanHelp";
 import LatestWork from "../Components/LatestWork/LatestWork";
 import LogoList from "../Components/LogoList/LogoList";
+import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
@@ -21,6 +24,9 @@ export default function Home() {
       <Folders />
       <LatestWork />
       <HowICanHelp />
+      <BigSlateTitle />
+      <MoreAboutMe />
+      <FoundersNote />
     </div>
   );
 }
