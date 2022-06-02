@@ -25,7 +25,7 @@ const HomeHero = () => {
             alt="Welcome"
             src="/images/Freelance.svg"
           />
-          <div style={{ height: "20%" }}>
+          <div style={{ height: "20%", marginTop: "50px" }}>
             <Secondary_ButtonCTA Label="Contact" />
             <Secondary_ButtonCTA Label="About Me" />
           </div>

@@ -1,0 +1,36 @@
+.Container {
+  height: 1300px;
+  width: 100%;
+  background-color: white;
+}
+.Container_Inner {
+  width: 1300px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: auto;
+}
+.Container_TopSection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.TopSection_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  color: #c8c9cb;
+}
+.TopSection_article_heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 1px 1px white, -1px -1px #444;
+}
+.TopSection_article_paragraph {
+  color: black;
+  font-weight: 500;
+
+  font-size: 16px;
+}

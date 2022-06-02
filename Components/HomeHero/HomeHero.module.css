@@ -10,9 +10,9 @@
 
 .Container_Main {
   width: 100%;
-  max-width: 1260px;
-  height: 605px;
-  margin: 0px 10px;
+  /* max-width: 1260px; */
+  height: 650px;
+  margin: 0px 20px;
   border-radius: 8px;
   border: solid 3px #ffd700;
   position: relative;
@@ -21,7 +21,7 @@
 .Container_Main_LeftSection {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   padding-left: 40px;
   position: absolute;
@@ -41,6 +41,7 @@
 }
 .LeftSection_name {
   color: #c8c9cb;
+  text-shadow: 1px 1px white, -1px -1px #444;
   /* text-shadow: 0px 4px 4px #c8c9cb, 0 0 0 rgb(255, 255, 255), 0px 4px 4px #fff; */
 
   margin-top: 60px;
@@ -55,7 +56,7 @@
   width: 60%;
   background-color: #ffd700;
   background-image: url("/images/WhiteWavesTexture.jpg");
-  background-size: cover;
+  background-size: 110%;
   background-position: bottom;
   animation: BackgroundWave 5s infinite linear alternate;
   border-top-right-radius: 8px;
@@ -63,9 +64,9 @@
 }
 @keyframes BackgroundWave {
   from {
-    background-position: top right;
+    background-position: right;
   }
   to {
-    background-position: bottom left;
+    background-position: left;
   }
 }

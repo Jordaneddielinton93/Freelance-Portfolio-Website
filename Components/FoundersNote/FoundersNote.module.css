@@ -1,0 +1,61 @@
+.Container {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.Container_TopBckGround {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+.Container_BottomBckGround {
+  background-color: #f7f9fa;
+  border-top: solid 3px #ffd700;
+
+  width: 100%;
+  height: 600px;
+}
+.Container_Inner {
+  position: absolute;
+  height: 100%;
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Container_Inner_label {
+  width: 100%;
+  font-size: 32px;
+  color: #dddddd;
+  padding-left: 60px;
+}
+.Slate {
+  width: 100%;
+  height: 200px;
+  background-image: url("/images/whiteMarbleTexture.jpg");
+  border: solid thin #c8c9cb;
+  padding: 20px;
+}
+.Slate_Article {
+  width: 100%;
+  height: 100%;
+  border: solid 3px #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Slate_Article_Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.Slate_Article_Content h3 {
+  font-size: 20px;
+  color: #716e6e;
+}

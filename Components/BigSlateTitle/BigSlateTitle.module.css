@@ -1,0 +1,35 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  width: 100%;
+  position: relative;
+}
+.Container_Background_Top {
+  background-color: #f7f9fa;
+  height: 30%;
+  width: 100%;
+}
+.Container_Background_Bottom {
+  background-color: #ffff;
+  height: 70%;
+  width: 100%;
+}
+.Container_Title {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 100px;
+  border: solid 3px #ffd700;
+  background-image: url("/images/whiteMarbleTexture.jpg");
+  background-size: cover;
+  background-position: center;
+  color: silver;
+  border-bottom-right-radius: 100px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-shadow: 1px 1px white, -1px -1px #444;
+}

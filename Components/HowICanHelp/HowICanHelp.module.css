@@ -1,11 +1,12 @@
 .Container {
   height: 1000px;
-  width: 1300px;
-  margin: 0px auto;
+  width: 100%;
   background-color: #f7f9fa;
-
-  border-top: #ffd700 solid 3px;
-  border-bottom: #ffd700 solid 3px;
+}
+.InnerContainer {
+  height: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
 }
 .TopContainer {
   display: flex;
@@ -43,4 +44,36 @@
   width: 310px;
   height: 558px;
   background-color: #6484bc;
+}
+.BottomContainer:hover article {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.BottomContainer article:nth-child(1):hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: solid 2px #23c7a7;
+}
+.BottomContainer article:nth-child(1):hover span {
+  transition: 1s;
+  width: 100%;
+}
+.BottomContainer article:nth-child(2):hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: solid 2px #23c7a7;
+}
+.BottomContainer article:nth-child(2):hover span {
+  transition: 1s;
+  width: 100%;
+}
+.BottomContainer article:nth-child(3):hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: solid 2px #23c7a7;
+}
+.BottomContainer article:nth-child(3):hover span {
+  transition: 1s;
+  width: 100%;
 }
