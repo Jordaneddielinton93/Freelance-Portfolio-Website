@@ -30,20 +30,18 @@
   width: 55%;
   /* background-color: red; */
   z-index: 1;
-  background-image: url("/images/MarbleLeftSection.svg");
+  background-image: url("/images/whiteMarbleTexture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  border-right: none;
-  border-bottom: none;
+
+  clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
 }
 .LeftSection_name {
   color: #c8c9cb;
   text-shadow: 1px 1px white, -1px -1px #444;
-  /* text-shadow: 0px 4px 4px #c8c9cb, 0 0 0 rgb(255, 255, 255), 0px 4px 4px #fff; */
-
   margin-top: 60px;
   text-align: center;
   font-size: 28px;
@@ -56,7 +54,7 @@
   width: 60%;
   background-color: #ffd700;
   background-image: url("/images/WhiteWavesTexture.jpg");
-  background-size: 110%;
+  background-size: 150%;
   background-position: bottom;
   animation: BackgroundWave 5s infinite linear alternate;
   border-top-right-radius: 8px;
@@ -69,4 +67,20 @@
   to {
     background-position: left;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Container_Main_RightSection {
+    display: none;
+  }
+  .Container_Main_LeftSection {
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* .Container_Main_RightSection {
+    display: none;
+  } */
 }

@@ -14,7 +14,8 @@ const MoreAboutMe = () => {
             <p className={style.TopSection_article_paragraph}>
               Thats why I surround myself with not just the best coders in the
               Uk but the most humble characters, who are allways ready to lend a
-              hand . Constantly practicing problem solving and writing clean
+              hand .<br />
+              <br /> Constantly practicing problem solving and writing clean
               code to keep your sites up to scratch , all with a healthy dose of
               cofee.
             </p>
@@ -36,14 +37,15 @@ const MoreAboutMe = () => {
           />
           <article className={style.TopSection_article}>
             <h3 className={style.TopSection_article_heading}>
-              Developers need more then code to make great applications
+              Dont go Backwards, find your feet with me.
             </h3>
             <p className={style.TopSection_article_paragraph}>
-              Thats why I surround myself with not just the best coders in the
-              Uk but the most humble characters, who are allways ready to lend a
-              hand . Constantly practicing problem solving and writing clean
-              code to keep your sites up to scratch , all with a healthy dose of
-              cofee.
+              We can all learn from each other! When you Become a developer, you
+              lose access to co-workers and many social acquaintances.
+              <br />
+              <br /> That’s why {"it's"} important I work full time as a coach
+              helping hundereds find their first feet in tech , community is
+              everything.
             </p>
             <Secondary_ButtonCTA Label={"About"} />
           </article>
