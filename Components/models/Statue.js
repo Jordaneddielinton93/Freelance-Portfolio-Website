@@ -6,7 +6,7 @@ const Statue = ({}) => {
   const ref = useRef();
   // console.log(ref.current.rotation.x)
 
-  let gltf = useGLTF("/Minoture/scene.gltf", true);
+  let gltf = useGLTF("/Minoture/scene.glb", true);
 
   let [rotate, setRotate] = useState(true);
   useFrame((state, delta) => {
