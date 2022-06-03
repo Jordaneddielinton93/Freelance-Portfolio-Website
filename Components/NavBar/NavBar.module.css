@@ -1,5 +1,5 @@
 .NavContainer {
-  height: 80px;
+  height: 90px;
   width: 100%;
 }
 .NavContainer_Fixed {
@@ -7,20 +7,29 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0px 20px;
-  height: 80px;
+  padding: 0px 50px 0px 50px;
+  height: 90px;
   width: 100vw;
   background-color: #ffffff;
-  border-bottom: solid 3px #d8dce8;
+  border-bottom: solid thin #d8dce8;
   z-index: 2;
+}
+.NavContainer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 .NavContainer_Fixed_List {
   height: 100%;
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #777373;
+  font-weight: 500;
+  color: #5f6773;
 }
 .NavContainer_Fixed_List_Item {
-  margin: 0px 25px;
+  margin: 0px 30px;
 }

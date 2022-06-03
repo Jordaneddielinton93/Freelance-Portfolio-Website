@@ -8,7 +8,7 @@ const LogoList = () => {
           height="159px"
           width="131px"
           alt="Initials"
-          src="/images/backgroundFlower.png"
+          src="/images/leaves2.png"
         />
       </span>
       <Image

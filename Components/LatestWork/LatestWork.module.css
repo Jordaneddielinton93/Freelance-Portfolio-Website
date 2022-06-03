@@ -19,7 +19,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .ImageContainer div:nth-child(1):hover,
@@ -34,8 +33,8 @@
 .ImageContainer div:nth-child(10):hover {
   opacity: 1;
   z-index: 2;
-  transform: rotate(360deg);
-  transition: 1s;
+  /* transform: rotate(360deg); */
+  transition: 0.5s;
 }
 .ImageContainer:hover div {
   opacity: 0.3;

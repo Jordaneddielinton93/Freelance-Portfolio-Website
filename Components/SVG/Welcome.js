@@ -2,8 +2,8 @@ import style from "./Welcome.module.css";
 export const WelcomeSvg = (
   <svg
     style={{ position: "relative" }}
-    width="509"
-    height="226"
+    width="459"
+    height="176"
     viewBox="0 0 509 126"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
