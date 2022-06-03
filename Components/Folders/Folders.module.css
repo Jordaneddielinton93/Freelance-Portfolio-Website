@@ -1,6 +1,6 @@
 .Container {
   background-color: #f7f9fa;
-  border: solid 3px #ffd700;
+  border: solid 3px brown;
   border-left: none;
   border-right: none;
 }
@@ -56,7 +56,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: 1s;
   cursor: pointer;
-  border: #ffd700 solid 1px;
+  border: brown solid 1px;
 }
 .Folder:hover div:nth-child(1) {
   transform: translateY(-55px);

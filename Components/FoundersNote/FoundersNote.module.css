@@ -42,7 +42,7 @@
 .Slate_Article {
   width: 100%;
   height: 100%;
-  border: solid 3px #ffd700;
+  border: solid 3px brown;
   display: flex;
   justify-content: center;
   align-items: center;
