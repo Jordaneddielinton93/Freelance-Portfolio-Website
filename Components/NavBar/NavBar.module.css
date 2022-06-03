@@ -7,12 +7,12 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 50px;
   height: 90px;
   width: 100vw;
   background-color: #ffffff;
   border-bottom: solid thin #d8dce8;
-  z-index: 2;
+  z-index: 5;
 }
 .NavContainer_logo {
   display: flex;
@@ -21,15 +21,60 @@
   width: 220px;
   font-weight: 600;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .NavContainer_Fixed_List {
   height: 100%;
+  width: 600px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   font-weight: 500;
   color: #5f6773;
 }
 .NavContainer_Fixed_List_Item {
-  margin: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  /* .Container_Main_RightSection {
+    display: none;
+  } */
+  .NavContainer_logo {
+    width: 60px;
+  }
+  .NavContainer_logo h4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .NavContainer_Fixed_List {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* .Container_Main_RightSection {
+    display: none;
+  } */
+  .NavContainer_Fixed_List {
+    width: 400px;
+  }
+  .NavContainer_Fixed {
+    padding: 0px 20px;
+  }
+  .NavContainer_logo {
+    width: 60px;
+  }
+  .NavContainer_logo h4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .NavContainer_Fixed_List {
+    display: none;
+  }
 }

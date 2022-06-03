@@ -10,8 +10,7 @@ const FoundersNote = () => {
           <article className={style.Slate_Article}>
             <div className={style.Slate_Article_Content}>
               <h3>
-                My main mission is to help! . and to grow along with that
-                journey
+                My main mission is to help and to grow along with that journey
               </h3>
               <p>
                 Im trying to make this world great as a fellow colleague once
@@ -22,8 +21,8 @@ const FoundersNote = () => {
             <Image
               alt="Logo Inistials"
               src="/images/greyBack.png"
-              width="126px"
-              height={"126px"}
+              width="70px"
+              height={"70px"}
             />
           </article>
         </div>

@@ -42,7 +42,7 @@
 .Slate_Article {
   width: 100%;
   height: 100%;
-  border: solid 3px brown;
+  border: solid 3px #ffd700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,4 +66,40 @@
   font-weight: 400;
   color: #aeadad;
   text-shadow: 1px 1px white, -1px -1px #c8c9cb;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Container_Inner {
+    width: 90%;
+  }
+  .Slate_Article {
+    justify-content: space-evenly;
+  }
+  .Slate_Article_Content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  .Slate_Article_Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .Slate_Article_Content h3 {
+    font-size: 18px;
+  }
+
+  .Slate_Article_Content p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .Slate_Article_Content h3 {
+    font-size: 16px;
+  }
+
+  .Slate_Article_Content p {
+    font-size: 11px;
+  }
 }
