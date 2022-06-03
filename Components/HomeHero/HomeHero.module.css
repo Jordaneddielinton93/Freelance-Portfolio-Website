@@ -14,7 +14,7 @@
   height: 650px;
   margin: 0px 20px;
   border-radius: 8px;
-  border: solid 3px #ffd700;
+  border: solid 3px brown;
   position: relative;
 }
 
@@ -53,7 +53,7 @@
   height: 100%;
   width: 60%;
   background-color: #ffd700;
-  background-image: url("/images/WhiteWavesTexture.jpg");
+  background-image: url("https://images.unsplash.com/photo-1564934304256-db564bb2568d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: 150%;
   background-position: bottom;
   animation: BackgroundWave 5s infinite linear alternate;
