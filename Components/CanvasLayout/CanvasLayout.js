@@ -1,3 +1,4 @@
+import { Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Statue from "../models/Statue";
@@ -8,6 +9,7 @@ const CanvasLayout = () => {
       <Suspense fallback={null}>
         <spotLight position={[0, 1, 7]} />
         <Statue />
+        <Preload all />
       </Suspense>
     </Canvas>
   );
