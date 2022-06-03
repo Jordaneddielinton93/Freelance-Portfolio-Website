@@ -12,26 +12,32 @@ const HomeHero = () => {
           height="159px"
           width="131px"
           alt="Initials"
-          src="/images/backgroundFlower2.png"
+          src="/images/leaves.png"
         />
       </span>
       <div className={style.Container_Main}>
         <section className={style.Container_Main_LeftSection}>
-          <h3 className={style.LeftSection_name}>Hi, Im Jordan</h3>
           {WelcomeSvg}
-          <Image
+          {/* <Image
             height="91px"
             width="420px"
             alt="Welcome"
             src="/images/Freelance.svg"
-          />
+          /> */}
+          <p className={style.Container_Main_LeftSection_text}>
+            I’m a Front-end & web developer who turned years of coding into a
+            full-time career, and recently into my freelancing journey. I help
+            teach hundreds of student how to find their own version of success
+            through my articles, newsletter, products, and freelance community.
+          </p>
+
           <div style={{ height: "20%", marginTop: "80px" }}>
             <Secondary_ButtonCTA Label="Contact" />
             <Secondary_ButtonCTA Label="About Me" />
           </div>
         </section>
         <section className={style.Container_Main_RightSection}>
-          <CanvasLayout />
+          {/* <CanvasLayout /> */}
         </section>
       </div>
     </main>

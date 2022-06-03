@@ -1,5 +1,5 @@
 .Secondary {
-  border: solid 2px #23c7a7;
+  border: solid 2px #1ca287;
   height: 44px;
   width: 150px;
   color: black;
@@ -13,7 +13,8 @@
   box-shadow: none;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: #23c7a7;
+  border: solid 2px #23c7a7;
 
+  background-color: #23c7a7;
   cursor: pointer;
 }

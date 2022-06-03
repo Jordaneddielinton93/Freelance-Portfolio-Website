@@ -1,6 +1,6 @@
 .Container {
   width: 100%;
-  height: 700px;
+  height: 620px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -10,11 +10,13 @@
 
 .Container_Main {
   width: 100%;
-  /* max-width: 1260px; */
-  height: 650px;
+  max-width: 1400px;
+  height: 550px;
   margin: 0px 20px;
   border-radius: 8px;
-  border: solid 3px brown;
+  /* border: solid 3px brown; */
+  border: solid 3px #ffd700;
+
   position: relative;
 }
 
@@ -28,9 +30,9 @@
   left: 0;
   height: 100%;
   width: 55%;
-  /* background-color: red; */
+  background-color: #f7f9fa;
   z-index: 1;
-  background-image: url("/images/whiteMarbleTexture.jpg");
+  background-image: url("https://images.unsplash.com/photo-1528604891270-c2d9c3d1fc0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
@@ -39,12 +41,9 @@
 
   clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
 }
-.LeftSection_name {
-  color: #c8c9cb;
-  text-shadow: 1px 1px white, -1px -1px #444;
-  margin-top: 60px;
-  text-align: center;
-  font-size: 28px;
+.Container_Main_LeftSection_text {
+  color: white;
+  width: 60%;
 }
 
 .Container_Main_RightSection {
@@ -53,21 +52,23 @@
   height: 100%;
   width: 60%;
   background-color: #ffd700;
-  background-image: url("https://images.unsplash.com/photo-1564934304256-db564bb2568d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  background-size: 150%;
-  background-position: bottom;
-  animation: BackgroundWave 5s infinite linear alternate;
+  background-image: url("/images/jordan.jpg");
+  background-color: #f7f9fa;
+  /* filter: blur(0.5px); */
+  background-size: cover;
+  background-position: top;
+  /* animation: BackgroundWave 5s infinite linear alternate; */
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-@keyframes BackgroundWave {
+/* @keyframes BackgroundWave {
   from {
     background-position: right;
   }
   to {
     background-position: left;
   }
-}
+} */
 
 @media only screen and (max-width: 1000px) {
   .Container_Main_RightSection {
