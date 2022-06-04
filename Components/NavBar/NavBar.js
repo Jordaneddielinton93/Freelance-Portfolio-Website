@@ -9,7 +9,7 @@ const NavBar = () => {
         <Link href="/">
           <div className={style.NavContainer_logo}>
             <Image
-              alt="Logo Inistials"
+              alt="Logo Home"
               src="/images/greyback.png"
               width="60px"
               height={"60px"}
