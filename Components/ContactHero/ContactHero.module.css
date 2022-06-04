@@ -1,0 +1,12 @@
+.Container {
+  height: 1017px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.Container_ContactContainer {
+  display: flex;
+  flex-direction: column;
+}
