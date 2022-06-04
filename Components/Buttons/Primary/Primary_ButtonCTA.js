@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import style from "./Primary_ButtonCTA.module.css";
+import Link from "next/link";
 
 const Primary_ButtonCTA = ({ Label }) => {
   return (
-    <button data-testid="PrimaryButton" className={style.PrimaryButton}>
-      {Label}
-    </button>
+    <Link href="/Contact">
+      <button data-testid="PrimaryButton" className={style.PrimaryButton}>
+        {Label}
+      </button>
+    </Link>
   );
 };
 
