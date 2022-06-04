@@ -103,3 +103,19 @@
     font-size: 11px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .Container_Inner {
+    width: 95%;
+  }
+  .Container_Inner_label {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .Slate_Article_Content h3 {
+    font-size: 16px;
+  }
+
+  .Slate_Article_Content p {
+    font-size: 11px;
+  }
+}
