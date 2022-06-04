@@ -14,7 +14,8 @@ const MoreAboutMe = () => {
             <p className={style.TopSection_article_paragraph}>
               Thats why I surround myself with not just the best coders in the
               Uk but the most humble characters, who are allways ready to lend a
-              hand .<br />
+              hand.
+              <br />
               <br /> Constantly practicing problem solving and writing clean
               code to keep your sites up to scratch , all with a healthy dose of
               cofee.
@@ -24,7 +25,7 @@ const MoreAboutMe = () => {
           <Image
             alt="Logo Inistials"
             src="/images/moreAboutMe1.png"
-            width="525px"
+            width="500px"
             height={"350px"}
           />
         </section>
@@ -32,7 +33,7 @@ const MoreAboutMe = () => {
           <Image
             alt="Logo Inistials"
             src="/images/moreAboutMe2.png"
-            width="525px"
+            width="500px"
             height={"350px"}
           />
           <article className={style.TopSection_article}>

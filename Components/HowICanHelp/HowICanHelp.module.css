@@ -4,6 +4,9 @@
   background-color: #f7f9fa;
 }
 .InnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100%;
   max-width: 1300px;
   margin: 0px auto;
@@ -76,4 +79,19 @@
 .BottomContainer article:nth-child(3):hover span {
   transition: 1s;
   width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  .Container {
+    height: 1500px;
+  }
+  .TopContainer {
+    height: 10%;
+  }
+
+  .BottomContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+  }
 }

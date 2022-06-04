@@ -14,7 +14,7 @@ const PricingCard = ({
   return (
     <article className={style.Card}>
       <div className={style.Card_img}>
-        <Image src={img} alt="Pricing Card" width="310px" height="126px" />
+        <Image src={img} alt="Pricing Card" layout="fill" />
       </div>
       <section className={style.Card_content}>
         <div className={style.Card_content_head}>

@@ -7,7 +7,7 @@ import { WelcomeSvg } from "../SVG/Welcome";
 const HomeHero = () => {
   return (
     <main className={style.Container}>
-      <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
+      <span style={{ position: "absolute", right: 0, top: 0, zIndex: 2 }}>
         <Image
           height="159px"
           width="131px"
@@ -25,13 +25,13 @@ const HomeHero = () => {
             src="/images/Freelance.svg"
           /> */}
           <p className={style.Container_Main_LeftSection_text}>
-            I’m a Front-end & web developer who turned years of coding into a
+            I’m a Front-end web developer who turned years of coding into a
             full-time career, and recently into my freelancing journey. I help
             teach hundreds of student how to find their own version of success
             through my articles, newsletter, products, and freelance community.
           </p>
 
-          <div style={{ height: "20%", marginTop: "80px" }}>
+          <div className={style.Container_Main_LeftSection_Buttons}>
             <Secondary_ButtonCTA Label="Contact" />
             <Secondary_ButtonCTA Label="About Me" />
           </div>

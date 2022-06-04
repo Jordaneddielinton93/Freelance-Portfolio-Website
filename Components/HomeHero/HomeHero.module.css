@@ -19,6 +19,15 @@
 
   position: relative;
 }
+.Container_Main_LeftSection_Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin-top: 20px;
+}
+.Container_Main_LeftSection_Buttons button {
+  margin-right: 0px;
+}
 
 .Container_Main_LeftSection {
   display: flex;
@@ -32,13 +41,11 @@
   width: 55%;
   background-color: #f7f9fa;
   z-index: 1;
-  background-image: url("https://images.unsplash.com/photo-1528604891270-c2d9c3d1fc0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-image: url("/images/HeroLeftLeaves.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-
+  border-radius: 8px;
   clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
 }
 .Container_Main_LeftSection_text {
@@ -80,8 +87,17 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 440px) {
   /* .Container_Main_RightSection {
     display: none;
   } */
+  .Container_Main_LeftSection_Buttons {
+    width: 220px;
+  }
+  .Container_Main_LeftSection_Buttons button {
+    width: 100px;
+  }
+  .Container_Main_LeftSection_text {
+    width: 90%;
+  }
 }

@@ -14,9 +14,8 @@ const LatestWork = () => {
               <Image
                 style={{ position: "absolute" }}
                 alt="Slides"
+                layout="fill"
                 src="/images/whiteWavesTexture.jpg"
-                height="130px"
-                width="130px"
               />
             </div>
           );
