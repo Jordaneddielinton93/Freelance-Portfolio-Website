@@ -19,7 +19,7 @@ const ContactForm = () => {
     console.log(state);
     e.preventDefault();
     try {
-      let response = await fetch("http://freelance-emailer.herokuapp.com/", {
+      let response = await fetch("https://freelance-emailer.herokuapp.com/", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         headers: {
