@@ -3,8 +3,8 @@ export const inistialState = {
   DevOrDeisgnAndDev: false,
   Budget: false,
   Timeline: false,
-  Fullname: false,
-  Email: false,
+  Fullname: "",
+  Email: "",
   Anythingelse: "none",
 };
 
@@ -16,6 +16,9 @@ export const FormReducer = (state, action) => {
         DevOrDeisgnAndDev: false,
         Budget: false,
         Timeline: false,
+        Fullname: "",
+        Email: "",
+        Anythingelse: "none",
       };
     case "DevOrDeisgnAndDev":
       return {

@@ -74,11 +74,13 @@ const ContactForm = () => {
             placeholder="Your Name"
             type="text"
             label="Full name"
+            value={state.Fullname}
           />
           <Input_and_name
             placeholder="YourEmail@Email.com"
             type="email"
             label="Email"
+            value={state.Email}
           />
 
           <button className={style.Submit}>Submit</button>
