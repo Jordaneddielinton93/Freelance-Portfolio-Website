@@ -2,6 +2,7 @@
   "name": "jordans-portfolio-v4",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://freelance-emailer.herokuapp.com",
   "scripts": {
     "test": "jest --watch",
     "dev": "next dev",
