@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FormContext } from "../ContactForm/ContactForm";
 import style from "./Input_and_name.module.css";
-const Input_and_name = ({ label, input, type, placeholder }) => {
+const Input_and_name = ({ label, input, type, placeholder, value }) => {
   let { dispatch } = useContext(FormContext);
 
   return (
@@ -9,7 +9,7 @@ const Input_and_name = ({ label, input, type, placeholder }) => {
       <label htmlFor="InputForm" className={style.Label}>
         {label}
       </label>
-      <input
+      <input value={value}
         onChange={(e) =>
           dispatch({ type: label.replace(/ /g, ""), payload: e.target.value })
         }
