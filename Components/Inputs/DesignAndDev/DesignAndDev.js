@@ -12,6 +12,7 @@ const DesignAndDev = () => {
         on this project.
       </p>
       <select
+        required
         value={state.DevOrDeisgnAndDev}
         onChange={(e) =>
           dispatch({ type: "DevOrDeisgnAndDev", payload: e.target.value })
@@ -20,7 +21,7 @@ const DesignAndDev = () => {
         name="Project"
         id="Project"
       >
-        <option value={false}>Select Design or Development</option>
+        <option value="">Select Design or Development</option>
         <option value="Development">Development</option>
         <option value="Design & Development">Design & Development</option>
       </select>
