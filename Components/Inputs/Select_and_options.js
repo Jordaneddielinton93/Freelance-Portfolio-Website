@@ -3,12 +3,14 @@ import style from "./Select_and_options.module.css";
 import React, { useContext } from "react";
 import { FormContext } from "../ContactForm/ContactForm";
 import PriceRange from "./PriceRange/PriceRange";
-const Select_and_options = ({ service, setService }) => {
+import TimeLine from "./Timeline/Timeline";
+const Select_and_options = () => {
   let { state, dispatch } = useContext(FormContext);
 
   return (
     <>
       <select
+        required
         value={state.ProjectType}
         onChange={(e) =>
           dispatch({ type: "ProjectType", payload: e.target.value })
@@ -17,14 +19,17 @@ const Select_and_options = ({ service, setService }) => {
         name="Project"
         id="Project"
       >
-        <option value={false}>Select Your Service Type</option>
+        <option value="">Select Your Service Type</option>
         <option value="Website">Website</option>
         <option value="Tutoring">Tutoring</option>
         <option value="Sponsor">Sponsor</option>
         <option value="Article">Add Article</option>
       </select>
       {state.ProjectType == "Website" && <DesignAndDev />}
-      {state.ProjectType !== "false" && <PriceRange />}
+      {state.ProjectType !== "" && state.ProjectType !== "Article" && (
+        <PriceRange />
+      )}
+      {(state.ProjectType == "Website" || state.ProjectType == "Tutoring") && <TimeLine />}
     </>
   );
 };

@@ -2,27 +2,41 @@ import style from "./ContactForm.module.css";
 import Image from "next/image";
 import Input_and_name from "../Inputs/Input_and_name";
 import Select_and_options from "../Inputs/Select_and_options";
-import React, { useState, useEffect, useReducer, createContext } from "react";
+import React, {
+
+  useReducer,
+  createContext,
+} from "react";
+
 import { FormReducer, inistialState } from "../01-Hooks/FormReducer";
-// plan.
-// pick one of 4 options and set object to false, beside the option chosen
-//  option-1:website
-//   True: Give option of develop or design & Develop
-//   if true:
-//       give estimate price value (per-project):
-//   if true:
-//       time of completion
 
 export let FormContext = createContext(inistialState);
 
 const ContactForm = () => {
-  let [service, setService] = useState("");
-
   let [state, dispatch] = useReducer(FormReducer, inistialState);
-  console.log(state);
+
+  async function sendEmail(e) {
+    console.log(state);
+    e.preventDefault();
+    try {
+      let response = await fetch("https://freelance-emailer.herokuapp.com/", {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "cors", // no-cors, *cors, same-origin
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(state),
+      });
+      let resData = await response.json();
+      console.log(resData);
+      setData(resData);
+    } catch (error) { }
+  }
+
   return (
     <FormContext.Provider value={{ state, dispatch }}>
-      <form className={style.Container}>
+      <form className={style.Container} onSubmit={(e) => sendEmail(e)}>
         <header className={style.Container_Header}>
           <span>
             <Image
@@ -52,7 +66,7 @@ const ContactForm = () => {
             and get the right time duration for the project , budget and or
             service in mind.
           </p>
-          <Select_and_options service={service} setService={setService} />
+          <Select_and_options />
         </section>
         {/*  */}
         <section className={style.NameEmail}>
