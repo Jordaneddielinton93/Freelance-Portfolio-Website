@@ -12,7 +12,7 @@ const PriceRange = () => {
         your budget. Consider this a starting point to our conversation, not a
         final quote.
       </p>
-      <select
+      <select style={{ cursor: "pointer" }}
         required
         value={state.Budget}
         onChange={(e) => dispatch({ type: "Budget", payload: e.target.value })}

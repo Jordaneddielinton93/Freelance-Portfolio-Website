@@ -13,7 +13,7 @@ const TimeLine = () => {
         Select the option that best expresses your expectations for the timeline of this project.
 
       </p>
-      <select
+      <select style={{ cursor: "pointer" }}
         required
         value={state.Timeline}
         onChange={(e) => dispatch({ type: "Timeline", payload: e.target.value })}

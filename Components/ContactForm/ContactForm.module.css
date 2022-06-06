@@ -81,11 +81,17 @@
   height: 40px;
   width: 100%;
   padding: 25px 50px;
-  background: #d9d9d9;
+  background: #23c7a7;
   border: none;
   border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
 }
-
+.Submit:hover {
+  background: #177e69;
+  color: white;
+}
 @media only screen and (max-width: 615px) {
   .Container {
     width: 500px;
