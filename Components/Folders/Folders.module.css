@@ -124,21 +124,23 @@
     height: 210px;
   }
 }
-@media only screen and (max-width: 550px) {
+
+@media only screen and (max-width: 665px) {
   .folder_And_Button button {
     display: none;
   }
   .InnerContainer {
     display: flex;
     flex-wrap: wrap;
-    height: 900px;
+    height: 1200px;
   }
   .Folder {
     width: 360px;
-    height: 205px;
+    height: 255px;
+    margin: 10px;
   }
   .folder_And_Button {
     width: 360px;
-    height: 205px;
+    height: 255px;
   }
 }
