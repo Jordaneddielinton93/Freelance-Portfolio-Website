@@ -11,7 +11,7 @@ const DesignAndDev = () => {
         Please specify the type level of completion {"you'd"} like me to deliver
         on this project.
       </p>
-      <select
+      <select style={{ cursor: "pointer" }}
         required
         value={state.DevOrDeisgnAndDev}
         onChange={(e) =>

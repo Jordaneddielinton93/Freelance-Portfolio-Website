@@ -9,7 +9,7 @@ const Select_and_options = () => {
 
   return (
     <>
-      <select
+      <select style={{ cursor: "pointer" }}
         required
         value={state.ProjectType}
         onChange={(e) =>

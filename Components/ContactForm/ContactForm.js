@@ -83,7 +83,9 @@ const ContactForm = () => {
             value={state.Email}
           />
 
-          <button className={style.Submit}>Submit</button>
+          <button className={style.Submit}
+
+          >Submit</button>
         </section>
       </form>
     </FormContext.Provider>
