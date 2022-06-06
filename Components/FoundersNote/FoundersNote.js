@@ -5,7 +5,7 @@ const FoundersNote = () => {
   return (
     <main className={style.Container}>
       <div className={style.Container_Inner}>
-        <h1 className={style.Container_Inner_label}>Need more convincing ?</h1>
+        <h1 className={style.Container_Inner_label}>Need more convincing?</h1>
         <div className={style.Slate}>
           <article className={style.Slate_Article}>
             <div className={style.Slate_Article_Content}>

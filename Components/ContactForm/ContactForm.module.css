@@ -8,6 +8,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
 }
+
 .Container_Header {
   display: flex;
   justify-content: space-evenly;
@@ -83,4 +84,32 @@
   background: #d9d9d9;
   border: none;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 615px) {
+  .Container {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Container {
+    width: 400px;
+  }
+  .Container_Content_paragraph {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Container {
+    width: 380px;
+  }
+  .Container_Content {
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Container {
+    width: 360px;
+  }
 }

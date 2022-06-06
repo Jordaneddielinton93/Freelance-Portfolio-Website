@@ -59,7 +59,7 @@ const ContactForm = () => {
         </header>
         <section className={style.SelectProduct}>
           <h3 className={style.SelectProduct_title}>
-            What do you need from me ?
+            What do you need from me?
           </h3>
           <p className={style.SelectProduct_paragraph}>
             This will help me understand the fundemental needs of you product

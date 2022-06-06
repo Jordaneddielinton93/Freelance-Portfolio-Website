@@ -14,12 +14,24 @@
   z-index: 3;
 }
 .Container_ContactContainer_title {
+  background-color: white;
+
   margin-top: 30px;
   font-size: 30px;
 }
 .Container_ContactContainer_SubHeading {
   margin-top: 20px;
-
+  text-align: center;
   font-size: 20px;
+  font-weight: 600;
   color: #6484bc;
+  background-color: white;
+}
+@media only screen and (max-width: 650px) {
+  .Container_ContactContainer_title {
+    font-size: 20px;
+  }
+  .Container_ContactContainer_SubHeading {
+    font-size: 16px;
+  }
 }
