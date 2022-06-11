@@ -32,8 +32,8 @@ const HomeHero = () => {
           </p>
 
           <div className={style.Container_Main_LeftSection_Buttons}>
-            <Secondary_ButtonCTA Label="Contact" />
-            <Secondary_ButtonCTA Label="About Me" />
+            <Secondary_ButtonCTA Label="Contact" Href="/Contact" />
+            <Secondary_ButtonCTA Label="About Me" Href="/About" />
           </div>
         </section>
         <section className={style.Container_Main_RightSection}>

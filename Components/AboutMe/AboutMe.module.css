@@ -17,6 +17,7 @@
   border: solid 3px #ffd700;
   background-color: #f7f9fa;
   display: flex;
+  position: relative;
 }
 .Container_Main_LeftSection {
   flex: 1;
@@ -25,10 +26,33 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  z-index: 2;
 }
 .Container_Main_RightSection {
   width: 350px;
   height: 100%;
   background-image: url("/images/Corridoor.png");
   background-size: cover;
+}
+
+@media only screen and (max-width: 950px) {
+  .Container_Main_RightSection {
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Container {
+    width: 100%;
+    height: 680px;
+  }
+
+  .Container_Main {
+    height: 100%;
+  }
+  .Container_Main_LeftSection {
+    padding: 10px;
+  }
 }

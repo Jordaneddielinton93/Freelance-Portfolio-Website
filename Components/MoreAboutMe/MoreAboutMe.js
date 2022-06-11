@@ -20,7 +20,7 @@ const MoreAboutMe = () => {
               code to keep your sites up to scratch , all with a healthy dose of
               cofee.
             </p>
-            <Secondary_ButtonCTA Label={"About"} />
+            <Secondary_ButtonCTA Label={"Projects"} Href="/About" />
           </article>
           <Image
             alt="Logo Inistials"
@@ -48,7 +48,7 @@ const MoreAboutMe = () => {
               helping hundereds find their first feet in tech , community is
               everything.
             </p>
-            <Secondary_ButtonCTA Label={"About"} />
+            <Secondary_ButtonCTA Label={"Community"} Href="/Contact" />
           </article>
         </section>
       </div>
