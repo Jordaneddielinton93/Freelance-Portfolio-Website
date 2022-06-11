@@ -4,7 +4,8 @@ import style from "../Select_and_options.module.css";
 
 const TimeLine = () => {
   let { state, dispatch } = useContext(FormContext);
-
+  let green = "solid 3px #23C7A7"
+  let yellow = "solid thin red"
   return (
     <>
       <h1 className={style.WhatService_title}>When is your expected time line?
@@ -13,7 +14,7 @@ const TimeLine = () => {
         Select the option that best expresses your expectations for the timeline of this project.
 
       </p>
-      <select style={{ cursor: "pointer" }}
+      <select style={{ cursor: "pointer", border: state.Timeline.length ? green : yellow }}
         required
         value={state.Timeline}
         onChange={(e) => dispatch({ type: "Timeline", payload: e.target.value })}

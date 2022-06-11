@@ -6,10 +6,11 @@ import PriceRange from "./PriceRange/PriceRange";
 import TimeLine from "./Timeline/Timeline";
 const Select_and_options = () => {
   let { state, dispatch } = useContext(FormContext);
-
+  let green = "solid 3px #23C7A7"
+  let yellow = "solid thin red"
   return (
     <>
-      <select style={{ cursor: "pointer" }}
+      <select style={{ cursor: "pointer", border: state.ProjectType.length ? green : yellow }}
         required
         value={state.ProjectType}
         onChange={(e) =>

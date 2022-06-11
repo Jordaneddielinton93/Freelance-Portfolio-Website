@@ -1,8 +1,8 @@
 export const inistialState = {
-  ProjectType: false,
-  DevOrDeisgnAndDev: false,
-  Budget: false,
-  Timeline: false,
+  ProjectType: "",
+  DevOrDeisgnAndDev: "",
+  Budget: "",
+  Timeline: "",
   Fullname: "",
   Email: "",
   Anythingelse: "none",
@@ -10,15 +10,53 @@ export const inistialState = {
 
 export const FormReducer = (state, action) => {
   switch (action.type) {
-    case "ProjectType":
+    // case "FormValidation":
+    //   if ((state.ProjectType == "Website") && (state.DevOrDeisgnAndDev.length != 0) && (state.Budget.length != 0) && (state.Timeline.length != 0) && (state.Fullname.length != 0) && (state.Email.length != 0)) {
+    //     alert("Website filled in")
+
+    //   }
+
+    //   if ((state.ProjectType == "Tutoring") && (state.Budget.length != 0) && (state.Timeline.length != 0) && (state.Fullname.length != 0) && (state.Email.length != 0)) {
+
+    //     alert("Tutoring filled in")
+    //   }
+    //   if ((state.ProjectType == "Sponsor") && (state.Budget.length != 0) && (state.Fullname.length != 0) && (state.Email.length != 0)) {
+    //     alert("sponsor filled in")
+
+    //   }
+    //   if ((state.ProjectType == "Article") && (state.Fullname.length != 0) && (state.Email.length != 0)) {
+    //     return alert("Article filled in")
+    //   }
+    //   // 
+
+
+
+    //   return {
+    //     ...state
+    //   };
+    case "Reset":
       return {
-        ProjectType: action.payload,
-        DevOrDeisgnAndDev: false,
-        Budget: false,
-        Timeline: false,
+        ProjectType: "",
+        DevOrDeisgnAndDev: "",
+        Budget: "",
+        Timeline: "",
         Fullname: "",
         Email: "",
         Anythingelse: "none",
+      };
+
+
+
+    case "ProjectType":
+      return {
+        ProjectType: action.payload,
+        DevOrDeisgnAndDev: "",
+        Budget: "",
+        Timeline: "",
+        Fullname: "",
+        Email: "",
+        Anythingelse: "none",
+        sendRequest: false
       };
     case "DevOrDeisgnAndDev":
       return {
@@ -27,6 +65,7 @@ export const FormReducer = (state, action) => {
       };
 
     case "Budget":
+      console.log(state.Budget)
       return {
         ...state,
         Budget: action.payload,
