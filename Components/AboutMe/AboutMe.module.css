@@ -1,0 +1,34 @@
+.Container {
+  width: 100%;
+  height: 620px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+}
+.Container_Main {
+  width: 100%;
+  max-width: 1400px;
+  height: 550px;
+  margin: 0px 20px;
+  border-radius: 8px;
+  /* border: solid 3px brown; */
+  border: solid 3px #ffd700;
+  background-color: #f7f9fa;
+  display: flex;
+}
+.Container_Main_LeftSection {
+  flex: 1;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Container_Main_RightSection {
+  width: 350px;
+  height: 100%;
+  background-image: url("/images/Corridoor.png");
+  background-size: cover;
+}
