@@ -12,12 +12,14 @@ import { FormReducer, inistialState } from "../01-Hooks/FormReducer";
 
 export let FormContext = createContext(inistialState);
 
-const ContactForm = () => {
+const ContactForm = ({ setConfirmation }) => {
   let [state, dispatch] = useReducer(FormReducer, inistialState);
 
   async function sendEmail(e) {
-    console.log(state);
     e.preventDefault();
+    // dispatch({ type: "FormValidation" })
+    console.log(state);
+
     try {
       let response = await fetch("https://freelance-emailer.herokuapp.com/", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -29,8 +31,10 @@ const ContactForm = () => {
         body: JSON.stringify(state),
       });
       let resData = await response.json();
-      console.log(resData);
-      setData(resData);
+      console.log(resData)
+      dispatch({ type: "Reset" })
+      setConfirmation(true)
+      // setData(resData);
     } catch (error) { }
   }
 

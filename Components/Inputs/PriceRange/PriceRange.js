@@ -3,7 +3,8 @@ import style from "../Select_and_options.module.css";
 import { FormContext } from "../../ContactForm/ContactForm";
 const PriceRange = () => {
   let { state, dispatch } = useContext(FormContext);
-
+  let green = "solid 3px #23C7A7"
+  let yellow = "solid thin red"
   return (
     <>
       <h1 className={style.WhatService_title}>What is your price range</h1>
@@ -12,7 +13,7 @@ const PriceRange = () => {
         your budget. Consider this a starting point to our conversation, not a
         final quote.
       </p>
-      <select style={{ cursor: "pointer" }}
+      <select style={{ cursor: "pointer", border: state.Budget.length ? green : yellow }}
         required
         value={state.Budget}
         onChange={(e) => dispatch({ type: "Budget", payload: e.target.value })}
