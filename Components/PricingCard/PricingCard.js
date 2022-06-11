@@ -62,7 +62,7 @@ const PricingCard = ({
           />
           <p>{bodyText3}</p>
         </div>
-        <Secondary_ButtonCTA Label={"Contact"} />
+        <Secondary_ButtonCTA Label={"Contact"} Href="/Contact" />
       </section>
     </article>
   );

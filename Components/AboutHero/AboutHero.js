@@ -33,7 +33,7 @@ const AboutHero = () => {
           <h2 className={style.Middle_Top_Lable}>Hi, {`I'm`} Jordan</h2>
           <div className={style.Middle_Container}>
             <span className={style.NavContainer_logo_span}>
-              <Image src="/images/greyback.png" alt="Selfie image" width="280px" height="280px" />
+              <Image src="/images/greyback.png" alt="Selfie image" layout="fill" />
             </span>
           </div>
           <h2 className={style.Middle_Bottom_Lable}>Web-developer</h2>
