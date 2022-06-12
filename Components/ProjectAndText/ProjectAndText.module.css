@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Project1 {
+  width: 100%;
+  max-width: 1400px;
+  height: 680px;
+  /* margin: 0px 20px; */
+  border-radius: 8px;
+  /* border: solid 3px brown; */
+  background-color: #f7f9fa;
+  position: relative;
+  display: flex;
+  align-self: center;
+}
+
+.LeftSection {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.RightSection {
+  width: 750px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.RightSection_Article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 1;
+}

@@ -1,0 +1,117 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 277px;
+  background-color: #f5f6f8;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: auto;
+  align-self: center;
+}
+
+/* @media only screen and (max-width: 1050px) {
+    width: 200px;
+    height: 400px;
+  } */
+
+.phoneNotch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 40px;
+  width: 50%;
+  background-color: #f5f6f8;
+  top: 0;
+  border-radius: 25px;
+  z-index: 12;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0 0px 5px 1px; */
+}
+.phoneNotchCamera {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: silver;
+  z-index: 10;
+}
+.phoneInnerShell {
+  height: 95%;
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+.screenSaver {
+  text-align: center;
+  height: 95%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 5;
+  border-radius: 15px;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 0%;
+}
+.screenSaver::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.screenSaver::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.screenSaver::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+.phoneInnerShell:hover .screenSaver {
+  display: none;
+}
+
+.phoneButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 44px;
+  width: 60%;
+  background-color: #f5f6f8;
+  bottom: -20px;
+  border-radius: 10px;
+  z-index: 12;
+  font-size: 2rem;
+  color: white;
+  animation: float 6s ease-in-out infinite;
+  cursor: pointer;
+  border: 5px ridge #fbf8f4;
+}
+.phoneButton a {
+  color: #23c7a7;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}

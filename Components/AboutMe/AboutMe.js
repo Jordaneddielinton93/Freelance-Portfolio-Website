@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (<main className={style.Container}>
     <article className={style.Container_Main}>
       <section className={style.Container_Main_LeftSection}>
-        <h1>About Me</h1>
+        <h1 className={style.LeftSection_Title}>About Me</h1>
         <p>As a Web Developer I spend my whole day , practically everyday learning new Technologies and creating beautiful responsive web application and websites.</p>
         <p>I learnt the Key skills needed to become a front-end developer from school of code bootcamp , we were regulary paired into {"group's"} and were given {`project's`} to learn new skills such as responsivenes, {"Api's"} , HTML/CSS and Javascript frameworks
         </p>
@@ -13,7 +13,12 @@ const AboutMe = () => {
 
         <Secondary_ButtonCTA Label="Portfolio" />
       </section>
-      <section className={style.Container_Main_RightSection}></section>
+      <section className={style.Container_Main_RightSection}>
+        <div className={style.RightSection_content}>
+          <h1>Personal Email</h1>
+          <p>Jordaneddielinton93@hotmail.co.uk</p>
+        </div>
+      </section>
     </article>
   </main>);
 }

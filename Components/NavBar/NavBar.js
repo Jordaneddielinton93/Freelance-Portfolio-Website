@@ -27,7 +27,7 @@ const NavBar = () => {
           <Link href="/">
             <li className={style.NavContainer_Fixed_List_Item}>Community</li>
           </Link>
-          <Link href="/">
+          <Link href="/Projects">
             <li className={style.NavContainer_Fixed_List_Item}>Projects</li>
           </Link>
           <Link href="/About">
