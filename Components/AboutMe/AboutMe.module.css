@@ -28,11 +28,34 @@
   justify-content: space-evenly;
   z-index: 2;
 }
+.LeftSection_Title {
+  font-size: 1.5rem;
+}
 .Container_Main_RightSection {
   width: 350px;
   height: 100%;
   background-image: url("/images/Corridoor.png");
   background-size: cover;
+  position: relative;
+}
+
+.RightSection_content {
+  bottom: 10px;
+  left: 25px;
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #7a7a7a;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: solid 2px #23c7a7;
 }
 
 @media only screen and (max-width: 950px) {

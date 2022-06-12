@@ -19,12 +19,15 @@ export default function Home() {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <NavBar />
-      <HomeHero />
+      <HomeHero leftImg={"/images/leaves.png"} paragraph={`I’m a Front-end web developer who turned years of coding into a
+            full-time career, and recently into my freelancing journey. I help
+            teach hundreds of student how to find their own version of success
+            through my articles, newsletter, products, and freelance community.`} />
       <LogoList />
       <Folders />
       <LatestWork />
       <HowICanHelp />
-      <BigSlateTitle />
+      <BigSlateTitle text={"More About Me"} />
       <MoreAboutMe />
       <FoundersNote />
     </div>

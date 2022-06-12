@@ -12,7 +12,7 @@
   width: 100vw;
   background-color: #ffffff;
   border-bottom: solid thin #d8dce8;
-  z-index: 5;
+  z-index: 20;
 }
 .NavContainer_logo {
   display: flex;
