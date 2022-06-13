@@ -2,7 +2,10 @@ import style from "./NavBar.module.css";
 import Image from "next/image";
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 const NavBar = () => {
+  const { pathname } = useRouter()
+  console.log(pathname)
   return (
     <nav className={style.NavContainer}>
       <div className={style.NavContainer_Fixed}>
@@ -19,19 +22,19 @@ const NavBar = () => {
         </Link>
         <ul className={style.NavContainer_Fixed_List}>
           <Link href="/">
-            <li className={style.NavContainer_Fixed_List_Item}>Store</li>
+            <li style={{ color: pathname === "/Store" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Store</li>
+          </Link>
+          <Link href="/Articles">
+            <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Article</li>
           </Link>
           <Link href="/">
-            <li className={style.NavContainer_Fixed_List_Item}>Article</li>
-          </Link>
-          <Link href="/">
-            <li className={style.NavContainer_Fixed_List_Item}>Community</li>
+            <li style={{ color: pathname === "/Community" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Community</li>
           </Link>
           <Link href="/Projects">
-            <li className={style.NavContainer_Fixed_List_Item}>Projects</li>
+            <li style={{ color: pathname === "/Projects" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Projects</li>
           </Link>
           <Link href="/About">
-            <li className={style.NavContainer_Fixed_List_Item}>About</li>
+            <li style={{ color: pathname === "/About" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>About</li>
           </Link>
         </ul>
 
