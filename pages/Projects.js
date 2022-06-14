@@ -3,6 +3,9 @@ import NavBar from "../Components/NavBar/NavBar";
 import HomeHero from "../Components/HomeHero/HomeHero"
 import LogoList from "../Components/LogoList/LogoList";
 import ProjectAndText from "../Components/ProjectAndText/ProjectAndText";
+import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
+import LatestWork from "../Components/LatestWork/LatestWork"
+import FoundersNote from "../Components/FoundersNote/FoundersNote"
 const Projects = () => {
   return (
     <div>
@@ -24,11 +27,16 @@ const Projects = () => {
         img3="/images/phone1/bikeman3.png"
         img4="/images/phone1/bikeman4.png"
         img5="/images/phone1/bikeman5.png" />
+
+      <SkillsAndProject />
+
       <ProjectAndText slateText={"Project 2"} direction={"row-reverse"} img1="/images/phone2/groPro1.png"
         img2="/images/phone2/groPro2.png"
         img3="/images/phone2/groPro3.png"
         img4="/images/phone2/groPro4.png"
         img5="/images/phone2/groPro5.png" />
+      <LatestWork />
+      <FoundersNote />
     </div>
   );
 }

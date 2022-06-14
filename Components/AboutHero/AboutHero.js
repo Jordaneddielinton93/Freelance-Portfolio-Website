@@ -1,29 +1,22 @@
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./AboutHero.module.css"
 import Image from "next/image"
+import Skills from "../Skills/Skills";
 const AboutHero = () => {
   return <main className={style.Container}>
     <div className={style.Container_Main}>
-      <section className={style.Container_Main_section}>
-        <div className={style.Container_Main_section_side}>
-          <h2 className={style.List_Heading}>Hard Skills</h2>
-          <ul className={style.List}>
-            <li>- UX Discovery</li>
-            <li>- HTML</li>
-            <li>- CSS/SASS/Modules</li>
-            <li>- React & Next.js</li>
-            <li>- Styled Components</li>
-            <li>- Node.js</li>
-            <li>- PostgreSQL</li>
-            <li>- Jest/Testing</li>
-            <li>- Strapi CMS</li>
-            <li>- Figma</li>
-          </ul>
-
-          <Secondary_ButtonCTA width="220px"
-            Label={"Learn Hard Skills, my articals"} />
-        </div>
-      </section>
+      <Skills ListHeading={"Hard Skills"} listItems={[
+        "UX Discovery",
+        "HTML",
+        "CSS/SASS/Modules",
+        " React & Next.js",
+        "Styled Components",
+        "Node.js",
+        "PostgreSQL",
+        "Jest/Testing",
+        "Strapi CMS",
+        "Figma"
+      ]} />
 
 
 
@@ -40,26 +33,16 @@ const AboutHero = () => {
         </div>
       </section>
 
+      <Skills ListHeading={"Soft Skills"} listItems={[
+        "Agile Methodologies",
+        " Disney Ideation",
+        "Jira Workflow",
+        " User Personas",
+        "User Flows",
+        "Site Maps",
+        "Wireframes",
 
-
-
-      <section className={style.Container_Main_section}>
-        <div className={style.Container_Main_section_side}>
-          <h2 className={style.List_Heading}>Soft Skills</h2>
-          <ul className={style.List}>
-            <li>- Agile Methodologies</li>
-            <li>- Disney Ideation</li>
-            <li>- Jira Workflow</li>
-            <li>- User Personas</li>
-            <li>- User Flows</li>
-            <li>- Site Maps</li>
-            <li>- Wireframes</li>
-
-          </ul>
-
-          <Secondary_ButtonCTA width="220px" Label={"Learn Soft Skills, my articals"} />
-        </div>
-      </section>
+      ]} />
     </div>
   </main>;
 };
