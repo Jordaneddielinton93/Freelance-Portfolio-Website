@@ -30,10 +30,17 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
 .RightSection_Article {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   flex: 1;
+}
+@media only screen and (max-width: 750px) {
+  .RightSection {
+    display: none;
+  }
 }

@@ -1,0 +1,24 @@
+.Container_Main_section_side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.Container_Main_section {
+  width: 33%;
+  height: 100%;
+  color: silver;
+  padding: 20px 0px;
+  text-shadow: 1px 1px white, -1px -1px #444;
+}
+.List_Heading {
+  width: 80%;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.List {
+  width: 80%;
+  font-size: 1.4rem;
+}
