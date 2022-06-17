@@ -8,3 +8,9 @@
     flex-direction: column;
   }
 } */
+.Home {
+  width: 100vw;
+  height: 100vh;
+  background-color: #131129;
+  display: flex;
+}

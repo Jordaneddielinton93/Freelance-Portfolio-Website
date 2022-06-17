@@ -1,0 +1,58 @@
+.nav {
+  width: 100px;
+  min-width: 100px;
+  height: 100%;
+  /* background-color:pink ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_list {
+  width: 70%;
+  height: 95%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  padding: 10px 0px;
+  border: solid thin #ffd700;
+}
+
+.nav_list_divider {
+  width: 30px;
+  height: 1px;
+  background-color: #f2f3f5;
+}
+
+.nav_list_container {
+  flex-grow: 0.5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav_list_container_listItem {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f2f3f5;
+  background-image: url("/images/whiteMarbleTexture.jpg");
+  margin: 5px 0px;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  cursor: pointer;
+  border: #ffd700 solid thin;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.nav_list_container_listItem:hover {
+  color: #23c7a7;
+  border: #23c7a7 solid thin;
+}
