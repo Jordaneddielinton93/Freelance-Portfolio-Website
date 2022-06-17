@@ -1,0 +1,46 @@
+.Card {
+  width: 250px;
+  height: 270px;
+  background-color: #1d1932;
+  border-radius: 10px;
+  /* border: solid 3px #6a667c; */
+  border: #ffd700 3px solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10px;
+  cursor: pointer;
+}
+.Card:hover {
+  border: white solid thin;
+}
+
+.Card_infoBox {
+  position: relative;
+  background-color: #6a667c;
+  height: 30%;
+  width: 95%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  border: transparent solid thin;
+}
+.Card_infoBox:hover {
+  border: white solid thin;
+}
+.Card_infoBox_img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 10px;
+  top: -40px;
+  background: #1d1932;
+  border-radius: 100%;
+}

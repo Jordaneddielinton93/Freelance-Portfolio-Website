@@ -1,0 +1,45 @@
+.FilterBar {
+  height: 180px;
+  min-height: 180px;
+  color: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-image: url("/images/whiteMarbleTexture.jpg"); */
+  background-color: white;
+  border: solid 2px #ffd700;
+  padding: 0px 10px;
+}
+
+.FilterBar_filters {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.FilterBar_filters_buttons {
+  display: flex;
+  width: 50%;
+
+  /* justify-content: space-between; */
+}
+.FilterBar_filters_buttons_lis {
+  border: solid thin rgb(49, 49, 49);
+  border: #ffd700 solid thin;
+
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  font-size: 1rem;
+  padding: 6px;
+  border-radius: 3px;
+  color: #808080;
+  background-color: #f2f3f5;
+
+  margin-right: 10px;
+  cursor: pointer;
+}
+.FilterBar_filters_buttons_lis:hover {
+  border: solid thin #23c7a7;
+  background: #23c7a7;
+
+  color: aliceblue;
+}

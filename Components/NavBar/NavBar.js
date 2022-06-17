@@ -22,12 +22,12 @@ const NavBar = () => {
         </Link>
         <ul className={style.NavContainer_Fixed_List}>
           <Link href="/">
-            <li style={{ color: pathname === "/Store" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Store</li>
+            <li style={{ color: pathname === "/Store" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Tutor</li>
           </Link>
           <Link href="/Articles">
             <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Article</li>
           </Link>
-          <Link href="/">
+          <Link href="/Community">
             <li style={{ color: pathname === "/Community" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Community</li>
           </Link>
           <Link href="/Projects">

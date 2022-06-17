@@ -1,0 +1,34 @@
+.nav {
+  width: 180px;
+  min-width: 280px;
+  height: 100%;
+  /* background-color:pink ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_list {
+  width: 90%;
+  height: 95%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  padding: 10px 0px;
+  border: solid thin #ffd700;
+}
+
+.content {
+  width: 90%;
+  border-radius: 10px;
+  height: 90px;
+  background-color: #373150;
+  background-image: url("/images/whiteMarbleTexture.jpg");
+  background-color: #f7f9fa;
+  background-size: cover;
+  color: white;
+  border: solid thin #ffd700;
+}
