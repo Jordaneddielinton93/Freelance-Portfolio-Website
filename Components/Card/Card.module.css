@@ -1,23 +1,24 @@
-.Card{
+.Card {
   width: 250px;
   height: 270px;
-  background-color: #1D1932;
+  background-color: #1d1932;
   border-radius: 10px;
-  border: solid 3px #6A667C;
+  /* border: solid 3px #6a667c; */
+  border: #ffd700 3px solid;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin:10px;
+  margin: 10px;
   cursor: pointer;
 }
-.Card:hover{
+.Card:hover {
   border: white solid thin;
 }
 
-
-.Card_infoBox{
+.Card_infoBox {
   position: relative;
-  background-color: #6A667C;
+  background-color: #6a667c;
   height: 30%;
   width: 95%;
   margin-bottom: 5px;
@@ -31,15 +32,15 @@
   cursor: pointer;
   border: transparent solid thin;
 }
-.Card_infoBox:hover{
+.Card_infoBox:hover {
   border: white solid thin;
 }
-.Card_infoBox_img{
-  width:70px;
+.Card_infoBox_img {
+  width: 70px;
   height: 70px;
-  position:absolute;
-  right:10px;
-  top:-40px;
-  background:#1D1932;
+  position: absolute;
+  right: 10px;
+  top: -40px;
+  background: #1d1932;
   border-radius: 100%;
 }
