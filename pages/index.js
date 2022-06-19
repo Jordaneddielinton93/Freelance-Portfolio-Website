@@ -23,6 +23,7 @@ export default function Home() {
             full-time career, and recently into my freelancing journey. I help
             teach hundreds of student how to find their own version of success
             through my articles, newsletter, products, and freelance community.`} />
+
       <LogoList />
       <Folders />
       <LatestWork />
