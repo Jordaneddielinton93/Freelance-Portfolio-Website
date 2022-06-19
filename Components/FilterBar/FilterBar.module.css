@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .FilterBar_filters_buttons {
   display: flex;
   width: 50%;
@@ -26,7 +27,7 @@
 .FilterBar_filters_buttons_lis {
   border: solid thin rgb(49, 49, 49);
   border: #ffd700 solid thin;
-
+  min-width: 100px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   font-size: 1rem;
   padding: 6px;
@@ -42,4 +43,34 @@
   background: #23c7a7;
 
   color: aliceblue;
+}
+
+@media only screen and (max-width: 1020px) {
+  .FilterBar_filters_buttons_lis {
+    min-width: 80px;
+    font-size: 0.7rem;
+  }
+
+  /* .FilterBar_filters {
+    flex-direction: column;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  .FilterBar_filters:nth-child(5) {
+    display: none;
+  }
+  .FilterBar_filters_buttons_lis {
+    min-width: 70px;
+    font-size: 0.6rem;
+  }
+  .FilterBar {
+    height: 100px;
+    min-height: 100px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .FilterBar_filters_buttons_lis {
+    min-width: 60px;
+    font-size: 0.5rem;
+  }
 }

@@ -6,6 +6,7 @@ import ProjectAndText from "../Components/ProjectAndText/ProjectAndText";
 import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
 import LatestWork from "../Components/LatestWork/LatestWork"
 import FoundersNote from "../Components/FoundersNote/FoundersNote"
+
 const Projects = () => {
   return (
     <div>
@@ -37,6 +38,8 @@ const Projects = () => {
         img5="/images/phone2/groPro5.png" />
       <LatestWork />
       <FoundersNote />
+
+
     </div>
   );
 }

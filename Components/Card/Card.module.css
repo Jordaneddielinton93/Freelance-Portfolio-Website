@@ -3,13 +3,11 @@
   height: 270px;
   background-color: #1d1932;
   border-radius: 10px;
-  /* border: solid 3px #6a667c; */
   border: #ffd700 3px solid;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin: 10px;
+  margin: 10px 5px;
   cursor: pointer;
 }
 .Card:hover {
@@ -18,7 +16,7 @@
 
 .Card_infoBox {
   position: relative;
-  background-color: #6a667c;
+  background-color: rgba(35, 199, 167, 0.5);
   height: 30%;
   width: 95%;
   margin-bottom: 5px;
@@ -43,4 +41,64 @@
   top: -40px;
   background: #1d1932;
   border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    width: 220px;
+    height: 240px;
+  }
+  .Card_infoBox_img {
+    width: 50px;
+    height: 50px;
+    top: -30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Card {
+    width: 200px;
+    height: 220px;
+    margin: 5px;
+  }
+  .Card_infoBox_img {
+    width: 30px;
+    height: 30px;
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .Card {
+    width: 180px;
+    height: 200px;
+    margin: 5px;
+  }
+  .Card_infoBox_img {
+    width: 30px;
+    height: 30px;
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Card {
+    width: 160px;
+    height: 180px;
+    margin: 5px;
+  }
+  .Card_infoBox_img {
+    width: 30px;
+    height: 30px;
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .Card {
+    width: 150px;
+    height: 170px;
+    margin: 3px;
+  }
+  .Card_infoBox_img {
+    width: 30px;
+    height: 30px;
+    top: -20px;
+  }
 }

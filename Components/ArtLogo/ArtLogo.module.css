@@ -25,13 +25,16 @@
   justify-content: space-evenly;
   align-items: center;
   width: 30%;
+  align-self: center;
   /* background-color: rgba(29, 25, 50, 0.5); */
   flex-grow: 1;
-  margin: auto;
+  /* margin: auto; */
+  max-height: 50px;
 }
 .ArtLogo_Buttons_btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 50px;
   padding: 20px;
   border-radius: 10px;
@@ -51,4 +54,13 @@
 .ArtLogo_Buttons_btn:nth-child(2) {
   background-color: transparent;
   color: black;
+}
+@media only screen and (max-width: 500px) {
+  .ArtLogo {
+    height: 100px;
+    min-height: 100px;
+  }
+  .ArtLogo_Buttons {
+    display: none;
+  }
 }

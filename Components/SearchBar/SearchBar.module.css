@@ -12,9 +12,8 @@
   border: none;
   background-color: white;
   border: solid thin #ffd700;
-
   padding-left: 10px;
-  color: white;
+  color: black;
 }
 .inputbox:hover {
   border: white solid thin;

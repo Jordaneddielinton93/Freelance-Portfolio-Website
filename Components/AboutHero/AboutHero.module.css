@@ -126,18 +126,18 @@
   }
 }
 @media only screen and (max-width: 780px) {
-  .Container_Main {
+  /* .Container_Main {
     flex-direction: column-reverse;
 
     height: 500px;
-  }
+  } */
   .Container_Main_section {
     width: 100%;
   }
-  .Container_Main_section:nth-child(1) {
+  .Container_Main section:nth-child(1) {
     display: none;
   }
-  .Container_Main_section:nth-child(3) {
+  .Container_Main section:nth-child(3) {
     display: none;
   }
   .Container {

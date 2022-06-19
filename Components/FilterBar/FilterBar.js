@@ -1,36 +1,35 @@
+import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 import styles from "./FilterBar.module.css"
 
 const FilterBar = () => {
-  return ( 
+  return (
     <section className={styles.FilterBar}>
 
-      <h3 className={styles.FilterBar_Title}>Tranding Topics</h3>
+      <h3 className={styles.FilterBar_Title}>Trending Topics</h3>
 
       <div className={styles.FilterBar_filters}>
 
         <ol className={styles.FilterBar_filters_buttons}>
           <button className={styles.FilterBar_filters_buttons_lis}>
-            latest
+            Featured
           </button>
           <button className={styles.FilterBar_filters_buttons_lis}>
-            Pretties
+            Latest
           </button>
           <button className={styles.FilterBar_filters_buttons_lis}>
-            New Style
+            Most Read
           </button>
           <button className={styles.FilterBar_filters_buttons_lis}>
             Funky
           </button>
         </ol>
 
-        <button className={styles.FilterBar_filters_buttons_lis}>
-          Filter
-        </button>
+
 
       </div>
 
     </section>
-   );
+  );
 }
- 
+
 export default FilterBar;

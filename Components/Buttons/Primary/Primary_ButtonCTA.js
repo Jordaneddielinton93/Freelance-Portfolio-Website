@@ -5,7 +5,7 @@ import Link from "next/link";
 const Primary_ButtonCTA = ({ Label }) => {
   return (
     <Link href="/Contact">
-      <button data-testid="PrimaryButton" className={style.PrimaryButton}>
+      <button className={style.PrimaryButton}>
         {Label}
       </button>
     </Link>

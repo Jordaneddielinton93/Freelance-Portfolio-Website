@@ -21,12 +21,6 @@
   border: solid thin #ffd700;
 }
 
-.nav_list_divider {
-  width: 30px;
-  height: 1px;
-  background-color: #f2f3f5;
-}
-
 .nav_list_container {
   flex-grow: 0.5;
   width: 100%;
@@ -55,4 +49,9 @@
 .nav_list_container_listItem:hover {
   color: #23c7a7;
   border: #23c7a7 solid thin;
+}
+@media only screen and (max-width: 1020px) {
+  .nav {
+    display: none;
+  }
 }
