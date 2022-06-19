@@ -21,7 +21,7 @@ const LatestWork = () => {
           );
         })}
       </div>
-      <Secondary_ButtonCTA Label="Projects" />
+      <Secondary_ButtonCTA Label="Projects" Href={"/Projects"} />
       <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
         <Image
           height="159px"

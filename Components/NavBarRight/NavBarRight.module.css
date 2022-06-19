@@ -20,15 +20,35 @@
   padding: 10px 0px;
   border: solid thin #ffd700;
 }
+@media only screen and (max-width: 1020px) {
+  .nav {
+    width: 100%;
 
-.content {
-  width: 90%;
-  border-radius: 10px;
-  height: 90px;
-  background-color: #373150;
-  background-image: url("/images/whiteMarbleTexture.jpg");
-  background-color: #f7f9fa;
-  background-size: cover;
-  color: white;
-  border: solid thin #ffd700;
+    height: 200px;
+    min-height: 100px;
+    /* background-color: #ffd700; */
+    margin-top: 10px;
+  }
+  .nav_list_logo {
+    display: none;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    min-width: 95vw;
+    /* height: 200px; */
+  }
+}
+@media only screen and (max-width: 560px) {
+  .nav_list {
+    flex-direction: row;
+    min-width: 100vw;
+    height: 100%;
+    padding: 0px 0px;
+    border: none;
+  }
+  .nav {
+    min-height: 120px;
+    /* background-color: #ffd700; */
+  }
 }

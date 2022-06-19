@@ -1,5 +1,7 @@
 import Head from "next/head";
 import CommunityHero from "../Components/CommunityHero/CommunityHero";
+
+
 import NavBar from "../Components/NavBar/NavBar";
 
 
@@ -13,6 +15,7 @@ const Community = () => {
       </Head>
       <NavBar />
       <CommunityHero />
+
 
     </div>
   );

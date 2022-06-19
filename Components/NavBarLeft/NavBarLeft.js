@@ -23,8 +23,6 @@ const NavBarLeft = () => {
           </li>
         </div>
 
-        <span className={styles.nav_list_divider}></span>
-
         <div className={styles.nav_list_container}>
           <li className={styles.nav_list_container_listItem}>
             <BsSegmentedNav />

@@ -1,0 +1,5 @@
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+}

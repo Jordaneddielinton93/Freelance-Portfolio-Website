@@ -2,25 +2,25 @@ import styles from "./SearchBar.module.css"
 import { IoMdNotifications } from 'react-icons/io';
 import { MdAccountBalanceWallet } from 'react-icons/md';
 import { useState } from "react";
-const SearchBar = ({setInputValue,value}) => {
-  return ( 
+const SearchBar = ({ setInputValue, value }) => {
+  return (
     <div className={styles.SearchBar}>
 
-      <input onChange={(e)=>setInputValue(e.target.value)}
-       type="search" name="Search" placeholder="Find your art peice now" className={styles.inputbox} />
+      <input value={value} onChange={(e) => setInputValue(e.target.value)}
+        type="search" name="Search" placeholder="Find your article now" className={styles.inputbox} />
 
       <section className={styles.SearchBar_Section}>
         <div className={styles.SearchBar_Section_counter}>
-          <MdAccountBalanceWallet style={{fontSize:"1rem"}}/>
+          <MdAccountBalanceWallet style={{ fontSize: "1rem" }} />
           <h1>22E12123</h1>
         </div>
         <div className={styles.SearchBar_Section_notification}>
-          <IoMdNotifications/>
+          <IoMdNotifications />
         </div>
       </section>
 
     </div>
-   );
+  );
 }
- 
+
 export default SearchBar;

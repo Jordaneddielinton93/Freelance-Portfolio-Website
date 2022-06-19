@@ -6,6 +6,7 @@ import NavBar from "../Components/NavBar/NavBar";
 import AboutMe from "../Components/AboutMe/AboutMe.js";
 import Head from "next/head";
 
+
 const About = () => {
   return (
     <div>
@@ -20,6 +21,8 @@ const About = () => {
       <AboutMe />
       <HowICanHelp />
       <FoundersNote />
+
+
     </div>
   );
 };

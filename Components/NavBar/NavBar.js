@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from 'next/router'
 const NavBar = () => {
   const { pathname } = useRouter()
-  console.log(pathname)
   return (
     <nav className={style.NavContainer}>
       <div className={style.NavContainer_Fixed}>
@@ -21,8 +20,8 @@ const NavBar = () => {
           </div>
         </Link>
         <ul className={style.NavContainer_Fixed_List}>
-          <Link href="/">
-            <li style={{ color: pathname === "/Store" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Tutor</li>
+          <Link href="/Tutor">
+            <li style={{ color: pathname === "/Tutor" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Tutor</li>
           </Link>
           <Link href="/Articles">
             <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Article</li>
