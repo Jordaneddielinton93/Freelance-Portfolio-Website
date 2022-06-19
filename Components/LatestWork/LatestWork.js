@@ -1,22 +1,25 @@
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./LatestWork.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useState } from "react";
 
-const LatestWork = () => {
-  let Arr = [...".".repeat(10)];
+
+
+
+
+
+const LatestWork = ({ latestWorkUrls }) => {
+
   return (
     <section className={style.Container}>
       <h2 className={style.Label}>Latest Work</h2>
       <div className={style.ImageContainer}>
-        {Arr.map((item, index) => {
+        {[...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls,].map((item, index) => {
+          console.log(latestWorkUrls[index])
           return (
-            <div key={index} className={style.ImageBox}>
-              <Image
-                style={{ position: "absolute" }}
-                alt="Slides"
-                layout="fill"
-                src="/images/whiteWavesTexture.jpg"
-              />
+            <div style={{ backgroundImage: `url(${item})` }}
+              key={index} className={style.ImageBox}>
             </div>
           );
         })}

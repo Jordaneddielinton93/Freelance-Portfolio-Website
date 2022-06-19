@@ -10,7 +10,17 @@ import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+// export async function getServerSideProps() {
+//   const response = await fetch("https://freelance-portfolio--cms.herokuapp.com/api/latest-works?populate=*")
+//   const data = await response.json()
+//   console.log(data)
+//   // let latestWorkUrls = data.map(({ attributes }) => "http://localhost:1337" + attributes.LatestWorkCarousel.data[0].attributes.url)
+//   return {
+//     props: { latestWorkUrls },
+//   }
+// }
+
+export default function Home({ latestWorkUrls }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +35,7 @@ export default function Home() {
             through my articles, newsletter, products, and freelance community.`} />
       <LogoList />
       <Folders />
-      <LatestWork />
+      {/* <LatestWork latestWorkUrls={latestWorkUrls} /> */}
       <HowICanHelp />
       <BigSlateTitle text={"More About Me"} />
       <MoreAboutMe />

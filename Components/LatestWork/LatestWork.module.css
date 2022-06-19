@@ -50,6 +50,8 @@
   margin-right: 20px;
   /* opacity: 0; */
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 .ImageBox:hover {
   position: relative;
@@ -107,6 +109,7 @@
   .ImageBox {
     height: 150px;
     width: 150px;
+    background-color: #23c7a7;
   }
   .ImageBox:hover {
     min-width: 155px;
