@@ -3,7 +3,7 @@ import style from "./LatestWork.module.css";
 import Image from "next/image";
 
 const LatestWork = ({ latestWorkImg }) => {
-  // let Arr = [...".".repeat(10)];
+
   return (
     <section className={style.Container}>
       <h2 className={style.Label}>Latest Work</h2>
