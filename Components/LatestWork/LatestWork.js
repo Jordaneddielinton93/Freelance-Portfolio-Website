@@ -8,13 +8,25 @@ import { useState } from "react";
 
 
 
-
-const LatestWork = ({ latestWorkUrls }) => {
+const LatestWork = ({ latestWorkImg }) => {
+  // let Arr = [...".".repeat(10)];
 
   return (
     <section className={style.Container}>
       <h2 className={style.Label}>Latest Work</h2>
       <div className={style.ImageContainer}>
+
+        {latestWorkImg && latestWorkImg.map((file, index) => {
+          console.log(file.url)
+          return (
+            <div key={index} className={style.ImageBox}>
+              <Image
+                style={{ position: "absolute" }}
+                alt="Slides"
+                layout="fill"
+                src={"https:" + file.url}
+              />
+
         {[...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls,].map((item, index) => {
           console.log(latestWorkUrls[index])
           return (

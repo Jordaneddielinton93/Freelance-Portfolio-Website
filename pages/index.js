@@ -10,17 +10,32 @@ import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
-// export async function getServerSideProps() {
-//   const response = await fetch("https://freelance-portfolio--cms.herokuapp.com/api/latest-works?populate=*")
-//   const data = await response.json()
-//   console.log(data)
-//   // let latestWorkUrls = data.map(({ attributes }) => "http://localhost:1337" + attributes.LatestWorkCarousel.data[0].attributes.url)
-//   return {
-//     props: { latestWorkUrls },
-//   }
-// }
+
+import { createClient } from "contentful";
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY
+  })
+
+  const res = await client.getEntries({
+    content_type: "latestWorkCarousel"
+  })
+  return {
+    props: {
+      latestWorkImg: res.items[0].fields.latestWorkCarousel.map((obj) => obj.fields.file)
+    }
+  }
+}
+
+export default function Home({ latestWorkImg }) {
+
+
+
 
 export default function Home({ latestWorkUrls }) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -36,7 +51,9 @@ export default function Home({ latestWorkUrls }) {
 
       <LogoList />
       <Folders />
-      {/* <LatestWork latestWorkUrls={latestWorkUrls} /> */}
+
+      <LatestWork latestWorkImg={latestWorkImg} />
+
       <HowICanHelp />
       <BigSlateTitle text={"More About Me"} />
       <MoreAboutMe />
