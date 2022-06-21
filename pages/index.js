@@ -29,12 +29,8 @@ export async function getStaticProps() {
   }
 }
 
+
 export default function Home({ latestWorkImg }) {
-
-
-
-
-export default function Home({ latestWorkUrls }) {
 
   return (
     <div className={styles.container}>
