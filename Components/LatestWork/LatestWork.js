@@ -2,20 +2,21 @@ import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./LatestWork.module.css";
 import Image from "next/image";
 
-const LatestWork = () => {
-  let Arr = [...".".repeat(10)];
+const LatestWork = ({ latestWorkImg }) => {
+  // let Arr = [...".".repeat(10)];
   return (
     <section className={style.Container}>
       <h2 className={style.Label}>Latest Work</h2>
       <div className={style.ImageContainer}>
-        {Arr.map((item, index) => {
+        {latestWorkImg && latestWorkImg.map((file, index) => {
+          console.log(file.url)
           return (
             <div key={index} className={style.ImageBox}>
               <Image
                 style={{ position: "absolute" }}
                 alt="Slides"
                 layout="fill"
-                src="/images/whiteWavesTexture.jpg"
+                src={"https:" + file.url}
               />
             </div>
           );

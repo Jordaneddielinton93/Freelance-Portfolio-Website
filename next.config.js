@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
 
-module.exports = nextConfig;
+
+module.exports = {
+  images: {
+    domains: ['images.ctfassets.net'],
+  },
+}
+
+
+// module.exports = nextConfig;

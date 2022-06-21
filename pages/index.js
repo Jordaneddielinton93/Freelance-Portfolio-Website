@@ -10,7 +10,26 @@ import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+import { createClient } from "contentful";
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY
+  })
+
+  const res = await client.getEntries({
+    content_type: "latestWorkCarousel"
+  })
+  return {
+    props: {
+      latestWorkImg: res.items[0].fields.latestWorkCarousel.map((obj) => obj.fields.file)
+    }
+  }
+}
+
+export default function Home({ latestWorkImg }) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -26,7 +45,7 @@ export default function Home() {
 
       <LogoList />
       <Folders />
-      <LatestWork />
+      <LatestWork latestWorkImg={latestWorkImg} />
       <HowICanHelp />
       <BigSlateTitle text={"More About Me"} />
       <MoreAboutMe />
