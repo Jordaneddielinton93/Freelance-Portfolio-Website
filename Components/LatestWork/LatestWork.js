@@ -1,13 +1,21 @@
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./LatestWork.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useState } from "react";
+
+
+
+
 
 const LatestWork = ({ latestWorkImg }) => {
   // let Arr = [...".".repeat(10)];
+
   return (
     <section className={style.Container}>
       <h2 className={style.Label}>Latest Work</h2>
       <div className={style.ImageContainer}>
+
         {latestWorkImg && latestWorkImg.map((file, index) => {
           console.log(file.url)
           return (
@@ -18,6 +26,12 @@ const LatestWork = ({ latestWorkImg }) => {
                 layout="fill"
                 src={"https:" + file.url}
               />
+
+        {[...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls,].map((item, index) => {
+          console.log(latestWorkUrls[index])
+          return (
+            <div style={{ backgroundImage: `url(${item})` }}
+              key={index} className={style.ImageBox}>
             </div>
           );
         })}
