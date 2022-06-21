@@ -9,7 +9,7 @@ import { useState } from "react";
 
 
 const LatestWork = ({ latestWorkImg }) => {
-  // let Arr = [...".".repeat(10)];
+
 
   return (
     <section className={style.Container}>
@@ -26,14 +26,6 @@ const LatestWork = ({ latestWorkImg }) => {
                 layout="fill"
                 src={"https:" + file.url}
               />
-
-        {[...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls, ...latestWorkUrls,].map((item, index) => {
-          console.log(latestWorkUrls[index])
-          return (
-            <div style={{ backgroundImage: `url(${item})` }}
-              key={index} className={style.ImageBox}>
-            </div>
-          );
         })}
       </div>
       <Secondary_ButtonCTA Label="Projects" Href={"/Projects"} />
