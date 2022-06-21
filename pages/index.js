@@ -10,6 +10,7 @@ import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
 
+
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -30,6 +31,11 @@ export async function getStaticProps() {
 
 export default function Home({ latestWorkImg }) {
 
+
+
+
+export default function Home({ latestWorkUrls }) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -45,7 +51,9 @@ export default function Home({ latestWorkImg }) {
 
       <LogoList />
       <Folders />
+
       <LatestWork latestWorkImg={latestWorkImg} />
+
       <HowICanHelp />
       <BigSlateTitle text={"More About Me"} />
       <MoreAboutMe />
