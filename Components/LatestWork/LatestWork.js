@@ -26,6 +26,7 @@ const LatestWork = ({ latestWorkImg }) => {
                 layout="fill"
                 src={"https:" + file.url}
               />
+            </div>)
         })}
       </div>
       <Secondary_ButtonCTA Label="Projects" Href={"/Projects"} />
