@@ -9,6 +9,7 @@
   align-items: flex-end;
   margin: 10px 5px;
   cursor: pointer;
+  background-size: contain;
 }
 .Card:hover {
   border: white solid thin;
@@ -37,12 +38,19 @@
   width: 70px;
   height: 70px;
   position: absolute;
-  right: 10px;
+  right: 5px;
   top: -40px;
   background: #1d1932;
   border-radius: 100%;
 }
 
+.Card_infoBox_content {
+  z-index: 2;
+  background-color: white;
+  width: 95%;
+  color: #1d1932;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 600px) {
   .Card {
     width: 220px;

@@ -5,9 +5,25 @@ import FoundersNote from "../Components/FoundersNote/FoundersNote"
 import NavBar from "../Components/NavBar/NavBar";
 import AboutMe from "../Components/AboutMe/AboutMe.js";
 import Head from "next/head";
+import { createClient } from "contentful";
 
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY
+  })
 
-const About = () => {
+  const res = await client.getEntries({
+    content_type: "latestWorkCarousel"
+  })
+  return {
+    props: {
+      latestWorkImg: res.items[0].fields.latestWorkCarousel.map((obj) => obj.fields.file)
+    }
+  }
+}
+
+const About = ({ latestWorkImg }) => {
   return (
     <div>
       <Head>
@@ -17,7 +33,7 @@ const About = () => {
       </Head>
       <NavBar />
       <AboutHero />
-      <LatestWork />
+      <LatestWork latestWorkImg={latestWorkImg} />
       <AboutMe />
       <HowICanHelp />
       <FoundersNote />
