@@ -25,15 +25,15 @@ export async function getStaticProps() {
   })
   return {
     props: {
-      Article: res.items.map((obj) => obj.fields)
+      Articles: res.items.map((obj) => obj.fields)
     }
   }
 }
 
-const Articles = ({ Article }) => {
+const Articles = ({ Articles }) => {
 
 
-  console.log(Article)
+  console.log(Articles)
 
 
   let [CardObj, setCardObj] = useState("")
@@ -46,7 +46,7 @@ const Articles = ({ Article }) => {
         <SearchBar setInputValue={setInputValue} />
         <ArtLogo Label={"Your Favourite Articles"} />
         <FilterBar />
-        <ArticleCards />
+        <ArticleCards Articles={Articles} />
       </ArticleMainSection>
       <NavBarRight />
     </ArticleContainer>
