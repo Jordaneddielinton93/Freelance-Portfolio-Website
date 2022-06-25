@@ -18,7 +18,7 @@
 .Card_infoBox {
   position: relative;
   background-color: rgba(35, 199, 167, 0.5);
-  height: 30%;
+  height: 45%;
   width: 95%;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -44,12 +44,43 @@
   border-radius: 100%;
 }
 
+.Card_ReadTime {
+  background: #de2589;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .Card_infoBox_content {
   z-index: 2;
   background-color: white;
   width: 95%;
   color: #1d1932;
   border-radius: 5px;
+}
+.Card_Discript {
+  font-size: 0.7rem;
+}
+.Card_Discript span {
+  font-weight: 600;
+  color: #de2589;
+  text-align: end;
+}
+.Card:hover .Card_Discript_full {
+  display: flex;
+}
+.Card_Discript_full {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: #196c5a;
+  padding: 5px;
+  height: 250px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  /* overflow-y: hidden; */
 }
 @media only screen and (max-width: 600px) {
   .Card {

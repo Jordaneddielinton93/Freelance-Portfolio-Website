@@ -9,7 +9,8 @@ const useFetch = ({ url }) => {
         let resData = await response.json();
         setData(resData);
       }
-    } catch (error) {}
+      sendApiReq()
+    } catch (error) { }
   }, [url]);
 
   return { data };

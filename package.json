@@ -13,6 +13,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@contentful/rich-text-types": "^15.12.1",
     "@react-three/drei": "^9.11.3",
     "@react-three/fiber": "^8.0.19",
     "@sendgrid/mail": "^7.7.0",
