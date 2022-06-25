@@ -9,7 +9,8 @@
   z-index: -1;
 }
 .Main {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   min-height: 100vh;
   margin: auto;
   margin-top: 200px;
