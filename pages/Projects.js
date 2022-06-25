@@ -6,8 +6,27 @@ import ProjectAndText from "../Components/ProjectAndText/ProjectAndText";
 import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
 import LatestWork from "../Components/LatestWork/LatestWork"
 import FoundersNote from "../Components/FoundersNote/FoundersNote"
+import { createClient } from "contentful";
 
-const Projects = () => {
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY
+  })
+
+  const res = await client.getEntries({
+    content_type: "latestWorkCarousel"
+  })
+  return {
+    props: {
+      latestWorkImg: res.items[0].fields.latestWorkCarousel.map((obj) => obj.fields.file)
+    }
+  }
+}
+
+
+const Projects = ({ latestWorkImg }) => {
   return (
     <div>
       <Head>
@@ -36,7 +55,7 @@ const Projects = () => {
         img3="/images/phone2/groPro3.png"
         img4="/images/phone2/groPro4.png"
         img5="/images/phone2/groPro5.png" />
-      <LatestWork />
+      <LatestWork latestWorkImg={latestWorkImg} />
       <FoundersNote />
 
 

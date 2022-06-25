@@ -28,8 +28,8 @@ const FoundersNote = () => {
         </div>
         <h1 className={style.Footer_title}>Ready to join the fun?</h1>
         <div className={style.Footer_container}>
-          <section></section>
-          <section></section>
+          <section className={style.Footer_container_Rectangle}></section>
+          <section className={style.Footer_container_Rectangle}></section>
         </div>
       </div>
       <section className={style.Container_TopBckGround}></section>
