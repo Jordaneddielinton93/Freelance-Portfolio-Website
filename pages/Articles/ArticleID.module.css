@@ -1,0 +1,32 @@
+.Background {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  background-image: url("/images/ArticleBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.Main {
+  width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+}
+
+.Main h1,
+.Main h2,
+.Main h3,
+.Main h4,
+.Main h5,
+.Main h6,
+.Main p,
+.Main ul,
+.Main li {
+  margin: 15px 0px;
+}
