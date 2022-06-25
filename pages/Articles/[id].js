@@ -28,7 +28,7 @@ export async function getStaticProps({ params }) {
   console.log(params)
   const { items } = await client.getEntries({
     content_type: "articlePage",
-    "fields.slug": params.slug
+    "fields.slug": params.id
   })
   return {
     props: { article: items[0].fields }
@@ -45,56 +45,52 @@ const ArticleTemplate = ({ article }) => {
       <main className={styles.Main}>
         {documentToReactComponents(article.content)}
 
-        <CopyBlock
+        {article.slug == "react-state-management" && <CopyBlock
           text={`
-          import React from 'react';
-          export let pageContext = React.createContext() 
+import React from 'react';
+export let pageContext = React.createContext() 
 
-          function App() {
+function App() {
 
-            let [state,setState]=useState({
-              name:"jordan",
-              age:20
-            })
+let [state,setState]=useState({
+  name:"jordan",
+  age:20
+})
 
-            return (
-              <pageContext.Provider value={{ state , setState }}> {/*<<< your state goes in the global value */}
-                  <div className="App">
-                      <NavBar/>
-                      <RandomComponent/>
-                  </div>
-              <pageContext.Provider>
-            )
-            
-            `}
+return (
+  <pageContext.Provider value={{ state , setState }}>
+      <div className="App">
+          <NavBar/>
+          <RandomComponent/>
+      </div>
+  <pageContext.Provider>
+)`}
           language={"jsx"}
           showLineNumbers={true}
           wrapLines={true}
           theme={dracula}
-        />
+        />}
         {documentToReactComponents(article.content2)}
-        <CopyBlock
+        {article.slug == "react-state-management" && <CopyBlock
           text={`
-          import React from 'react';
-          import { PageContext } from "../App";
+import React from 'react';
+import { PageContext } from "../App";
 
-          export default function Navbar() {
+export default function Navbar() {
 
-            let { state, setState } = useContext(pageContext)
-            console.log(state)
+  let { state, setState } = useContext(pageContext)
+  console.log(state)
 
-            return (
-              <nav>
+  return (
+    <nav>
 
-              </nav>
-            )
-            
-            `}
+    </nav>
+  )`}
           language={"jsx"}
           showLineNumbers={true}
           wrapLines={true}
           theme={dracula}
-        />
+        />}
       </main>
 
     </div>
