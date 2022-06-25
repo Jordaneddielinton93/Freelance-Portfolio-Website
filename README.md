@@ -2,10 +2,10 @@
 
 Basics :
 
-
 <ul>
 
 - Next.js Application
+- Sendgrid Api Emailer
 - StoryBook.js
 - JestTesting
 
@@ -23,8 +23,8 @@ gitHub
 
 - `npm install --save-dev jest @testing-library/react @testing-library/jest-dom`
 - `npm install --save-dev jest-environment-jsdom`
-- `npm install contentful`
+- `npm install contentful` -`@sendgrid/mail`
 
 ## }
 
-# Freelance-Portfolio-Website
+#

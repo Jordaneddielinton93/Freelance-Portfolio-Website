@@ -13,7 +13,7 @@ const Skills = ({ ListHeading, listItems }) => {
         </ul>
 
         <Secondary_ButtonCTA width="220px"
-          Label={"Learn Hard Skills, my articals"} />
+          Label={"Learn Hard Skills, my articals"} Href="/Tutor" />
       </div>
     </section>
   );

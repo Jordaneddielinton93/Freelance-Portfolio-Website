@@ -70,6 +70,23 @@
   text-shadow: 1px 1px white, -1px -1px #c8c9cb;
 }
 
+.Footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  /* background-color: #aeadad; */
+  height: 150px;
+  width: 100%;
+}
+
+.Footer_container_Rectangle {
+  height: 80%;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  border: #ffd700 solid 2px;
+}
+
 @media only screen and (max-width: 1130px) {
   .Container_Inner {
     width: 90%;

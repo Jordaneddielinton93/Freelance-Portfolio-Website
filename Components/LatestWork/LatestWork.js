@@ -1,11 +1,6 @@
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./LatestWork.module.css";
 import Image from "next/image";
-import { useEffect } from "react";
-import { useState } from "react";
-
-
-
 
 
 const LatestWork = ({ latestWorkImg }) => {
