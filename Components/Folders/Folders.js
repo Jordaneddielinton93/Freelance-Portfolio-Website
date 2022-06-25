@@ -46,7 +46,7 @@ const Folders = () => {
           <Secondary_ButtonCTA Href="/Projects" Label={"My Skills"} />
         </div>
         <div className={style.folder_And_Button}>
-          <Link href="/Community">
+          <Link href="/Articles">
             <main className={style.Folder}>
               <div className={style.Folder_img}>
                 <Image
@@ -57,12 +57,12 @@ const Folders = () => {
                 />
               </div>
               <div className={style.Folder_Flap}>
-                <h6>Groups</h6>
-                <h4>Community</h4>
+                <h6>Amazing</h6>
+                <h4>Articles</h4>
               </div>
             </main>
           </Link>
-          <Secondary_ButtonCTA Label={"Community"} Href="/Community" />
+          <Secondary_ButtonCTA Label={"Articles"} Href="/Articles" />
         </div>
         <div className={style.folder_And_Button}>
           <Link href="/Tutor">

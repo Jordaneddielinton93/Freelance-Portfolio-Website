@@ -1,5 +1,5 @@
 .Background {
-  position: absolute;
+  position: fixed;
   height: 50vh;
   width: 100%;
   background-image: url("/images/ArticleBackground.jpg");
@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+  border-bottom: thick solid #23c7a7;
 }
 .Main {
   max-width: 1000px;
@@ -15,7 +16,7 @@
   margin: auto;
   margin-top: 200px;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 12px;
 }

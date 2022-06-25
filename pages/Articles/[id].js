@@ -4,6 +4,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import styles from "./ArticleID.module.css"
 import { createClient } from "contentful";
 import { CopyBlock, dracula } from "react-code-blocks";
+import { useEffect } from "react";
+import { useState } from "react";
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_KEY
@@ -30,18 +32,29 @@ export async function getStaticProps({ params }) {
     content_type: "articlePage",
     "fields.slug": params.id
   })
+
+
   return {
     props: { article: items[0].fields }
   }
 }
 
 const ArticleTemplate = ({ article }) => {
-  console.log(article)
-
+  let [photo, setPhoto] = useState("")
+  async function getPhoto() {
+    let response = await fetch("/api/unsplash")
+    let data = await response.json()
+    setPhoto(data.name.urls.regular)
+  }
+  useEffect(() => {
+    getPhoto()
+  }, [])
+  console.log(photo)
   return (
     <div >
       <NavBar />
-      <div className={styles.Background}></div>
+      <div style={{ backgroundImage: `url(${photo})` }}
+        className={styles.Background}></div>
       <main className={styles.Main}>
         {documentToReactComponents(article.content)}
 
@@ -54,7 +67,7 @@ function App() {
 
 let [state,setState]=useState({
   name:"jordan",
-  age:20
+  age:28
 })
 
 return (
