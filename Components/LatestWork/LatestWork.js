@@ -13,7 +13,7 @@ const LatestWork = ({ latestWorkImg }) => {
       <div className={style.ImageContainer}>
 
         {latestWorkImg && latestWorkImg.map((file, index) => {
-          console.log(file.url)
+
           return (
             <div key={index} className={style.ImageBox} data-aos="fade-right">
               <Image

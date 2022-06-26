@@ -6,7 +6,7 @@ import PriceRange from "./PriceRange/PriceRange";
 import TimeLine from "./Timeline/Timeline";
 const Select_and_options = () => {
   let { state, dispatch } = useContext(FormContext);
-  console.log(state)
+
   let green = "solid 3px #23C7A7"
   let yellow = "solid thin red"
   return (

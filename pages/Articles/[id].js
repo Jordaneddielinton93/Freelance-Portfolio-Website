@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps({ params }) {
-  console.log(params)
+
   const { items } = await client.getEntries({
     content_type: "articlePage",
     "fields.slug": params.id
@@ -43,7 +43,7 @@ export async function getStaticProps({ params }) {
 
 const ArticleTemplate = ({ article }) => {
   let router = useRouter()
-  console.log(router.query.id)
+
   let [photo, setPhoto] = useState("")
   async function getPhoto() {
     let response = await fetch("/api/unsplash")
@@ -53,7 +53,7 @@ const ArticleTemplate = ({ article }) => {
   useEffect(() => {
     getPhoto()
   }, [])
-  console.log(photo)
+
   return (
     <div >
       <Head>
