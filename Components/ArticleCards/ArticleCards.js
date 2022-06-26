@@ -5,7 +5,6 @@ const ArticleCards = ({ Articles, inputValue }) => {
     <div className={styles.CardContainer}>
       {Articles && Articles.map(({ cardTitle, cardImg, readTime, carddiscription, slug }) => {
         let Img = cardImg.fields.file.url
-        console.log(cardTitle)
         return !inputValue.length ? (
           <Card
             key={cardTitle}

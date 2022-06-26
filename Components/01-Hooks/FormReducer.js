@@ -42,7 +42,7 @@ export const FormReducer = (state, action) => {
       };
 
     case "Budget":
-      console.log(state.Budget)
+
       return {
         ...state,
         Budget: action.payload,

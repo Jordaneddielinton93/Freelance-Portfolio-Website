@@ -34,11 +34,11 @@ export async function getStaticProps() {
 const Articles = ({ Articles }) => {
 
 
-  console.log(Articles)
+
 
 
   let [inputValue, setInputValue] = useState("")
-  console.log(inputValue)
+
   return (<div>
     <Head>
       <title>Articles - Jordan Freelance</title>

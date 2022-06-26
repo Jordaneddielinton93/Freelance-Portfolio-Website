@@ -18,7 +18,7 @@ const ContactForm = ({ setConfirmation }) => {
   async function sendEmail(e) {
     e.preventDefault();
     // dispatch({ type: "FormValidation" })
-    console.log(state);
+
 
     try {
       let response = await fetch("https://freelance-emailer.herokuapp.com", {
@@ -31,7 +31,7 @@ const ContactForm = ({ setConfirmation }) => {
         body: JSON.stringify(state),
       });
       let resData = await response.json();
-      console.log(resData)
+
       dispatch({ type: "Reset" })
       setConfirmation(true)
       // setData(resData);
