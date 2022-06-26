@@ -12,7 +12,7 @@ const PricingCard = ({
   bodyText3,
 }) => {
   return (
-    <article className={style.Card}>
+    <article className={style.Card} data-aos="zoom-in-right" >
       <div className={style.Card_img}>
         <Image src={img} alt="Pricing Card" layout="fill" />
       </div>
@@ -64,7 +64,7 @@ const PricingCard = ({
         </div>
         <Secondary_ButtonCTA Label={"Contact"} Href="/Contact" />
       </section>
-    </article>
+    </article >
   );
 };
 

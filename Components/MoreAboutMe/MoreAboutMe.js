@@ -6,7 +6,7 @@ const MoreAboutMe = () => {
   return (
     <main className={style.Container}>
       <div className={style.Container_Inner}>
-        <section className={style.Container_TopSection}>
+        <section className={style.Container_TopSection} data-aos="fade-right">
           <article className={style.TopSection_article}>
             <h3 className={style.TopSection_article_heading}>
               Developers need more then code to make great applications
@@ -29,7 +29,7 @@ const MoreAboutMe = () => {
             height={"350px"}
           />
         </section>
-        <section className={style.Container_TopSection}>
+        <section className={style.Container_TopSection} data-aos="fade-right">
           <Image
             alt="Logo Inistials"
             src="/images/moreAboutMe2.png"

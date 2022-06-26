@@ -1,20 +1,21 @@
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import style from "./LatestWork.module.css";
 import Image from "next/image";
+import Plantpot from "../Animations/Plantpot/Plantpot";
 
 
 const LatestWork = ({ latestWorkImg }) => {
 
 
   return (
-    <section className={style.Container}>
+    <section className={style.Container} >
       <h2 className={style.Label}>Latest Work</h2>
       <div className={style.ImageContainer}>
 
         {latestWorkImg && latestWorkImg.map((file, index) => {
           console.log(file.url)
           return (
-            <div key={index} className={style.ImageBox}>
+            <div key={index} className={style.ImageBox} data-aos="fade-right">
               <Image
                 style={{ position: "absolute" }}
                 alt="Slides"
@@ -32,7 +33,9 @@ const LatestWork = ({ latestWorkImg }) => {
           alt="Initials"
           src="/images/backgroundFlower2.png"
         />
+
       </span>
+      <Plantpot />
     </section>
   );
 };
