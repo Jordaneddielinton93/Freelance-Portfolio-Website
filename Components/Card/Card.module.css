@@ -9,7 +9,8 @@
   align-items: flex-end;
   margin: 10px 5px;
   cursor: pointer;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Card:hover {
   border: white solid thin;
@@ -92,6 +93,10 @@
     height: 50px;
     top: -30px;
   }
+  .Card_Discript_full {
+    font-size: 0.7rem;
+    height: 230px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .Card {
@@ -103,6 +108,10 @@
     width: 30px;
     height: 30px;
     top: -20px;
+  }
+  .Card_Discript_full {
+    font-size: 0.6rem;
+    height: 210px;
   }
 }
 @media only screen and (max-width: 440px) {
@@ -116,6 +125,16 @@
     height: 30px;
     top: -20px;
   }
+  .Card_Discript_full {
+    font-size: 0.6rem;
+    height: 180px;
+  }
+  .Card_infoBox_content {
+    font-size: 0.6rem;
+  }
+  .Card_ReadTime {
+    padding: 1px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .Card {
@@ -128,6 +147,13 @@
     height: 30px;
     top: -20px;
   }
+  .Card_Discript_full {
+    font-size: 0.5rem;
+    height: 170px;
+  }
+  .Card_infoBox_content {
+    font-size: 0.5rem;
+  }
 }
 @media only screen and (max-width: 360px) {
   .Card {
@@ -139,5 +165,15 @@
     width: 30px;
     height: 30px;
     top: -20px;
+  }
+  .Card_Discript {
+    font-size: 0.5rem;
+  }
+  .Card_infoBox_content {
+    font-size: 0.5rem;
+  }
+  .Card_Discript_full {
+    font-size: 0.5rem;
+    height: 170px;
   }
 }
