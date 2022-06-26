@@ -26,9 +26,9 @@ const NavBar = () => {
           <Link href="/Articles">
             <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Article</li>
           </Link>
-          <Link href="/Community">
+          {/* <Link href="/Community">
             <li style={{ color: pathname === "/Community" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Community</li>
-          </Link>
+          </Link> */}
           <Link href="/Projects">
             <li style={{ color: pathname === "/Projects" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Projects</li>
           </Link>
