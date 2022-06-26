@@ -14,7 +14,7 @@ const HowICanHelp = () => {
           </h2>
         </section>
         <section className={style.BottomContainer}>
-          <PricingCard
+          <PricingCard data-aos="fade-right"
             heading={"Freelance Design"}
             subheading={"web dev"}
             img={"/images/PricingCard1.png"}

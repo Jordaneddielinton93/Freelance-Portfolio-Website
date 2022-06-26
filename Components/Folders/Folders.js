@@ -7,10 +7,10 @@ const Folders = () => {
   return (
     <section className={style.Container}>
       <div className={style.InnerContainer}>
-        <div className={style.folder_And_Button}>
+        <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/About">
             <main className={style.Folder}>
-              <div className={style.Folder_img}>
+              <div className={style.Folder_img} >
                 <Image
                   alt="Slides"
                   src="/images/Freelance_Image1.png"
@@ -26,10 +26,10 @@ const Folders = () => {
           </Link>
           <Secondary_ButtonCTA Label={"About Me"} Href="/About" />
         </div>
-        <div className={style.folder_And_Button}>
+        <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Projects">
             <main className={style.Folder}>
-              <div className={style.Folder_img}>
+              <div className={style.Folder_img} >
                 <Image
                   alt="Slides"
                   src="/images/Project_Image1.png"
@@ -45,7 +45,7 @@ const Folders = () => {
           </Link>
           <Secondary_ButtonCTA Href="/Projects" Label={"My Skills"} />
         </div>
-        <div className={style.folder_And_Button}>
+        <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Articles">
             <main className={style.Folder}>
               <div className={style.Folder_img}>
@@ -64,7 +64,7 @@ const Folders = () => {
           </Link>
           <Secondary_ButtonCTA Label={"Articles"} Href="/Articles" />
         </div>
-        <div className={style.folder_And_Button}>
+        <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Tutor">
             <main className={style.Folder}>
               <div className={style.Folder_img}>

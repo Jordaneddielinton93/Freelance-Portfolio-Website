@@ -26,6 +26,8 @@ gitHub
 - `npm install contentful`
 - `@sendgrid/mail`
 - `--save @contentful/rich-text-types @contentful/rich-text-re act-renderer`
+- `npm i aos --save`
+- `google analytics`
 
 ## }
 
