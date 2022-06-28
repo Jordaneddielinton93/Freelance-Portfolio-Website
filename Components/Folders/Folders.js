@@ -3,13 +3,14 @@ import Link from "next/link";
 
 import style from "./Folders.module.css";
 import Image from "next/image";
-const Folders = () => {
+const Folders = ({ scrollY }) => {
+
   return (
     <section className={style.Container}>
       <div className={style.InnerContainer}>
         <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/About">
-            <main className={style.Folder}>
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }}>
               <div className={style.Folder_img} >
                 <Image
                   alt="Slides"
@@ -28,7 +29,7 @@ const Folders = () => {
         </div>
         <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Projects">
-            <main className={style.Folder}>
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }}>
               <div className={style.Folder_img} >
                 <Image
                   alt="Slides"
@@ -47,7 +48,7 @@ const Folders = () => {
         </div>
         <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Articles">
-            <main className={style.Folder}>
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }}>
               <div className={style.Folder_img}>
                 <Image
                   alt="Slides"
@@ -66,7 +67,7 @@ const Folders = () => {
         </div>
         <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Tutor">
-            <main className={style.Folder}>
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }} >
               <div className={style.Folder_img}>
                 <Image
                   alt="Slides"

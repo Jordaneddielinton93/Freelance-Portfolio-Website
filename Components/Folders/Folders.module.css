@@ -34,10 +34,6 @@
   opacity: 1;
   border: #23c7a7 solid 3px;
 }
-.InnerContainer:hover div main {
-  opacity: 0.2;
-  transition: 0s;
-}
 
 .folder_And_Button {
   height: 100%;

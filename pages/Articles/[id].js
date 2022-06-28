@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { CodeBlocks } from "../../Components/02-Constants/ArticleDynamic";
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_KEY
@@ -65,54 +66,12 @@ const ArticleTemplate = ({ article }) => {
       <div style={{ backgroundImage: `url(${photo})` }}
         className={styles.Background}></div>
       <main className={styles.Main}>
+
         {documentToReactComponents(article.content)}
-
-        {article.slug == "react-state-management" && <CopyBlock
-          text={`
-import React from 'react';
-export let pageContext = React.createContext() 
-
-function App() {
-
-let [state,setState]=useState({
-  name:"jordan",
-  age:28
-})
-
-return (
-  <pageContext.Provider value={{ state , setState }}>
-      <div className="App">
-          <NavBar/>
-          <RandomComponent/>
-      </div>
-  <pageContext.Provider>
-)`}
-          language={"jsx"}
-          showLineNumbers={true}
-          wrapLines={true}
-          theme={dracula}
-        />}
+        {article.slug == "react-state-management" && CodeBlocks.creatingContext}
         {documentToReactComponents(article.content2)}
-        {article.slug == "react-state-management" && <CopyBlock
-          text={`
-import React from 'react';
-import { PageContext } from "../App";
+        {article.slug == "react-state-management" && CodeBlocks.usingContent}
 
-export default function Navbar() {
-
-  let { state, setState } = useContext(pageContext)
-  console.log(state)
-
-  return (
-    <nav>
-
-    </nav>
-  )`}
-          language={"jsx"}
-          showLineNumbers={true}
-          wrapLines={true}
-          theme={dracula}
-        />}
       </main>
 
     </div>
