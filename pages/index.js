@@ -13,7 +13,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 import { createClient } from "contentful";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -38,6 +38,30 @@ export default function Home({ latestWorkImg }) {
     Aos.init({ duration: 3000 });
   }, [])
 
+
+  const [scrollY, setScrollY] = useState(0);
+  console.log(scrollY)
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY / 2);
+    };
+
+    // just trigger this so that the initial state 
+    // is updated as soon as the component is mounted
+    // related: https://stackoverflow.com/a/63408216
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -46,13 +70,13 @@ export default function Home({ latestWorkImg }) {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <NavBar />
-      <HomeHero leftImg={"/images/leaves.png"} paragraph={`I’m a Front-end web developer who turned years of coding into a
+      <HomeHero scrollY={scrollY} leftImg={"/images/leaves.png"} paragraph={`I’m a Front-end web developer who turned years of coding into a
             full-time career, and recently into my freelancing journey. I help
             teach hundreds of student how to find their own version of success
             through my articles, newsletter, products, and freelance community.`} />
 
       <LogoList />
-      <Folders />
+      <Folders scrollY={scrollY} />
 
       <LatestWork latestWorkImg={latestWorkImg} />
 

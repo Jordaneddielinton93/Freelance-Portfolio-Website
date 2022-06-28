@@ -1,7 +1,7 @@
 import style from "./ContactHero.module.css";
 import Image from "next/image";
 import ContactForm from "../ContactForm/ContactForm";
-const ContactHero = ({ setConfirmation }) => {
+const ContactHero = ({ setConfirmation, setLoading }) => {
   return (
     <main className={style.Container}>
 
@@ -15,7 +15,7 @@ const ContactHero = ({ setConfirmation }) => {
         <p className={style.Container_ContactContainer_SubHeading}>
           care and patience your product needs to grow
         </p>
-        <ContactForm setConfirmation={setConfirmation} />
+        <ContactForm setLoading={setLoading} setConfirmation={setConfirmation} />
       </section>
 
       <span style={{ position: "absolute", left: 0, bottom: "-4px" }}>

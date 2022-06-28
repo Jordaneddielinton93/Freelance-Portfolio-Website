@@ -12,16 +12,16 @@ import { FormReducer, inistialState } from "../01-Hooks/FormReducer";
 
 export let FormContext = createContext(inistialState);
 
-const ContactForm = ({ setConfirmation }) => {
+const ContactForm = ({ setConfirmation, setLoading }) => {
   let [state, dispatch] = useReducer(FormReducer, inistialState);
 
   async function sendEmail(e) {
     e.preventDefault();
-    // dispatch({ type: "FormValidation" })
-
-
+    dispatch({ type: "FormValidation" })
+    setLoading(true)
+    setConfirmation(true)
     try {
-      let response = await fetch("https://freelance-emailer.herokuapp.com", {
+      let response = await fetch("/api/sendgrid", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         headers: {
@@ -31,11 +31,14 @@ const ContactForm = ({ setConfirmation }) => {
         body: JSON.stringify(state),
       });
       let resData = await response.json();
-
+      console.log(resData, "im the data", response)
       dispatch({ type: "Reset" })
-      setConfirmation(true)
+      setLoading(false)
+
       // setData(resData);
-    } catch (error) { }
+    } catch (error) {
+      console.log("error:", error)
+    }
   }
 
   return (
