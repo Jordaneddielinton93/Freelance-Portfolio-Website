@@ -1,6 +1,6 @@
 import sendgrid from "@sendgrid/mail";
 console.log(sendgrid.setApiKey)
-sendgrid.setApiKey(process.env.SENDG);
+sendgrid.setApiKey("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");
 
 async function sendEmail(req, res) {
 
@@ -59,6 +59,7 @@ async function sendEmail(req, res) {
 
   try {
     const response = await sendgrid.send(message);
+
     res.status(response[0].statusCode).json({ success: true, message: "Successfully Sent Email", status: response[0].statusCode })
   } catch (error) {
     res.json({ success: false, message: "Successfully Sent", status: 404 })
