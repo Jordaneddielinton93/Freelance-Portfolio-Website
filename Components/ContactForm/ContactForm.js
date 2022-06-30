@@ -21,7 +21,7 @@ const ContactForm = ({ setConfirmation, setLoading }) => {
     setLoading(true)
     setConfirmation(true)
     try {
-      let response = await fetch("/api/sendgrid", {
+      let response = await fetch("https://freelance-emailer.herokuapp.com/", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         headers: {
