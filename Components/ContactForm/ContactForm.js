@@ -3,7 +3,6 @@ import Image from "next/image";
 import Input_and_name from "../Inputs/Input_and_name";
 import Select_and_options from "../Inputs/Select_and_options";
 import React, {
-
   useReducer,
   createContext,
 } from "react";
@@ -21,7 +20,7 @@ const ContactForm = ({ setConfirmation, setLoading }) => {
     setLoading(true)
     setConfirmation(true)
     try {
-      let response = await fetch("https://freelance-emailer.herokuapp.com/", {
+      let response = await fetch("/api/sendgrid", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         headers: {
@@ -40,7 +39,7 @@ const ContactForm = ({ setConfirmation, setLoading }) => {
       console.log("error:", error)
     }
   }
-
+  // "https://freelance-emailer.herokuapp.com"
   return (
     <FormContext.Provider value={{ state, dispatch }}>
       <form className={style.Container} onSubmit={(e) => sendEmail(e)}>
