@@ -1,14 +1,14 @@
 import sendgrid from "@sendgrid/mail";
-console.log(sendgrid.setApiKey)
-sendgrid.setApiKey("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");
+
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
 
   let { Timeline, ProjectType, Budget, Fullname, DevOrDeisgnAndDev, Email, } = req.body;
 
   const message = {
-    to: ["jordaneddielinton93@hotmail.co.uk", Email],
-    from: "jordaneddielinton93@outlook.com",
+    to: ["JordanEddieLinton93@hotmail.co.uk", Email],
+    from: "JordanEddieLinton93@hotmail.co.uk",
     subject: "Jordans Freelance Service",
     text: `Project:${ProjectType}, Project-Type:${DevOrDeisgnAndDev},Budget:${Budget},Fullname:${Fullname},Time line:${Timeline}`,
     html: `<div
@@ -60,7 +60,7 @@ async function sendEmail(req, res) {
   try {
     const response = await sendgrid.send(message);
 
-    res.status(response[0].statusCode).json({ success: true, message: "Successfully Sent Email", status: response[0].statusCode })
+    res.status(response[0].statusCode).json({ success: true, message: `Successfully Sent Email To ${Email}`, status: response[0].statusCode })
   } catch (error) {
     res.json({ success: false, message: "Successfully Sent", status: 404 })
 
