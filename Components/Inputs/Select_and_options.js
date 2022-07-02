@@ -18,7 +18,7 @@ const Select_and_options = () => {
           dispatch({ type: "ProjectType", payload: e.target.value })
         }
         className={style.Select_and_options}
-        name="Project"
+        name="ProjectType"
         id="Project"
       >
         <option value="">Select Your Service Type</option>

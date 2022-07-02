@@ -19,7 +19,7 @@ const TimeLine = () => {
         value={state.Timeline}
         onChange={(e) => dispatch({ type: "Timeline", payload: e.target.value })}
         className={style.Select_and_options}
-        name="Project"
+        name="TimeLine"
         id="Project"
       >
         <option value="">Select Time of Completion</option>

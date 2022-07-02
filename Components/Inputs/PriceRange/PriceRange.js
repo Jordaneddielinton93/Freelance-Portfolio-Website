@@ -18,7 +18,7 @@ const PriceRange = () => {
         value={state.Budget}
         onChange={(e) => dispatch({ type: "Budget", payload: e.target.value })}
         className={style.Select_and_options}
-        name="Project"
+        name="Budget"
         id="Project"
       >
         <option value="">Select Your Budget</option>
