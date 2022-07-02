@@ -6,7 +6,7 @@ import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 import { WelcomeSvg } from "../SVG/Welcome";
 
 const HomeHero = ({ scrollY, heading, LeftSectionIMG, RightSectionIMG, show3D, paragraph }) => {
-  console.log(scrollY)
+
   return (
     <main className={style.Container}>
       <span style={{ position: "absolute", right: 0, top: 0, zIndex: 2 }}>
