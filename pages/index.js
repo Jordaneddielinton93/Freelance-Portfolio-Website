@@ -40,7 +40,6 @@ export default function Home({ latestWorkImg }) {
 
 
   const [scrollY, setScrollY] = useState(0);
-  console.log(scrollY)
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY / 2);
