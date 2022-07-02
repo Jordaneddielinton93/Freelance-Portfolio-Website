@@ -20,6 +20,7 @@ const Input_and_name = ({ label, input, type, placeholder, value }) => {
         type={type}
         id="InputForm"
         className={style.Input}
+        name={label.replace(/ /g, "")}
       />
     </div>
   );

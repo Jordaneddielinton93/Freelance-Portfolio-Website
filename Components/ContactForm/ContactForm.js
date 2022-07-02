@@ -5,44 +5,40 @@ import Select_and_options from "../Inputs/Select_and_options";
 import React, {
   useReducer,
   createContext,
+  useRef,
 } from "react";
-
+import emailjs from "emailjs-com"
 import { FormReducer, inistialState } from "../01-Hooks/FormReducer";
 
 export let FormContext = createContext(inistialState);
 
 const ContactForm = ({ setConfirmation, setLoading }) => {
   let [state, dispatch] = useReducer(FormReducer, inistialState);
+  const form = useRef();
 
   async function sendEmail(e) {
     e.preventDefault();
     dispatch({ type: "FormValidation" })
     setLoading(true)
     setConfirmation(true)
-    try {
-      let response = await fetch("/api/sendgrid", {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: JSON.stringify(state),
-      });
-      let resData = await response.json();
-      console.log(resData, "im the data", response)
-      dispatch({ type: "Reset" })
-      setLoading(false)
 
-      // setData(resData);
-    } catch (error) {
-      console.log("error:", error)
-    }
+
+    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_FORMID)
+      .then((result) => {
+        console.log(result.text);
+        dispatch({ type: "Reset" })
+        setLoading(false)
+      }, (error) => {
+        console.log(error.text);
+        dispatch({ type: "Reset" })
+        setLoading(false)
+      });
+
   }
   // "https://freelance-emailer.herokuapp.com"
   return (
     <FormContext.Provider value={{ state, dispatch }}>
-      <form className={style.Container} onSubmit={(e) => sendEmail(e)}>
+      <form ref={form} className={style.Container} onSubmit={sendEmail}>
         <header className={style.Container_Header}>
           <span>
             <Image
