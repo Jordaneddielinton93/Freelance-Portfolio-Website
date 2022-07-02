@@ -1,6 +1,13 @@
 import "../styles/globals.css";
 import Script from "next/script"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, [])
   return (
     <>
       <Script

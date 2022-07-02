@@ -11,12 +11,12 @@
 }
 .Main {
   max-width: 1000px;
-  width: 100%;
+  width: 95%;
   min-height: 100vh;
   margin: auto;
   margin-top: 200px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 12px;
 }
@@ -31,4 +31,15 @@
 .Main ul,
 .Main li {
   margin: 15px 0px;
+  line-height: 30px;
+}
+.Main h1 {
+  text-align: center;
+  margin: 50px 0px;
+}
+.Main h3 {
+  content: "";
+  background-color: rgba(35, 199, 167, 0.5);
+  height: 100%;
+  /* width: 100%; */
 }

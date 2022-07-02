@@ -7,6 +7,7 @@ import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
 import LatestWork from "../Components/LatestWork/LatestWork"
 import FoundersNote from "../Components/FoundersNote/FoundersNote"
 import { createClient } from "contentful";
+import { Project1, Project2 } from "../Components/02-Constants/ArticleDynamic";
 
 
 export async function getStaticProps() {
@@ -43,6 +44,7 @@ const Projects = ({ latestWorkImg }) => {
         paragraph={`Check out my recent projects and learn how to create your own along the way with my free articles when you sign up, after years of experience designing and coding websites i show the best route to creating unique, user friendly and accessaible web application's `} />
       <LogoList />
       <ProjectAndText slateText={"Project 1"} img1="/images/phone1/bikeman1.png"
+        projects={Project1}
         img2="/images/phone1/bikeman2.png"
         img3="/images/phone1/bikeman3.png"
         img4="/images/phone1/bikeman4.png"
@@ -50,7 +52,9 @@ const Projects = ({ latestWorkImg }) => {
 
       <SkillsAndProject />
 
-      <ProjectAndText slateText={"Project 2"} direction={"row-reverse"} img1="/images/phone2/groPro1.png"
+      <ProjectAndText slateText={"Project 2"}
+        projects={Project2}
+        direction={"row-reverse"} img1="/images/phone2/groPro1.png"
         img2="/images/phone2/groPro2.png"
         img3="/images/phone2/groPro3.png"
         img4="/images/phone2/groPro4.png"
