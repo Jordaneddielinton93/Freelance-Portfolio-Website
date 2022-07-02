@@ -9,8 +9,7 @@ import LogoList from "../Components/LogoList/LogoList";
 import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
 import NavBar from "../Components/NavBar/NavBar";
 import styles from "../styles/Home.module.css";
-import Aos from "aos"
-import "aos/dist/aos.css"
+
 
 import { createClient } from "contentful";
 import { useEffect, useState } from "react";
@@ -34,9 +33,7 @@ export async function getStaticProps() {
 
 export default function Home({ latestWorkImg }) {
 
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, [])
+
 
 
   const [scrollY, setScrollY] = useState(0);

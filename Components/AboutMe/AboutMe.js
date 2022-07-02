@@ -1,7 +1,7 @@
 import style from "./AboutMe.module.css"
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA"
 const AboutMe = () => {
-  return (<main className={style.Container}>
+  return (<main className={style.Container} data-aos="fade-right">
     <article className={style.Container_Main}>
       <section className={style.Container_Main_LeftSection}>
         <h1 className={style.LeftSection_Title}>About Me</h1>
