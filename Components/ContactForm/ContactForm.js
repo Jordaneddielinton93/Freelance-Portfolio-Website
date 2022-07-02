@@ -22,7 +22,6 @@ const ContactForm = ({ setConfirmation, setLoading }) => {
     setLoading(true)
     setConfirmation(true)
 
-
     emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_FORMID)
       .then((result) => {
         console.log(result.text);
@@ -35,7 +34,7 @@ const ContactForm = ({ setConfirmation, setLoading }) => {
       });
 
   }
-  // "https://freelance-emailer.herokuapp.com"
+
   return (
     <FormContext.Provider value={{ state, dispatch }}>
       <form ref={form} className={style.Container} onSubmit={sendEmail}>
