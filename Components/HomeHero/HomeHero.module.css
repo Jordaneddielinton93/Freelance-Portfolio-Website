@@ -16,9 +16,10 @@
   border-radius: 8px;
   /* border: solid 3px brown; */
   border: solid 3px #ffd700;
-
+  z-index: 1;
   position: relative;
 }
+
 .Container_Main_LeftSection_Buttons {
   display: flex;
   justify-content: space-between;
@@ -32,33 +33,59 @@
 .Container_Main_LeftSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding-left: 40px;
   position: absolute;
   left: 0;
   height: 100%;
   width: 55%;
-  background-color: #f7f9fa;
-  z-index: 1;
+  background-color: white;
   background-image: url("/images/HeroLeftLeaves.jpg");
   background-size: 150%;
-
   background-position: center;
+  z-index: 1;
   border-radius: 8px;
   clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
-}
-.Container_Main_LeftSection_text {
   color: white;
-  width: 60%;
+}
+.Container_Main_Title {
+  width: 80%;
+  font-size: 3.5rem;
+  animation: alternate-color 3s ease-out alternate infinite none running;
+}
+.Container_Main_Title:nth-child(2) {
+  animation-delay: 2s;
+}
+.Container_Main_Title:nth-child(3) {
+  animation-delay: 3s;
+}
+.Container_Main_Title span {
+  color: #36b25c;
+}
+@keyframes alternate-color {
+  from {
+    color: white;
+  }
+  to {
+    color: rgb(0, 40, 0);
+  }
 }
 
+.Container_Main_Title2 {
+  /* color: #f7f9fa; */
+  width: 80%;
+}
+
+.Container_Main_LeftSection_text {
+  font-weight: 600;
+  width: 60%;
+}
 .Container_Main_RightSection {
   position: absolute;
   right: 0;
   height: 100%;
   width: 60%;
-  background-color: #ffd700;
   background-image: url("/images/jordan.jpg");
   background-color: #f7f9fa;
   /* filter: blur(0.5px); */
@@ -75,6 +102,13 @@
   .Container_Main_LeftSection {
     width: 100%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Container_Main_Title {
+    width: 80%;
+    font-size: 2.5rem;
   }
 }
 
