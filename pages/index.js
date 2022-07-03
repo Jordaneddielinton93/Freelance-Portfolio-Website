@@ -66,10 +66,10 @@ export default function Home({ latestWorkImg }) {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <NavBar />
-      <HomeHero scrollY={scrollY} leftImg={"/images/leaves.png"} paragraph={`I’m a Front-end web developer who turned years of coding into a
-            full-time career, and recently into my freelancing journey. I help
-            teach hundreds of student how to find their own version of success
-            through my articles, newsletter, products, and freelance community.`} />
+      <HomeHero scrollY={scrollY} leftImg={"/images/leaves.png"} paragraph={`
+      I upgrade, fix and in all respects make your websites better.
+      I make it my mission to be the most dependable & honest expertise developer you know
+      `} />
 
       <LogoList />
       <Folders scrollY={scrollY} />
