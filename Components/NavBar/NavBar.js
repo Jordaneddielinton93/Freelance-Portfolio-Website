@@ -21,19 +21,19 @@ const NavBar = () => {
         </Link>
         <ul className={style.NavContainer_Fixed_List}>
           <Link href="/Tutor">
-            <li style={{ color: pathname === "/Tutor" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Tutor</li>
+            <li style={{ color: pathname === "/Tutor" ? "#23c7a7" : "#5f6773",borderBottom: pathname === "/Tutor" ?"#21C7A6 solid thin":"none" }} className={style.NavContainer_Fixed_List_Item}>TUTOR</li>
           </Link>
           <Link href="/Articles">
-            <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Article</li>
+            <li style={{ color: pathname === "/Articles" ? "#23c7a7" : "#5f6773",borderBottom: pathname === "/Articles" ?"#21C7A6 solid thin":"none"  }} className={style.NavContainer_Fixed_List_Item}>ARTICLES</li>
           </Link>
           {/* <Link href="/Community">
             <li style={{ color: pathname === "/Community" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Community</li>
           </Link> */}
           <Link href="/Projects">
-            <li style={{ color: pathname === "/Projects" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>Projects</li>
+            <li style={{ color: pathname === "/Projects" ? "#23c7a7" : "#5f6773",borderBottom: pathname === "/Projects" ?"#21C7A6 solid thin":"none" }} className={style.NavContainer_Fixed_List_Item}>PROJECTS</li>
           </Link>
           <Link href="/About">
-            <li style={{ color: pathname === "/About" ? "#23c7a7" : "#5f6773" }} className={style.NavContainer_Fixed_List_Item}>About</li>
+            <li style={{ color: pathname === "/About" ? "#23c7a7" : "#5f6773",borderBottom: pathname === "/About" ?"#21C7A6 solid thin":"none" }} className={style.NavContainer_Fixed_List_Item}>ABOUT</li>
           </Link>
         </ul>
 

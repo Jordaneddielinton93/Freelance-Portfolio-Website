@@ -3,6 +3,7 @@ import Script from "next/script"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
+import NavBar from "../Components/NavBar/NavBar";
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps }) {
 
   gtag('config', 'G-H96PSEM1C4');
   `}</Script>
-
+<NavBar/>
       <Component {...pageProps} />;
     </>
   )
