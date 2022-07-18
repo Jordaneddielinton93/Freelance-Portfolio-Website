@@ -17,8 +17,6 @@ const Contact = () => {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       {confirmation && <ContactConfirmation loading={loading} setConfirmation={setConfirmation} />}
-
-      <NavBar />
       <ContactHero setLoading={setLoading} setConfirmation={setConfirmation} />
       <Folders />
       <FoundersNote />
