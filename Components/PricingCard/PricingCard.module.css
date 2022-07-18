@@ -1,9 +1,10 @@
 .Card {
   width: 310px;
   height: 558px;
-  background-color: #fff;
+  background-color: #1f2c35;
   border: solid 3px #ffd700;
   border-radius: 8px;
+  color: white;
 }
 .Card_content {
   padding: 15px;

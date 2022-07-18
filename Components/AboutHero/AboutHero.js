@@ -15,6 +15,7 @@ const AboutHero = () => {
         "PostgreSQL",
         "Jest/Testing",
         "Strapi CMS",
+        "Contentful CMS",
         "Figma"
       ]} />
 
