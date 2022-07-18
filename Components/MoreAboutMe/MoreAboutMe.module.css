@@ -15,6 +15,10 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  background-color: #F6F9FA;
+  padding: 20px;
+  border: solid thin black;
+  border-radius: 10px;
 }
 .TopSection_article {
   display: flex;

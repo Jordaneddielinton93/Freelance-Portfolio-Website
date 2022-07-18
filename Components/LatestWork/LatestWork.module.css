@@ -18,11 +18,11 @@
   padding-right: 50px;
   width: 95%;
   background-color: #2f363c;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: #21C7A6 0px 2px 8px 0px;
   background-image: url("/images/dotted-bg.jpeg");
   background-size: cover;
   align-self: flex-start;
-  border: #ffd700 solid thin;
+  border: #23c7a7 solid 3px;
   /* border-left: none; */
   border-radius: 16px;
   border-bottom-right-radius: 16px;

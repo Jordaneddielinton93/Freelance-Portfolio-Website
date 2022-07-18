@@ -1,6 +1,6 @@
 import style from "./MoreAboutMe.module.css";
 import Image from "next/image";
-import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
+import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 
 const MoreAboutMe = () => {
   return (
@@ -20,7 +20,7 @@ const MoreAboutMe = () => {
               code to keep your sites up to scratch , all with a healthy dose of
               cofee.
             </p>
-            <Secondary_ButtonCTA Label={"Projects"} Href="/Projects" />
+            <Primary_ButtonCTA Label={"Projects"} Href="/Projects" />
           </article>
           <Image
             alt="Logo Inistials"
@@ -48,7 +48,7 @@ const MoreAboutMe = () => {
               helping hundereds find their first feet in tech , community is
               everything.
             </p>
-            <Secondary_ButtonCTA Label={"Community"} Href="/Community" />
+            <Primary_ButtonCTA Label={"Community"} Href="/Community" />
           </article>
         </section>
       </div>
