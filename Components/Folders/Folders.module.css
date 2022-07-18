@@ -1,6 +1,6 @@
 .Container {
   background-color: #f7f9fa;
-  border: solid 1px #ffd700;
+  border-top: solid 1px #ffd700;
 
   border-left: none;
   border-right: none;
@@ -53,7 +53,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: 1s;
   cursor: pointer;
-  border: solid 3px #ffd700;
+  border: #23c7a7 solid 3px;
 }
 .Folder:hover div:nth-child(1) {
   transform: translateY(-55px);
@@ -70,7 +70,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url("/images/whiteMarbleTexture.jpg");
+  background-image: url("/images/dotted-bg.jpeg");
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 56%, 100% 100%, 0% 100%);
   padding-left: 20px;
   padding-top: 40px;
@@ -89,11 +90,9 @@
   background-image: url("/images/Project.png");
 }
 .folder_And_Button main {
-  background-image: url("/images/WhiteWavesTexture.jpg");
+  background-image: url("/images/whiteWavesTexture.jpg");
+
   /* border-bottom: #eff0f2 10px solid; */
-}
-.folder_And_Button main div:nth-child(2) {
-  border-bottom: #eff0f2 20px solid;
 }
 
 @media only screen and (max-width: 1200px) {

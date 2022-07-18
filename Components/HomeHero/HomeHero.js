@@ -5,7 +5,7 @@ import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
 
 
-const HomeHero = ({ scrollY, heading, LeftSectionIMG, RightSectionIMG, show3D, paragraph, paragraph2 }) => {
+const HomeHero = ({ heading, LeftSectionIMG, RightSectionIMG, show3D, paragraph, paragraph2 }) => {
 
   return (
     <main className={style.Container}>
@@ -19,17 +19,17 @@ const HomeHero = ({ scrollY, heading, LeftSectionIMG, RightSectionIMG, show3D, p
       </span>
 
       <div className={style.Container_Main}>
-        <section style={{ backgroundImage: LeftSectionIMG, backgroundPosition: "center " + `-${(scrollY + 0.5 + 360)}px` }} className={style.Container_Main_LeftSection}>
+        <section style={{ backgroundImage: LeftSectionIMG }} className={style.Container_Main_LeftSection}>
 
           <div className={style.Title_Container} >
-            <h1 className={style.Container_Main_Title}>Creativity<span>.</span> </h1>
-            <h1 className={style.Container_Main_Title}>Collaboration<span>.</span></h1>
-            <h1 className={style.Container_Main_Title}>Commitment</h1>
+            <h1 className={style.Container_Main_Title}>Designer<span>.</span> </h1>
+            <h1 className={style.Container_Main_Title}>Developer<span>.</span></h1>
+            <h1 className={style.Container_Main_Title}>Freelancer<span>.</span></h1>
           </div>
 
 
 
-          <h2 style={{ display: show3D && "none" }} className={style.Container_Main_Title2}>Success Starts with the Right App Developer</h2>
+          <h2 style={{ display: show3D && "none" }} className={style.Container_Main_Title2}>Wolverhampton{`'`}s Heart Winning Web Developer</h2>
 
           <p style={{ color: show3D && "black" }} className={style.Container_Main_LeftSection_text}>
             {paragraph}
@@ -37,7 +37,7 @@ const HomeHero = ({ scrollY, heading, LeftSectionIMG, RightSectionIMG, show3D, p
 
 
           <div className={style.Container_Main_LeftSection_Buttons}>
-            <Secondary_ButtonCTA Label="Contact" Href="/Contact" />
+            <Primary_ButtonCTA Label="Contact" Href="/Contact" />
             <Secondary_ButtonCTA Label="About Me" Href="/About" />
           </div>
         </section>

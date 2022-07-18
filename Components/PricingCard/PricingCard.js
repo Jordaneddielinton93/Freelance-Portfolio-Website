@@ -31,7 +31,7 @@ const PricingCard = ({
               fontSize: "20px",
               minWidth: "25px",
               height: "36px",
-              color: "#525C66",
+              color: "white",
               paddingRight: "5px",
             }}
           />
@@ -44,7 +44,7 @@ const PricingCard = ({
               fontSize: "20px",
               minWidth: "25px",
               height: "36px",
-              color: "#525C66",
+              color: "white",
               paddingRight: "5px",
             }}
           />
@@ -56,7 +56,7 @@ const PricingCard = ({
               fontSize: "20px",
               minWidth: "25px",
               height: "36px",
-              color: "#525C66",
+              color: "white",
               paddingRight: "5px",
             }}
           />
