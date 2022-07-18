@@ -2,7 +2,9 @@
   width: 310px;
   height: 558px;
   background-color: #1f2c35;
-  border: solid 3px #ffd700;
+  border: solid 3px #23c7a7;
+  background-image: url("/images/dotted-bg.jpeg");
+  background-size: cover;
   border-radius: 8px;
   color: white;
 }
