@@ -71,7 +71,7 @@ const Folders = ({ scrollY }) => {
               <div className={style.Folder_img}>
                 <Image
                   alt="Slides"
-                  src="/images/Project_Image1.png"
+                  src="/images/TutoringImage.png"
                   height="178px"
                   width="250px"
                 />

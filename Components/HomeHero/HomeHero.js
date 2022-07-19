@@ -3,6 +3,7 @@ import style from "./HomeHero.module.css";
 import Image from "next/image";
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
 import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
+import TestimonialImageComp from "../ImageComponent/TestimonialImageComp";
 
 
 const HomeHero = ({ heading, LeftSectionIMG, RightSectionIMG, show3D, paragraph, paragraph2 }) => {
@@ -43,6 +44,8 @@ const HomeHero = ({ heading, LeftSectionIMG, RightSectionIMG, show3D, paragraph,
         </section>
         <section style={{ backgroundImage: RightSectionIMG }} className={style.Container_Main_RightSection}>
           {show3D && <CanvasLayout />}
+          {!show3D && <TestimonialImageComp src={"/images/testimonials/Testimonial1.png"} top="10%" right="10%" />}
+          {!show3D && <TestimonialImageComp src={"/images/testimonials/Testimonial2.png"} top="55%" right="50%" />}
         </section>
       </div>
     </main>

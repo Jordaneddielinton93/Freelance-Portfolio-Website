@@ -15,7 +15,7 @@
   margin: 0px 20px;
   border-radius: 8px;
   /* border: solid 3px brown; */
-  border: solid 3px #ffd700;
+  /* border: solid 3px #ffd700; */
   z-index: 1;
   position: relative;
 }
@@ -48,6 +48,7 @@
   border-radius: 8px;
   clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
   color: white;
+  border: solid 3px #23c7a7;
 }
 .Container_Main_Title {
   width: 80%;
@@ -86,13 +87,14 @@
   right: 0;
   height: 100%;
   width: 60%;
-  background-image: url("/images/jordan.jpg");
+  background-image: url("/images/jordan1.jpg");
   background-color: #f7f9fa;
   /* filter: blur(0.5px); */
-  background-size: cover;
+  background-size: 101%;
   background-position: top;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  border: solid 4px #ffd700;
 }
 
 @media only screen and (max-width: 1000px) {
