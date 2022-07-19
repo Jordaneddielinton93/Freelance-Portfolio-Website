@@ -6,7 +6,7 @@
 
   height: 100%;
   /* // flex: 1; */
-  background: #f7f9fa;
+  background: #1f2c35;
   display: flex;
 }
 @media only screen and (max-width: 1020px) {

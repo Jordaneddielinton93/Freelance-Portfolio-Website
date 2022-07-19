@@ -1,6 +1,6 @@
 .Card {
   width: 250px;
-  height: 270px;
+  height: 545px;
   background-color: #1d1932;
   border-radius: 10px;
   border: #ffd700 3px solid;
@@ -19,14 +19,14 @@
 .Card_infoBox {
   position: relative;
   background-color: rgba(35, 199, 167, 0.5);
-  height: 45%;
+  height: 25%;
   width: 95%;
   margin-bottom: 5px;
   border-radius: 5px;
   color: aliceblue;
   font-size: 0.8rem;
   padding-left: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;

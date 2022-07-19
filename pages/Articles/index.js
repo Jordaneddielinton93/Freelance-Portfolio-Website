@@ -1,5 +1,3 @@
-
-import NavBar from "../../Components/NavBar/NavBar";
 import NavBarLeft from "../../Components/NavBarLeft/NavBarLeft"
 import NavBarRight from "../../Components/NavBarRight/NavBarRight"
 import ArticleMainSection from "../../Components/ArticleMainSection/ArticleMainSection"

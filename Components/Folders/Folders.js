@@ -52,9 +52,9 @@ const Folders = ({ scrollY }) => {
               <div className={style.Folder_img}>
                 <Image
                   alt="Slides"
-                  src="/images/Community_Image1.png"
-                  height="144px"
-                  width="271px"
+                  src="/images/FolderImgs/Articles.png"
+                  height="182px"
+                  width="254px"
                 />
               </div>
               <div className={style.Folder_Flap}>
