@@ -53,7 +53,7 @@
 .Container_Main_Title {
   width: 80%;
   font-size: 3.5rem;
-  animation: alternate-color 3s ease-out alternate infinite none running;
+  animation: alternate-color 6s ease-out alternate infinite none running;
 }
 .Container_Main_Title:nth-child(2) {
   animation-delay: 2s;
@@ -65,11 +65,15 @@
   color: #36b25c;
 }
 @keyframes alternate-color {
-  from {
+  0%{
     color: white;
   }
-  to {
-    color: #1f2c35;
+  33%{
+    color: #FFD601;
+  }
+  66%{
+    color: #23c7a7;
+
   }
 }
 

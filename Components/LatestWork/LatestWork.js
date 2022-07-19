@@ -28,15 +28,16 @@ const LatestWork = ({ latestWorkImg }) => {
           })}
         </div>
         <Primary_ButtonCTA Label="Projects" Href={"/Projects"} />
-        {/* <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
+        <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
         <Image
           height="159px"
           width="131px"
           alt="Initials"
-          src="/images/backgroundFlower2.png"
+          src="/images/leaves.png"
         />
+        
 
-      </span> */}
+      </span>
       </div>
     </section>
   );
