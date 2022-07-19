@@ -1,8 +1,8 @@
 import Image from "next/image";
-
-const TestimonialImageComp = ({ src, top, right, Aos }) => {
+import styled from "./Testimonial.module.css"
+const TestimonialImageComp = ({ src, top, right,delay}) => {
   return (
-    <span style={{ position: "absolute", right: right, top: top, zIndex: 1, cursor: "pointer" }} data-aos={"fade-right"} >
+    <span className={styled.Container} style={{  right: right, top: top, zIndex: 1, animationDelay:delay }} data-aos={"fade-right"} >
       <Image
         height="94px"
         width="223px"
