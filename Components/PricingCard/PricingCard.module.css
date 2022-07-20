@@ -36,10 +36,30 @@
 }
 .Card_content_head_text {
   font-weight: 600;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  color: #23c7a7;
+  text-align: center;
+  position: relative;
+}
+.Card_content_head_text_label{
+  position: absolute;
+  left: -20px;
+  bottom: -10;
+  width: 115%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #23c7a7;
+
 }
 .Card_content_head_underline {
   border: solid 2px #23c7a7;
   width: 25%;
+
 }
 
 .Card_content_body {
@@ -73,6 +93,12 @@
     width: 100%;
     font-size: 1.3rem;
   }
+  .Card_content_head_text {
+    height: 40px;
+  }
+  .Card_content_head_text_label{
+    width: 116%;
+  }
 }
 @media only screen and (max-width: 870px) {
   .Card {
@@ -87,6 +113,9 @@
   .Card_content_head {
     height: 70px;
     width: 100%;
+  }
+  .Card_content_head_text_label{
+    width: 120%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -115,5 +144,9 @@
     padding: 0px 2px 0px 10px;
     height: 255px;
     justify-content: space-evenly;
+  }
+  .Card_content_head_text_label{
+    width: 100%;
+    left: 0px;
   }
 }

@@ -1,4 +1,5 @@
 .NavContainer {
+  position: relative;
   height: 90px;
   width: 100%;
 }
@@ -39,6 +40,64 @@
   cursor: pointer;
   border-bottom: solid thin;
 }
+
+.NavContainer_Burger{
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.NavContainer_Burger div{
+  height: 8px;
+  width: 100%;
+  z-index: 10;
+  border-radius: 6px;
+}
+.NavContainer_Burger div:nth-child(1){
+  position: absolute;
+  top: 0;
+  background-color: #21C7A6;
+}
+.NavContainer_Burger div:nth-child(2){
+  position: absolute;
+  top: 15px;
+  background-color: #FFD601;
+}
+.NavContainer_Burger div:nth-child(3){
+  position: absolute;
+  top: 32px;
+  background-color: #21C7A6;
+}
+
+.NavContainer_BurgerMenu{
+  padding-top: 92px;
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.NavContainer_BurgerMenu_List{
+  width: 98%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1D2A35;
+  margin: auto;
+  overflow: hidden;
+  font-size: 2rem;
+}
+
+
+
+
 @media only screen and (max-width: 1100px) {
   /* .Container_Main_RightSection {
     display: none;
@@ -77,5 +136,14 @@
 @media only screen and (max-width: 700px) {
   .NavContainer_Fixed_List {
     display: none;
+  }
+  .NavContainer_Primary{
+    display: none;
+  }
+  .NavContainer_Burger{
+    display: block;
+  }
+  .NavContainer_BurgerMenu{
+    display: flex;
   }
 }
