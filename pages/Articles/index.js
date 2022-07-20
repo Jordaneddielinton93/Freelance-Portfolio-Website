@@ -44,11 +44,12 @@ const Articles = ({ Articles }) => {
       <link rel="icon" href="/images/greyback.png" />
     </Head>
     <ArticleContainer>
-      <NavBarLeft />
+      {/* <NavBarLeft /> */}
       <ArticleMainSection CardInfo={[]}>
-        <SearchBar setInputValue={setInputValue} />
         <ArtLogo Label={"Your Favourite Articles"} />
-        <FilterBar />
+        <SearchBar setInputValue={setInputValue} />
+
+        {/* <FilterBar /> */}
         <ArticleCards inputValue={inputValue} Articles={Articles} />
       </ArticleMainSection>
       <NavBarRight />

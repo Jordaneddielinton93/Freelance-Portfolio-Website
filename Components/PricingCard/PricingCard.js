@@ -19,7 +19,9 @@ const PricingCard = ({
       <section className={style.Card_content}>
         <div className={style.Card_content_head}>
           <h5 className={style.Card_content_head_subtext}>{subheading}</h5>
-          <h1 className={style.Card_content_head_text}>{heading}</h1>
+          <div className={style.Card_content_head_text}>
+            <h1 className={style.Card_content_head_text_label}>{heading}</h1> 
+          </div>
           <span
             className={style.Card_content_head_underline}
             style={{ borderColor: underlineColor }}
