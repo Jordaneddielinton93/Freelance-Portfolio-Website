@@ -16,7 +16,7 @@
   position: relative;
 }
 .Container_section_Left {
-  border: solid 3px #23c7a7;
+  border: solid 4px #23c7a7;
 
   display: flex;
   flex-direction: column;
@@ -98,9 +98,19 @@
   background-image: url("/images/jordanImg2.jpg");
   background-size: cover;
   background-position: center;
-  border: solid 3px #ffd700;
+  border: solid 4px #ffd700;
   background-color: #2f363c;
   background-position: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Container_section_Right {
+    display: none;
+  }
+  .Container_section_Left{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 @media only screen and (max-width: 770px) {

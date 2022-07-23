@@ -11,7 +11,7 @@ const LatestWork = ({ latestWorkImg }) => {
 
   return (
     <main className={style.Container} >
-      <div className={style.Container_section} data-aos="fade-right">
+      <div className={style.Container_section}>
         <section className={style.Container_section_Left}>
           <div className={style.Label}>
             <h2>Latest</h2>
@@ -21,7 +21,7 @@ const LatestWork = ({ latestWorkImg }) => {
 
             {latestWorkImg && latestWorkImg.map((file, index) => {
 
-              return (
+              return index<5&& (
                 <div key={index} className={style.ImageBox} >
                   <Image
                     style={{ position: "absolute", borderRadius: "10px" }}
@@ -37,6 +37,7 @@ const LatestWork = ({ latestWorkImg }) => {
         </section>
         <section className={style.Container_section_Right}>
           <TestimonialImageComp src={"/images/testimonials/Testimonial3.png"} top="2%" right="2%" />
+          <TestimonialImageComp src={"/images/testimonials/Testimonial4.png"} top="25%" right="50%" delay={"1s"} />
         </section>
       </div>
     </main>
