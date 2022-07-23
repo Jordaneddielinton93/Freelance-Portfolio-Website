@@ -9,10 +9,11 @@ const LatestWork = ({ latestWorkImg }) => {
 
 
   return (
-    <section className={style.Container} >
-      <div className={style.Container_Inner} data-aos="fade-right">
+    <main className={style.Container} >
+      <div className={style.Container_section} data-aos="fade-right">
+      <section className={style.Container_section_Left}>
         <h2 className={style.Label}>Latest Work</h2>
-        <div className={style.ImageContainer} data-aos="fade-left">
+        <div className={style.ImageContainer} >
 
           {latestWorkImg && latestWorkImg.map((file, index) => {
 
@@ -28,7 +29,22 @@ const LatestWork = ({ latestWorkImg }) => {
           })}
         </div>
         <Primary_ButtonCTA Label="Projects" Href={"/Projects"} />
-        <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
+        
+      </section>
+      <section className={style.Container_section_Right}>
+
+      </section>
+      </div>
+    </main>
+  );
+};
+
+export default LatestWork;
+
+
+
+
+{/* <span style={{ position: "absolute", right: 0, top: 0, zIndex: 1 }}>
         <Image
           height="159px"
           width="131px"
@@ -37,10 +53,4 @@ const LatestWork = ({ latestWorkImg }) => {
         />
         
 
-      </span>
-      </div>
-    </section>
-  );
-};
-
-export default LatestWork;
+      </span> */}
