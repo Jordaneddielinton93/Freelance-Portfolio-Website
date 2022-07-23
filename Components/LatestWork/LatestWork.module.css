@@ -1,31 +1,40 @@
 .Container {
-  height: 360px;
+  height: 450px;
   width: 100%;
   /* padding-left: 50px; */
   position: relative;
+  padding: 0px 15px;
   border-left: none;
   background-color: #f7f9fa;
   justify-self: flex-start;
 }
-.Container_Inner {
+.Container_section {
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 1300px;
   height: 100%;
+  display: flex;
+  position: relative;
+}
+.Container_section_Left {
+  border: solid 4px #23c7a7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 100%;
   padding-left: 50px;
-  padding-right: 50px;
-  width: 95%;
+  width: 60%;
   background-color: #2f363c;
-  box-shadow: #21C7A6 0px 2px 8px 0px;
+  /* box-shadow: #21C7A6 0px 2px 8px 0px; */
   background-image: url("/images/dotted-bg.jpeg");
   background-size: cover;
   align-self: flex-start;
-  border: #23c7a7 solid 3px;
+  clip-path: polygon(0% 0%, 100% 0%, 84% 100%, 0% 100%);
   /* border-left: none; */
   border-radius: 16px;
   border-bottom-right-radius: 16px;
+  z-index: 2;
 }
 .Label {
   font-size: 25px;
@@ -58,15 +67,16 @@
   transition: 0.5s;
 }
 .ImageContainer:hover div {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .ImageBox {
   transition: 300ms;
   position: relative;
   min-width: 110px;
   height: 110px;
-  border: solid 2px #ffd700;
-  border-radius: 100%;
+  border: solid 3px #23c7a7;
+
+  border-radius: 12px;
   margin-right: 20px;
   /* opacity: 0; */
   cursor: pointer;
@@ -77,6 +87,30 @@
   position: relative;
   border: solid 2px #23c7a7;
   opacity: 1;
+}
+
+.Container_section_Right {
+  position: absolute;
+  width: 60%;
+  height: inherit;
+  /* background-color: #ffd700; */
+  right: 0;
+  background-image: url("/images/jordanImg2.jpg");
+  background-size: cover;
+  background-position: center;
+  border: solid 4px #ffd700;
+  background-color: #2f363c;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Container_section_Right {
+    display: none;
+  }
+  .Container_section_Left{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 @media only screen and (max-width: 770px) {
