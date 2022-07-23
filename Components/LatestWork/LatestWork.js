@@ -3,6 +3,7 @@ import style from "./LatestWork.module.css";
 import Image from "next/image";
 
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
+import TestimonialImageComp from "../ImageComponent/TestimonialImageComp";
 
 
 const LatestWork = ({ latestWorkImg }) => {
@@ -11,29 +12,32 @@ const LatestWork = ({ latestWorkImg }) => {
   return (
     <main className={style.Container} >
       <div className={style.Container_section} data-aos="fade-right">
-      <section className={style.Container_section_Left}>
-        <h2 className={style.Label}>Latest Work</h2>
-        <div className={style.ImageContainer} >
+        <section className={style.Container_section_Left}>
+          <div className={style.Label}>
+            <h2>Latest</h2>
+            <p>A collection of my work, dedicated to you</p>
+          </div>
+          <div className={style.ImageContainer} >
 
-          {latestWorkImg && latestWorkImg.map((file, index) => {
+            {latestWorkImg && latestWorkImg.map((file, index) => {
 
-            return (
-              <div key={index} className={style.ImageBox} >
-                <Image
-                  style={{ position: "absolute", borderRadius: "100%" }}
-                  alt="Slides"
-                  layout="fill"
-                  src={"https:" + file.url}
-                />
-              </div>)
-          })}
-        </div>
-        <Primary_ButtonCTA Label="Projects" Href={"/Projects"} />
-        
-      </section>
-      <section className={style.Container_section_Right}>
+              return (
+                <div key={index} className={style.ImageBox} >
+                  <Image
+                    style={{ position: "absolute", borderRadius: "10px" }}
+                    alt="Slides"
+                    layout="fill"
+                    src={"https:" + file.url}
+                  />
+                </div>)
+            })}
+          </div>
+          <Primary_ButtonCTA Label="Projects" Href={"/Projects"} />
 
-      </section>
+        </section>
+        <section className={style.Container_section_Right}>
+          <TestimonialImageComp src={"/images/testimonials/Testimonial3.png"} top="2%" right="2%" />
+        </section>
       </div>
     </main>
   );

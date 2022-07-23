@@ -1,13 +1,14 @@
 .Container {
-  height: 360px;
+  height: 450px;
   width: 100%;
   /* padding-left: 50px; */
   position: relative;
+  padding: 0px 15px;
   border-left: none;
   background-color: #f7f9fa;
   justify-self: flex-start;
 }
-.Container_section{
+.Container_section {
   margin: auto;
   max-width: 1300px;
   height: 100%;
@@ -15,12 +16,12 @@
   position: relative;
 }
 .Container_section_Left {
-  border: solid 3px #ffd700;
-  
+  border: solid 3px #23c7a7;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: space-evenly;
+
   height: 100%;
   padding-left: 50px;
   width: 60%;
@@ -66,15 +67,16 @@
   transition: 0.5s;
 }
 .ImageContainer:hover div {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .ImageBox {
   transition: 300ms;
   position: relative;
   min-width: 110px;
   height: 110px;
-  border: solid 2px #ffd700;
-  border-radius: 100%;
+  border: solid 3px #23c7a7;
+
+  border-radius: 12px;
   margin-right: 20px;
   /* opacity: 0; */
   cursor: pointer;
@@ -87,17 +89,17 @@
   opacity: 1;
 }
 
-
-.Container_section_Right{
+.Container_section_Right {
   position: absolute;
-width: 60%;
-height: inherit;
-background-color: #ffd700;
-right: 0;
-background-image: url("https://lh3.googleusercontent.com/-Wj8GCuEJDCLyjErrCTB_2lgxy4FOU286S97RFlBj7nUGTltZ7upFt5LJyuZ3PlGPVBPBYsvpVTnLLQZ-GWAfibwcMcol6HfCZp35EVo6vy26HLcw35b5QKG2yUy45rvejrvISLpKpxYSGzkcYyfRYQq1usFob6R573-SOlh92lNat9TYv2288ZJFT44cm2TObBaejjYipMF_uKSz01fTzYZ0hQLXgKxbQD7RUcS1I_LXQHw4X_RpuSEl2FioHTTCKmqR9ta47de7_xPUQIOYu2GQG0kIUdESKLGq0wnHU5AJ5gTFSmHbb18s1PHUwU519GeXCCBYmockrs48P1mj3azFaxg-ziXL3TrFP1bizZGaA_aMnsXSlrccnvTebi0asyGu2pM4gm6ZC2IWuVjdcjrbrYRCeGeGRBLDqBYZyZkNmnY8V7V4vynrAab5fvY7vvDcVFq4rDfy7k0p6Lr7McnDoWC8tiNVm0O8vab9UhqqfGRjETitxSaFSk_JhINxfYBTp0BJqyfODG2PZDQw5LmcLWK-SoOHBkE_TqMnfv45fD87l1fIcFovr-8ia3Fv-N3TD5KDhj4InA2PPTRFbbRGeuTxPyj6v2By5zjbfb_R046TEoH45OH-En4AlUjsEhVFZB1YVO-LqSqDMAR77Bv20ECujvH3_YdNbUyq7oL85iXUn18qiELsIbZhTjoPzJ3BFN8OObfPoufVxN3pNdaQPfKcd2RjV68O3hIa_N2kcl-nFNHZa-PjIVt99U=w1996-h1496-no?authuser=0");
+  width: 60%;
+  height: inherit;
+  /* background-color: #ffd700; */
+  right: 0;
+  background-image: url("/images/jordanImg2.jpg");
   background-size: cover;
-  border: solid 3px #23c7a7;
-
+  background-position: center;
+  border: solid 3px #ffd700;
+  background-color: #2f363c;
   background-position: center;
 }
 
