@@ -4,15 +4,26 @@ import { TutorSubjects } from "../Components/02-Constants/TutorSubjects";
 import ArticleContainer from "../Components/ArticleContainer/ArticleContainer";
 import ArticleMainSection from "../Components/ArticleMainSection/ArticleMainSection";
 import ArtLogo from "../Components/ArtLogo/ArtLogo";
+import Benefits from "../Components/Benefits/Benefits";
 import CardTopic from "../Components/CardTopic/CardTopic";
 
 import NavBar from "../Components/NavBar/NavBar";
 import NavBarLeft from "../Components/NavBarLeft/NavBarLeft";
 import NavBarRight from "../Components/NavBarRight/NavBarRight";
+import SearchBar from "../Components/SearchBar/SearchBar";
 
 const Tutor = () => {
-  let [CardObj, setCardObj] = useState("")
-  let [inputValue, setInputValue] = useState("")
+  let [subjects, setSubjects] = useState(TutorSubjects)
+  function filterSubjects(value) {
+    if (value.length == 0) {
+      setSubjects(TutorSubjects)
+    } else {
+      let filteredSubjects = TutorSubjects.filter((obj) => {
+        return obj.subjectTitle.toLowerCase().includes(value.toLowerCase())
+      })
+      setSubjects(filteredSubjects)
+    }
+  }
   return (
     <div>
       <Head>
@@ -24,21 +35,22 @@ const Tutor = () => {
         <NavBarLeft />
         <ArticleMainSection CardInfo={[]}>
           <ArtLogo Label={"Need One to One Tutoring?."} />
-
-          <h2 style={{color:"white"}}>Topic of Choice:</h2>
-
-          {TutorSubjects.map(({icon,subjectTitle,subjectDiscription,price,author,authorImg}) => {
-            return (
-            <CardTopic key={subjectDiscription}
-              icon={icon}
-              subjectTitle={subjectTitle}
-              subjectDiscription={subjectDiscription}
-              price={price}
-              author={author}
-              authorImg={authorImg}
-            />
-            )
-          })}
+          <h2 style={{ color: "white" }}>Topic of Choice:</h2>
+          <SearchBar setInputValue={filterSubjects} />
+          {
+            subjects.map(({ icon, subjectTitle, subjectDiscription, price, author, authorImg }) => {
+              return (
+                <CardTopic key={subjectTitle}
+                  icon={icon}
+                  subjectTitle={subjectTitle}
+                  subjectDiscription={subjectDiscription}
+                  price={price}
+                  author={author}
+                  authorImg={authorImg}
+                />
+              )
+            })}
+          {/* <Benefits /> */}
 
         </ArticleMainSection>
         <NavBarRight />
