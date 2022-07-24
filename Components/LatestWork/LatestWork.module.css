@@ -94,12 +94,10 @@
   width: 60%;
   height: inherit;
   /* background-color: #ffd700; */
-  right: 0;
+  right: 0px;
   background-image: url("/images/jordanImg2.jpg");
   background-size: cover;
-  background-position: center;
   border: solid 4px #ffd700;
-  background-color: #2f363c;
   background-position: center;
 }
 

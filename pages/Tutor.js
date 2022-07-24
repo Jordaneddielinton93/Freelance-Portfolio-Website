@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import { TutorSubjects } from "../Components/02-Constants/TutorSubjects";
 import ArticleContainer from "../Components/ArticleContainer/ArticleContainer";
 import ArticleMainSection from "../Components/ArticleMainSection/ArticleMainSection";
 import ArtLogo from "../Components/ArtLogo/ArtLogo";
@@ -22,11 +23,21 @@ const Tutor = () => {
       <ArticleContainer>
         <NavBarLeft />
         <ArticleMainSection CardInfo={[]}>
-          <ArtLogo Label={"Need One to One Tutoring"} />
+          <ArtLogo Label={"Need One to One Tutoring?."} />
 
-          <h2>Topic of Choice:</h2>
-          {[1, 2, 3, 4].map((item) => {
-            return <CardTopic key={item} />
+          <h2 style={{color:"white"}}>Topic of Choice:</h2>
+
+          {TutorSubjects.map(({icon,subjectTitle,subjectDiscription,price,author,authorImg}) => {
+            return (
+            <CardTopic key={subjectDiscription}
+              icon={icon}
+              subjectTitle={subjectTitle}
+              subjectDiscription={subjectDiscription}
+              price={price}
+              author={author}
+              authorImg={authorImg}
+            />
+            )
           })}
 
         </ArticleMainSection>
