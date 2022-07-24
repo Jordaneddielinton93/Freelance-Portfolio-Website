@@ -6,12 +6,44 @@
   cursor: pointer;
   margin: 5px 0px;
   background-color: #f4f5f7;
+  justify-content: space-evenly;
 }
 .Container:hover {
   background-color: white;
   border: #23c7a7 solid 3px;
 }
 .TopicHeader {
-  color: red;
-  text-decoration: line-through;
+  margin-right:30px ;
+  width: 300px;
+  background-color: #1F2C35;
+  text-align: center;
+  color: white;
+
+}
+.TopicPrice{
+  margin-right:30px ;
+  padding: 5px;
+  border: solid thin grey;
+  border-radius: 5px;
+  background-color: #1F2C35;
+  color: white;
+}
+.AuthorContainer{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.AuthorContainer_Title{
+  width: 120px;
+  background-color: #1F2C35;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-right: 5px;
+}
+.AuthorContainer_img{
+  width: 50px;
+  height: 50px;
 }
