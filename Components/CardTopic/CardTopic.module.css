@@ -9,41 +9,70 @@
   justify-content: space-evenly;
 }
 .Container:hover {
-  background-color: white;
+  background-color: #23c7a7;
   border: #23c7a7 solid 3px;
 }
 .TopicHeader {
-  margin-right:30px ;
-  width: 300px;
-  background-color: #1F2C35;
+  width: 270px;
+  background-color: #1f2c35;
   text-align: center;
   color: white;
-
 }
-.TopicPrice{
-  margin-right:30px ;
+.TopicPrice {
   padding: 5px;
   border: solid thin grey;
   border-radius: 5px;
-  background-color: #1F2C35;
+  background-color: #1f2c35;
   color: white;
+  font-size: 0.7rem;
 }
-.AuthorContainer{
+.AuthorContainer {
   display: flex;
   width: 200px;
   justify-content: center;
   align-items: center;
 }
 
-.AuthorContainer_Title{
+.AuthorContainer_Title {
   width: 120px;
-  background-color: #1F2C35;
+  background-color: #1f2c35;
   color: white;
   padding: 5px;
   text-align: center;
   margin-right: 5px;
 }
-.AuthorContainer_img{
+.AuthorContainer_img {
   width: 50px;
   height: 50px;
+}
+@media only screen and (max-width: 750px) {
+  .TopicHeader {
+    font-size: 1rem;
+    width: 200px;
+  }
+  .AuthorContainer_Title {
+    font-size: 0.7rem;
+
+    width: 100px;
+  }
+  .AuthorContainer {
+    display: flex;
+    width: 150px;
+  }
+  .TopicPrice {
+    font-size: 0.5rem;
+    /* width: 200px; */
+  }
+}
+@media only screen and (max-width: 500px) {
+  .AuthorContainer_Title {
+    display: none;
+  }
+  .AuthorContainer {
+    display: none;
+  }
+  .TopicHeader {
+    width: 155px;
+    font-size: 0.8rem;
+  }
 }

@@ -7,7 +7,7 @@ const SearchBar = ({ setInputValue, value }) => {
     <div className={styles.SearchBar}>
 
       <input value={value} onChange={(e) => setInputValue(e.target.value)}
-        type="search" name="Search" placeholder="Find your article now" className={styles.inputbox} />
+        type="search" name="Search" placeholder="Find your Topic now" className={styles.inputbox} />
 
       <section className={styles.SearchBar_Section}>
         <div className={styles.SearchBar_Section_counter}>
