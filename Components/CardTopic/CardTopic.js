@@ -5,10 +5,10 @@ import { AiFillQuestionCircle } from "react-icons/ai";
 
 
 
-const CardTopic = ({ icon, subjectTitle, subjectDiscription, price, author, authorImg }) => {
+const CardTopic = ({ icon, subjectTitle, subjectDiscription, price, author, authorImg,handleClick }) => {
   return (
-    <Link href="/Contact">
-      <section className={styles.Container} >
+  
+      <section className={styles.Container} onClick={handleClick}>
         {icon}
         <h1 className={styles.TopicHeader}>{subjectTitle}</h1>
         <h5 className={styles.TopicPrice}>£{price} per week</h5>
@@ -22,7 +22,7 @@ const CardTopic = ({ icon, subjectTitle, subjectDiscription, price, author, auth
         </div>
 
       </section>
-    </Link>
+
   );
 }
 
