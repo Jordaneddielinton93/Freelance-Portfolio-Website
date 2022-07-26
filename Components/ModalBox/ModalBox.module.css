@@ -1,0 +1,20 @@
+.Container{
+    width: 90%;
+    height: 80%;
+   background-color: #1F2C35;
+   margin-top: 20px;
+   border-radius: 8px;
+   border: outset thick #21C7A6;
+   animation: modalOpen 0.3s linear ;
+   color: white;
+}
+@keyframes modalOpen {
+    from{
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        width: 90%;
+        height: 80%;
+    }
+}
