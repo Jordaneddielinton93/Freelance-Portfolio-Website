@@ -7,7 +7,10 @@
    border: outset thick #21C7A6;
    animation: modalOpen 0.3s linear ;
    color: white;
+   overflow-y: scroll;
+   position: relative;
 }
+
 @keyframes modalOpen {
     from{
         width: 0%;
@@ -17,4 +20,19 @@
         width: 90%;
         height: 80%;
     }
+}
+
+.Container_Block{
+    /* border-top: dotted white thick; */
+    border-bottom: dotted white thick;
+    padding: 15px;
+}
+.Container_Cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #21C7A6;
+    font-size: 3rem;
+    cursor: pointer;
+
 }

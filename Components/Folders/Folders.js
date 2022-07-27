@@ -9,23 +9,23 @@ const Folders = ({ scrollY }) => {
     <section className={style.Container}>
       <div className={style.InnerContainer}>
         <div className={style.folder_And_Button} data-aos="fade-up">
-          <Link href="/About">
-            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }}>
-              <div className={style.Folder_img} >
+        <Link href="/Tutor">
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }} >
+              <div className={style.Folder_img}>
                 <Image
                   alt="Slides"
-                  src="/images/Freelance_Image1.png"
-                  height="120px"
-                  width="116px"
+                  src="/images/TutoringImage.png"
+                  height="178px"
+                  width="250px"
                 />
               </div>
               <div className={style.Folder_Flap}>
-                <h6>What I Do</h6>
-                <h4>Freelance</h4>
+                <h6>helping</h6>
+                <h4>Tutoring</h4>
               </div>
             </main>
           </Link>
-          <Secondary_ButtonCTA Label={"About Me"} Href="/About" />
+          <Secondary_ButtonCTA Label={"One to One"} Href="/Tutor" />
         </div>
         <div className={style.folder_And_Button} data-aos="fade-up">
           <Link href="/Projects">
@@ -66,23 +66,24 @@ const Folders = ({ scrollY }) => {
           <Secondary_ButtonCTA Label={"Articles"} Href="/Articles" />
         </div>
         <div className={style.folder_And_Button} data-aos="fade-up">
-          <Link href="/Tutor">
-            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }} >
-              <div className={style.Folder_img}>
+        <Link href="/About">
+            <main className={style.Folder} style={{ backgroundPositionY: `-${scrollY}px` }}>
+              <div className={style.Folder_img} >
                 <Image
                   alt="Slides"
-                  src="/images/TutoringImage.png"
-                  height="178px"
-                  width="250px"
+                  src="/images/Freelance_Image1.png"
+                  height="120px"
+                  width="116px"
                 />
               </div>
               <div className={style.Folder_Flap}>
-                <h6>helping</h6>
-                <h4>Tutoring</h4>
+                <h6>What I Do</h6>
+                <h4>Freelance</h4>
               </div>
             </main>
           </Link>
-          <Secondary_ButtonCTA Label={"One to One"} Href="/Tutor" />
+          <Secondary_ButtonCTA Label={"About Me"} Href="/About" />
+          
         </div>
       </div>
     </section>

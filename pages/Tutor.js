@@ -38,8 +38,8 @@ const Tutor = () => {
       </Head>
       <ArticleContainer>
 
-      <ModalOverlay isOpen={toggleModal} closeModal={()=>setToggleModal(false)}>
-        <ModalBox modalData={toggleModal}/>
+      <ModalOverlay isOpen={toggleModal} >
+        <ModalBox modalData={toggleModal} closeModal={()=>setToggleModal(false)}/>
       </ModalOverlay>
 
         <NavBarLeft />

@@ -1,7 +1,7 @@
 import styles from "./ModalOverlay.module.css"
-const ModalOverlay = ({children,isOpen,closeModal}) => {
+const ModalOverlay = ({children,isOpen}) => {
     return ( 
-        <div onClick={closeModal}
+        <div 
         className={styles.Container} style={{display:isOpen?"flex":"none"}}>
             {children}
         </div>
