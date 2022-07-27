@@ -11,7 +11,7 @@ const CardTopic = ({ icon, subjectTitle, subjectDiscription, price, author, auth
       <section className={styles.Container} onClick={handleClick}>
         {icon}
         <h1 className={styles.TopicHeader}>{subjectTitle}</h1>
-        <h5 className={styles.TopicPrice}>£{price} per week</h5>
+        <h5 className={styles.TopicPrice}>£{price} per 2 Hours</h5>
 
         {/* <AiFillQuestionCircle /> */}
 

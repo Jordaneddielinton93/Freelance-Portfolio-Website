@@ -5,9 +5,9 @@ const subjectsList = ({subjects,handleClick}) => {
     return ( 
         <>
         {
-            subjects.map(({ icon, subjectTitle, subjectDiscription, price, author, authorImg }) => {
+            subjects.map(({ icon, subjectTitle, subjectDiscription, price, author, authorImg,subjectList ,Projects}) => {
               return (
-                <CardTopic key={subjectTitle} handleClick={()=>handleClick({subjectTitle,subjectDiscription,price,icon,author,authorImg})}
+                <CardTopic key={subjectTitle} handleClick={()=>handleClick({subjectTitle,subjectDiscription,price,icon,author,authorImg,subjectList,Projects})}
                   icon={icon}
                   subjectTitle={subjectTitle}
                   subjectDiscription={subjectDiscription}
