@@ -1,0 +1,16 @@
+.Container{
+    margin: 5px;
+    padding: 5px;
+    border-top: solid thin #21C7A5;
+    border-bottom: solid thin #21C7A5;
+    cursor: pointer;
+    /* text-align: center; */
+}
+.Container:hover{
+    background-color: #21C7A5;
+}
+.Container_titleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
