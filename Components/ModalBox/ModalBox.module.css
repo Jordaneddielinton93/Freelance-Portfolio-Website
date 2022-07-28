@@ -1,5 +1,5 @@
 .Container{
-    width: 90%;
+    width: 98%;
     height: 80%;
    background-color: #1F2C35;
    margin-top: 20px;
@@ -28,10 +28,10 @@
     padding: 15px;
 }
 .Container_Cross{
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
-    color: #21C7A6;
+    color: red;
     font-size: 3rem;
     cursor: pointer;
 
