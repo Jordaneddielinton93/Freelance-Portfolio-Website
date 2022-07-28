@@ -8,7 +8,7 @@ export const TutorSubjects = [
     {
         icon: <TbBrandNextjs style={{ fontSize: "3rem", color: "black" }} />,
         subjectTitle: "Next.js",
-        subjectDiscription: "Sessions on react will cover all the fundementals , including things like components,props,state and a multitude of other advanced hooks such as custom hooks, useCallback,memo,useMemo which will lead you to building your own portfolio or any project you like",
+        subjectDiscription: "Sessions on Next will cover all the fundementals , including things like page routing , creating layouts ,adding styling with Modules, and the deeper topics like getStatic and props SSR",
         subjectList:[
             "Introduction & Setup",
             "Pages , Routing and Linking pages",
