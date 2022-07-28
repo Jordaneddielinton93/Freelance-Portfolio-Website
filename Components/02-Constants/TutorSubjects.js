@@ -79,10 +79,9 @@ export const TutorSubjects = [
     {
         icon: <SiCsswizardry style={{ fontSize: "3rem", color: "#007ACC" }} />,
         subjectTitle: "CSS & BEM",
-        subjectDiscription: "Sessions on react will cover all the fundementals , including things like components,props,state and a multitude of other advanced hooks such as custom hooks, useCallback,memo,useMemo which will lead you to building your own portfolio or any project you like",
+        subjectDiscription: "Sessions on CSS will cover the fundamentals such as classes and id's how to add it to you html and javascript with inline styling , conditional rendering , variable and a lot lot more!",
         subjectList:[],
         Projects:"Resturant Food Menu",
-
         price: 20.00,
         author: "Jordan Linton",
         authorImg: "/images/greyback.png"
@@ -90,7 +89,7 @@ export const TutorSubjects = [
     {
         icon: <SiSass style={{ fontSize: "3rem", color: "#C66394" }} />,
         subjectTitle: "SASS & BEM",
-        subjectDiscription: "Sessions on react will cover all the fundementals , including things like components,props,state and a multitude of other advanced hooks such as custom hooks, useCallback,memo,useMemo which will lead you to building your own portfolio or any project you like",
+        subjectDiscription: "Sessions on SASS will cover things like Mixins, Sass Ampersand for nesting and vairables also the huge benefits of using BEM methodology",
         subjectList:[],
         Projects:"Resturant Food Menu",
 
@@ -101,7 +100,7 @@ export const TutorSubjects = [
     {
         icon: <SiCss3 style={{ fontSize: "3rem", color: "#007ACC" }} />,
         subjectTitle: "CSS Modules & BEM",
-        subjectDiscription: "Sessions on react will cover all the fundementals , including things like components,props,state and a multitude of other advanced hooks such as custom hooks, useCallback,memo,useMemo which will lead you to building your own portfolio or any project you like",
+        subjectDiscription: "Sessions on CSS Modules will cover all the fundementals , including things like implimenting CSS modules with react, benefits and best practices also touching on BEM and why to use it",
         subjectList:[],
         Projects:"Resturant Food Menu",
 
@@ -112,7 +111,7 @@ export const TutorSubjects = [
     {
         icon: <SiStyledcomponents style={{ fontSize: "3rem", color: "#F7CB4F" }} />,
         subjectTitle: "Styled Components",
-        subjectDiscription: "Sessions on react will cover all the fundementals , including things like components,props,state and a multitude of other advanced hooks such as custom hooks, useCallback,memo,useMemo which will lead you to building your own portfolio or any project you like",
+        subjectDiscription: "Sessions on Styled components will cover react based styled components with things like dynamic rendering to best practices , props and a vairiaty of other things.",
         subjectList:[],
         Projects:"Resturant Food Menu",
 

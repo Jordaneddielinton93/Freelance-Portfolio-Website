@@ -16,7 +16,8 @@ const ModalBox = ({modalData,closeModal}) => {
     return ( 
         <div className={styles.Container}> 
             {/* <span className={styles.Container_Cross}> */}
-                <BsFillXCircleFill className={styles.Container_Cross} onClick={closeModal}/>
+                <BsFillXCircleFill 
+                 className={styles.Container_Cross} onClick={closeModal}/>
             {/* </span> */}
             <DropDown
              length={"4 hours"}
