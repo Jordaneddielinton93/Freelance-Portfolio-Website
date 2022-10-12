@@ -1,31 +1,35 @@
 import Head from "next/head";
 import NavBar from "../Components/NavBar/NavBar";
-import HomeHero from "../Components/HomeHero/HomeHero"
+import HomeHero from "../Components/HomeHero/HomeHero";
 import LogoList from "../Components/LogoList/LogoList";
 import ProjectAndText from "../Components/ProjectAndText/ProjectAndText";
 import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
-import LatestWork from "../Components/LatestWork/LatestWork"
-import FoundersNote from "../Components/FoundersNote/FoundersNote"
+import LatestWork from "../Components/LatestWork/LatestWork";
+import FoundersNote from "../Components/FoundersNote/FoundersNote";
 import { createClient } from "contentful";
-import { Project1, Project2 } from "../Components/02-Constants/ArticleDynamic";
-
+import {
+  Project1,
+  Project2,
+  Project3,
+} from "../Components/02-Constants/ArticleDynamic";
 
 export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY
-  })
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
 
   const res = await client.getEntries({
-    content_type: "latestWorkCarousel"
-  })
+    content_type: "latestWorkCarousel",
+  });
   return {
     props: {
-      latestWorkImg: res.items[0].fields.latestWorkCarousel.map((obj) => obj.fields.file)
-    }
-  }
+      latestWorkImg: res.items[0].fields.latestWorkCarousel.map(
+        (obj) => obj.fields.file
+      ),
+    },
+  };
 }
-
 
 const Projects = ({ latestWorkImg }) => {
   return (
@@ -38,32 +42,55 @@ const Projects = ({ latestWorkImg }) => {
       <HomeHero
         LeftSectionIMG={'url("/images/whiteMarbleTexture.jpg")'}
         RightSectionIMG={'url("/images/whiteWavesTexture.jpg")'}
-        heading={<h1 style={{ fontSize: "4rem", color: "#23C7A7", marginBottom: "40px" }}>My Projects</h1>}
+        heading={
+          <h1
+            style={{ fontSize: "4rem", color: "#23C7A7", marginBottom: "40px" }}
+          >
+            My Projects
+          </h1>
+        }
         show3D={true}
-        paragraph={`Check out my recent projects and learn how to create your own along the way with my free articles when you sign up, after years of experience designing and coding websites i show the best route to creating unique, user friendly and accessaible web application's `} />
+        paragraph={`Check out my recent projects and learn how to create your own along the way with my free articles when you sign up, after years of experience designing and coding websites i show the best route to creating unique, user friendly and accessaible web application's `}
+      />
       <LogoList />
-      <ProjectAndText slateText={"Project 1"} img1="/images/phone1/bikeman1.png"
+      <ProjectAndText
+        slateText={"Project 1"}
+        projects={Project3}
+        direction={"row-reverse"}
+        img1="/images/phone4/resturant1.png"
+        img2="/images/phone4/resturant2.png"
+        img3="/images/phone4/resturant3.png"
+        img4="/images/phone4/resturant4.png"
+        Href="https://italian-resturant-front-end.vercel.app/"
+      />
+      <ProjectAndText
+        slateText={"Project 2"}
+        img1="/images/phone1/bikeman1.png"
         projects={Project1}
         img2="/images/phone1/bikeman2.png"
         img3="/images/phone1/bikeman3.png"
         img4="/images/phone1/bikeman4.png"
-        img5="/images/phone1/bikeman5.png" />
+        img5="/images/phone1/bikeman5.png"
+        Href="https://bike-man-dan-wheeldeal.netlify.app/"
+      />
 
       <SkillsAndProject />
 
-      <ProjectAndText slateText={"Project 2"}
+      <ProjectAndText
+        slateText={"Project 3"}
         projects={Project2}
-        direction={"row-reverse"} img1="/images/phone2/groPro1.png"
+        direction={"row-reverse"}
+        img1="/images/phone2/groPro1.png"
         img2="/images/phone2/groPro2.png"
         img3="/images/phone2/groPro3.png"
         img4="/images/phone2/groPro4.png"
-        img5="/images/phone2/groPro5.png" />
+        img5="/images/phone2/groPro5.png"
+        Href="https://team-grow-pro.netlify.app/"
+      />
       <LatestWork latestWorkImg={latestWorkImg} />
       <FoundersNote />
-
-
     </div>
   );
-}
+};
 
 export default Projects;
