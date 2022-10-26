@@ -5,6 +5,10 @@ Basics :
 <ul>
 
 - Next.js Application
+- Contentfull CMS
+- Google Analytics
+- CSS Modules
+- Stripe & Calendly
 - Sendgrid Api Emailer
 - StoryBook.js
 - JestTesting
@@ -28,7 +32,7 @@ gitHub
 - `--save @contentful/rich-text-types @contentful/rich-text-re act-renderer`
 - `npm i aos --save`
 - `google analytics`
-
+- `npm install react-icons --save`
 ## }
 
 #
