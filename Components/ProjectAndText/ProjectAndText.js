@@ -17,7 +17,14 @@ const ProjectAndText = ({
     <main className={style.container} data-aos="fade-right">
       <div style={{ flexDirection: direction }} className={style.Project1}>
         <section className={style.LeftSection}>
-          <Phone1 img1={img1} img2={img2} img3={img3} img4={img4} img5={img5} />
+          <Phone1
+            Href={Href}
+            img1={img1}
+            img2={img2}
+            img3={img3}
+            img4={img4}
+            img5={img5}
+          />
         </section>
         <section className={style.RightSection}>
           <BigSlateTitle text={slateText} />
