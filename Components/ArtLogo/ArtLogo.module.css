@@ -20,6 +20,35 @@
   text-align: center;
   background-color: rgba(29, 25, 50, 0.5);
 }
+.ArtLogo_header2 {
+  color: #f53535;
+  text-align: center;
+  background-color: rgba(29, 25, 50, 0.5);
+  background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background-size:600vw 600vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimate 5s linear infinite alternate;
+}
+
+
+
+@keyframes textAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+    
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+    
+  }
+}
+
+
+
+
 .ArtLogo_Buttons {
   display: flex;
   justify-content: space-evenly;

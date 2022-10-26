@@ -1,7 +1,7 @@
 import style from "./Phone1.module.css";
 import Image from "next/image";
 
-const Phone1 = ({ img1, img2, img3, img4, img5 }) => {
+const Phone1 = ({ Href, img1, img2, img3, img4, img5 }) => {
   return (
     <div className={style.Container}>
       <div className={style.phoneNotch}>
@@ -56,11 +56,7 @@ const Phone1 = ({ img1, img2, img3, img4, img5 }) => {
         )}
       </div>
       <div className={style.phoneButton}>
-        <a
-          target="_blank"
-          href="https://bike-man-dan-wheeldeal.netlify.app/"
-          rel="noreferrer"
-        >
+        <a target="_blank" href={Href} rel="noreferrer">
           Visit here
         </a>
       </div>

@@ -11,23 +11,29 @@ import NavBarRight from "../Components/NavBarRight/NavBarRight";
 import SearchBar from "../Components/SearchBar/SearchBar";
 import SubjectsList from "../Components/subjectsList/subjectsList";
 
-
 // get a List of Tutoring subjects
 // on each subject click, open the popup modal and pass in relivant data
 
 const Tutor = () => {
-  let [subjects, setSubjects] = useState(TutorSubjects)
+  let [subjects, setSubjects] = useState(TutorSubjects);
 
-  function filterSubjects(inputvalue) { // filters search input
+  function filterSubjects(inputvalue) {
+    // filters search input
     // check length of the input if 0 return full tutorlist else filter based on user input
-      inputvalue.length?
-      setSubjects(TutorSubjects):
-      setSubjects(TutorSubjects.filter((obj) =>  obj.subjectTitle.toLowerCase().includes(inputvalue.toLowerCase())))
+    inputvalue.length
+      ? setSubjects(TutorSubjects)
+      : setSubjects(
+          TutorSubjects.filter((obj) =>
+            obj.subjectTitle.toLowerCase().includes(inputvalue.toLowerCase())
+          )
+        );
   }
 
-  let [toggleModal, setToggleModal] = useState(false)
+  let [toggleModal, setToggleModal] = useState(false);
 
-  let openModelAndTopic= useCallback((modalData)=>{setToggleModal(modalData)},[]) // open model also pass relivant topic data
+  let openModelAndTopic = useCallback((modalData) => {
+    setToggleModal(modalData);
+  }, []); // open model also pass relivant topic data
 
   return (
     <div>
@@ -37,26 +43,28 @@ const Tutor = () => {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <ArticleContainer>
-
-      <ModalOverlay isOpen={toggleModal} >
-        <ModalBox modalData={toggleModal} closeModal={()=>setToggleModal(false)}/>
-      </ModalOverlay>
+        <ModalOverlay isOpen={toggleModal}>
+          <ModalBox
+            modalData={toggleModal}
+            closeModal={() => setToggleModal(false)}
+          />
+        </ModalOverlay>
 
         <NavBarLeft />
         <ArticleMainSection CardInfo={[]}>
-          <ArtLogo Label={"Need One to One Tutoring?."} />
+          <ArtLogo
+            // Label={"Need One to One Tutoring?."}
+            Label2="New Mentor sessions & price's!"
+          />
           <h2 style={{ color: "white" }}>Topic of Choice:</h2>
-          <SearchBar setInputValue={filterSubjects}/>
-          <SubjectsList subjects={subjects} handleClick={openModelAndTopic}/> 
+          <SearchBar setInputValue={filterSubjects} />
+          <SubjectsList subjects={subjects} handleClick={openModelAndTopic} />
           {/* <Benefits /> */}
-
         </ArticleMainSection>
         <NavBarRight />
       </ArticleContainer>
-
-
     </div>
   );
-}
+};
 
 export default Tutor;
