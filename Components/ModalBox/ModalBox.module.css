@@ -1,13 +1,13 @@
 .Container{
     width: 98%;
-    height: 80%;
+    height: 90%;
    background-color: #1F2C35;
-   margin-top: 20px;
    border-radius: 8px;
    border: outset thick #21C7A6;
    animation: modalOpen 0.3s linear ;
    color: white;
-   overflow-y: scroll;
+   overflow: visible;
+   /* overflow-y: hidden; */
    position: relative;
 }
 
@@ -22,17 +22,15 @@
     }
 }
 
-.Container_Block{
-    /* border-top: dotted white thick; */
-    border-bottom: dotted white thick;
-    padding: 15px;
-}
 .Container_Cross{
     position: fixed;
     top: 10px;
     right: 10px;
-    color: red;
-    font-size: 3rem;
+    color: #0168FF;
+    font-size: 4rem;
     cursor: pointer;
-
+    background: white;
+    border-radius: 100%;
+    border: #21C7A6 outset thick;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

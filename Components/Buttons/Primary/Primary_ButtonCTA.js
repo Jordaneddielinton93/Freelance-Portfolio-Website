@@ -4,10 +4,8 @@ import Link from "next/link";
 
 const Primary_ButtonCTA = ({ Label }) => {
   return (
-    <Link href="/Contact">
-      <button className={style.PrimaryButton}>
-        {Label}
-      </button>
+    <Link href={Label}>
+      <button className={style.PrimaryButton}>{Label}</button>
     </Link>
   );
 };

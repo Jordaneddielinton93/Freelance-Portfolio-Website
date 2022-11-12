@@ -1,0 +1,64 @@
+.BookingCard{
+    width:400px ;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    border: solid thin black;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: auto;
+}
+.BookingCard_PriceContainer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.BookingCard_PriceContainer_Perhour{
+    font-size: 1rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.BookingCard_Duration_and_Subject{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Label{
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.Select{
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.Button{
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0px 10px;
+    font-size: 1rem;
+    background-color: #26BF9E;
+    font-weight:800;
+    color: white;
+
+    border: solid thin white;
+    box-shadow: 4px 4px 7px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}

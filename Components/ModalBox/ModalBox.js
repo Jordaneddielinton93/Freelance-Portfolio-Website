@@ -4,16 +4,12 @@ import { BsFillXCircleFill } from "react-icons/bs";
 
 import { InlineWidget } from "react-calendly";
 import DropDown from "../DropDown/DropDown";
-const ModalBox = ({ modalData, closeModal }) => {
-  console.log(modalData);
-
-  if (!modalData) {
+const ModalBox = ({ duration, closeModal }) => {
+  if (!duration) {
     return <></>;
   }
 
-  let { subjectTitle, subjectDiscription, price, icon, subjectList, Projects } =
-    modalData;
-
+  console.log(duration, "rendered");
   return (
     <div className={styles.Container}>
       {/* <span className={styles.Container_Cross}> */}
@@ -21,56 +17,18 @@ const ModalBox = ({ modalData, closeModal }) => {
         className={styles.Container_Cross}
         onClick={closeModal}
       />
-      {/* </span> */}
-      <DropDown
-        length={"4 hours"}
-        Price={"50"}
-        calendly={
-          <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-4-hours" />
-        }
-      />
-      <DropDown
-        length={"3 hours"}
-        Price={"37"}
-        calendly={
-          <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-3-hours" />
-        }
-      />
-      <DropDown
-        length={"2 hours"}
-        Price={"25"}
-        calendly={
-          <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring" />
-        }
-      />
-      <DropDown
-        length={"1 hours"}
-        Price={"12.50"}
-        calendly={
-          <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-1-hour" />
-        }
-      />
-      <div className={styles.Container_Block} style={{ textAlign: "center" }}>
-        <h1>
-          {subjectTitle} {icon}
-        </h1>
-      </div>
-      <div className={styles.Container_Block}>
-        <h2>Subject discription</h2>
-        <p>{subjectDiscription}</p>
-      </div>
-      <div className={styles.Container_Block}>
-        <h2>Things you will learn</h2>
-        <ul>
-          {subjectList.map((li, index) => {
-            return <li key={index}>{li}</li>;
-          })}
-        </ul>
-      </div>
-      <div className={styles.Container_Block}>
-        <h2>Project</h2>
-        <p>{Projects}</p>
-      </div>
+      {duration == "1hr" && (
+        <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-1-hour" />
+      )}
+      {duration == "2hr" && (
+        <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring" />
+      )}
+      {duration == "3hr" && (
+        <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-3-hours" />
+      )}
+      {duration == "4hr" && (
+        <InlineWidget url="https://calendly.com/jordan-eddie-linton/tutoring-4-hours" />
+      )}
     </div>
   );
 };
