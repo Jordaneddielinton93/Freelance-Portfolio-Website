@@ -1,0 +1,8 @@
+.Circle{
+
+    width: 200px;
+    height: 200px;
+    border:#DE9F36 solid 18px;
+    z-index: 10;
+    border-radius: 100%;
+}
