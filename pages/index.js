@@ -7,7 +7,7 @@ import HowICanHelp from "../Components/HowICanHelp/HowICanHelp";
 import LatestWork from "../Components/LatestWork/LatestWork";
 import LogoList from "../Components/LogoList/LogoList";
 import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
-import NavBar from "../Components/NavBar/NavBar";
+
 import styles from "../styles/Home.module.css";
 
 import { createClient } from "contentful";

@@ -1,8 +1,7 @@
-import CanvasLayout from "../CanvasLayout/CanvasLayout";
 import style from "./TutorHero.module.css";
 import Image from "next/image";
 import Primary_ButtonCTA from "../Buttons/Primary/Primary_ButtonCTA";
-import Secondary_ButtonCTA from "../Buttons/Secondary/Secondary_ButtonCTA";
+
 import TestimonialImageComp from "../ImageComponent/TestimonialImageComp";
 import Circle from "../Shapes/Circle";
 import BookingCard from "../BookingCard/BookingCard";
