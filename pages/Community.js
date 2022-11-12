@@ -1,10 +1,6 @@
 import Head from "next/head";
 import CommunityHero from "../Components/CommunityHero/CommunityHero";
 
-
-import NavBar from "../Components/NavBar/NavBar";
-
-
 const Community = () => {
   return (
     <div>
@@ -14,10 +10,8 @@ const Community = () => {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <CommunityHero />
-
-
     </div>
   );
-}
+};
 
 export default Community;

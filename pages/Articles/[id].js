@@ -2,9 +2,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import styles from "./ArticleID.module.css";
 import { createClient } from "contentful";
-import { CopyBlock, dracula } from "react-code-blocks";
-import { useEffect } from "react";
-import { useState } from "react";
+
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { CodeBlocks } from "../../Components/02-Constants/ArticleDynamic";

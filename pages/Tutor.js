@@ -7,7 +7,6 @@ import LogoList from "../Components/LogoList/LogoList";
 
 import ModalBox from "../Components/ModalBox/ModalBox";
 import ModalOverlay from "../Components/ModalOverlay/ModalOverlay.js";
-import NavBarRight from "../Components/NavBarRight/NavBarRight";
 import TutorHero from "../Components/TutorHero/TutorHero";
 
 // get a List of Tutoring subjects
