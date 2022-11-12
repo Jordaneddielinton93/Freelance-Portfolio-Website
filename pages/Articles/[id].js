@@ -1,4 +1,3 @@
-import NavBar from "../../Components/NavBar/NavBar";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import styles from "./ArticleID.module.css";
 import { createClient } from "contentful";
