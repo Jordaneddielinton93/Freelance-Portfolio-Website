@@ -40,17 +40,9 @@ const Projects = ({ latestWorkImg }) => {
         <link rel="icon" href="/images/greyback.png" />
       </Head>
       <HomeHero
-        LeftSectionIMG={'url("/images/whiteMarbleTexture.jpg")'}
-        RightSectionIMG={'url("/images/whiteWavesTexture.jpg")'}
-        heading={
-          <h1
-            style={{ fontSize: "4rem", color: "#23C7A7", marginBottom: "40px" }}
-          >
-            My Projects
-          </h1>
-        }
-        show3D={true}
-        paragraph={`Check out my recent projects and learn how to create your own along the way with my free articles when you sign up, after years of experience designing and coding websites i show the best route to creating unique, user friendly and accessaible web application's `}
+        leftImg={"/images/dotted-bg.jpeg"}
+        paragraph={`Welcome to my portfolio! My name is Jordan and I am a Web Designer,Developer and Coach. I have been working in this field for 3 year and have developed a strong set of skills and experience. In this portfolio, you will find examples of my work and accomplishments. Thank you for taking the time to visit my page. I look forward to sharing my portfolio with you.
+      `}
       />
       <LogoList />
       <ProjectAndText
