@@ -4,7 +4,7 @@
   align-items: center;
   /* justify-content: flex-start; */
   height: 240px;
-  width: 100%;
+  width: 95%;
   position: relative;
 }
 .Container_Background_Top {
@@ -16,6 +16,8 @@
   background-color: #ffff;
   height: 70%;
   width: 100%;
+  border: solid 2px #ffd700;
+
 }
 .Container_Title {
   position: absolute;

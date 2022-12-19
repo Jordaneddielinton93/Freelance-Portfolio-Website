@@ -16,7 +16,7 @@
   border-radius: 8px;
   /* border: solid 3px brown; */
   border: solid 3px #ffd700;
-  background-image: url("/images/whiteMarbleTexture.jpg");
+  background-image: url("/images/dotted-bg.jpeg");
   background-size: cover;
   position: relative;
   display: flex;

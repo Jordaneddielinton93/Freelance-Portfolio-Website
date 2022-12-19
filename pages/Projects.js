@@ -1,10 +1,7 @@
 import Head from "next/head";
-import NavBar from "../Components/NavBar/NavBar";
 import HomeHero from "../Components/HomeHero/HomeHero";
 import LogoList from "../Components/LogoList/LogoList";
 import ProjectAndText from "../Components/ProjectAndText/ProjectAndText";
-import SkillsAndProject from "../Components/SkillsAndProject/SkillsAndProject";
-import LatestWork from "../Components/LatestWork/LatestWork";
 import FoundersNote from "../Components/FoundersNote/FoundersNote";
 import { createClient } from "contentful";
 import {
@@ -55,6 +52,7 @@ const Projects = ({ latestWorkImg }) => {
         img4="/images/phone4/resturant4.png"
         Href="https://italian-resturant-front-end.vercel.app/"
       />
+      <LogoList />
       <ProjectAndText
         slateText={"Project 2"}
         img1="/images/phone1/bikeman1.png"
@@ -66,7 +64,8 @@ const Projects = ({ latestWorkImg }) => {
         Href="https://bike-man-dan-wheeldeal.netlify.app/"
       />
 
-      <SkillsAndProject />
+      {/* <SkillsAndProject /> */}
+      <LogoList />
 
       <ProjectAndText
         slateText={"Project 3"}
@@ -79,7 +78,7 @@ const Projects = ({ latestWorkImg }) => {
         img5="/images/phone2/groPro5.png"
         Href="https://team-grow-pro.netlify.app/"
       />
-      <LatestWork latestWorkImg={latestWorkImg} />
+      {/* <LatestWork latestWorkImg={latestWorkImg} /> */}
       <FoundersNote />
     </div>
   );
