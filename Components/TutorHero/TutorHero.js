@@ -46,7 +46,7 @@ const TutorHero = ({ setToggleModal }) => {
           </p>
 
           <div className={style.Container_Main_LeftSection_Buttons}>
-            <Primary_ButtonCTA Label="Contact" Href="/Contact" />
+            <Primary_ButtonCTA Label="Tutor" Href="/Tutor" />
           </div>
         </section>
         <section className={style.Container_Main_RightSection}>

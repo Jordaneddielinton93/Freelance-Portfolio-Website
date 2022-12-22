@@ -28,6 +28,14 @@ export const Project3 = {
     "The site was one of my favourite design wise and Chakra made that so much easier to make responsive",
 };
 
+export const Project4 = {
+  paragraph1:
+    "I used this site to learn Material UI and use query while also helping my sister out with a site. I found it cool how fast you can build using MUI.",
+  paragraph2:
+    "I plan to make this site's backend to have an easy-to-access CMS with Contentful so she can upload her own images and text.",
+  paragraph3: "This site was one of the main reasons I got into React Native.",
+};
+
 export const CodeBlocks = {
   creatingContext: (
     <CopyBlock

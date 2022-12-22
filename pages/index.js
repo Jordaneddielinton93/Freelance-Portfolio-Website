@@ -7,6 +7,7 @@ import HowICanHelp from "../Components/HowICanHelp/HowICanHelp";
 import LatestWork from "../Components/LatestWork/LatestWork";
 import LogoList from "../Components/LogoList/LogoList";
 import MoreAboutMe from "../Components/MoreAboutMe/MoreAboutMe";
+import Chatbot from "react-chatbot-kit";
 
 import styles from "../styles/Home.module.css";
 
@@ -15,6 +16,11 @@ import { useEffect, useState } from "react";
 import TutorHero from "../Components/TutorHero/TutorHero";
 import ModalOverlay from "../Components/ModalOverlay/ModalOverlay";
 import ModalBox from "../Components/ModalBox/ModalBox";
+import {
+  ActionProvider,
+  config,
+  MessageParser,
+} from "../Components/ChatBot/ChatBot";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -88,6 +94,11 @@ export default function Home({ latestWorkImg }) {
           closeModal={() => setToggleModal(false)}
         />
       </ModalOverlay>
+      <Chatbot
+        config={config}
+        messageParser={MessageParser}
+        actionProvider={ActionProvider}
+      />
     </div>
   );
 }
