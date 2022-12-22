@@ -8,6 +8,7 @@ import {
   Project1,
   Project2,
   Project3,
+  Project4,
 } from "../Components/02-Constants/ArticleDynamic";
 
 export async function getStaticProps() {
@@ -46,16 +47,29 @@ const Projects = ({ latestWorkImg }) => {
         slateText={"Project 1"}
         projects={Project3}
         direction={"row-reverse"}
-        img1="/images/phone4/resturant1.png"
-        img2="/images/phone4/resturant2.png"
-        img3="/images/phone4/resturant3.png"
-        img4="/images/phone4/resturant4.png"
+        img1="/images/phone4/resturant_1.png"
+        img2="/images/phone4/resturant_2.png"
+        img3="/images/phone4/resturant_3.png"
+        img4="/images/phone4/resturant_4.png"
         Href="https://italian-resturant-front-end.vercel.app/"
       />
       <LogoList />
+
       <ProjectAndText
         slateText={"Project 2"}
+        img1="/images/phone5/visions_1.png"
+        projects={Project4}
+        img2="/images/phone5/visions_2.png"
+        img3="/images/phone5/visions_3.png"
+        img4="/images/phone5/visions_4.png"
+        img5="/images/phone5/visions_5.png"
+        Href="https://visions-of-peace.netlify.app/"
+      />
+      <LogoList />
+      <ProjectAndText
+        slateText={"Project 3"}
         img1="/images/phone1/bikeman1.png"
+        direction={"row-reverse"}
         projects={Project1}
         img2="/images/phone1/bikeman2.png"
         img3="/images/phone1/bikeman3.png"
@@ -68,9 +82,8 @@ const Projects = ({ latestWorkImg }) => {
       <LogoList />
 
       <ProjectAndText
-        slateText={"Project 3"}
+        slateText={"Project 4"}
         projects={Project2}
-        direction={"row-reverse"}
         img1="/images/phone2/groPro1.png"
         img2="/images/phone2/groPro2.png"
         img3="/images/phone2/groPro3.png"

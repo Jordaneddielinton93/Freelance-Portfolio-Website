@@ -4,7 +4,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .Project1 {
@@ -45,6 +45,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   flex: 1;
+  
 }
 @media only screen and (max-width: 750px) {
   .RightSection {

@@ -11,6 +11,21 @@ const LogoList = () => {
           src="/images/leaves2.png"
         />
       </span>
+      <span
+        style={{
+          position: "absolute",
+          display: "flex",
+          right: 0,
+          transform: "scaleX(-1)",
+        }}
+      >
+        <Image
+          height="159px"
+          width="131px"
+          alt="Initials"
+          src="/images/leaves2.png"
+        />
+      </span>
       <Image
         height="70px"
         width="85px"
